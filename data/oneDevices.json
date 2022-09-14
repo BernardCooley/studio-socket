@@ -1,0 +1,4086 @@
+[
+    {
+        "external_links": [
+            {
+                "url": "http://www.opweb.de/en/model.php?id=8861",
+                "notes": "User Manual"
+            }
+        ],
+        "country_of_manufacture": "Japan",
+        "channels_voices_tracks": [
+            {
+                "type": "Channel",
+                "additional_information": "",
+                "quantity": "2"
+            }
+        ],
+        "dates_produced": "2002 - 2010",
+        "title": "SL-1210MK5",
+        "model_number": "",
+        "controls": [
+            {
+                "range": "",
+                "parameter": "On/Off",
+                "control_type": "Rotary Switch"
+            },
+            {
+                "range": "33 ⅓ rpm",
+                "parameter": "Speed",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "45 rpm",
+                "parameter": "Speed",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "±8 % (continuously variable)",
+                "parameter": "Pitch",
+                "control_type": "Slide Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Pitch Reset",
+                "control_type": "Latching Push Switch"
+            }
+        ],
+        "slug": "3689-technics-sl-1210mk5",
+        "connections": [
+            {
+                "connector": "RCA (Phono, Cinch)",
+                "name": "Audio Out",
+                "description": [
+                    "Plug (Male)"
+                ]
+            }
+        ],
+        "displays_indicators_meters": [
+            {
+                "type": "Light",
+                "scale": "",
+                "indication": "On / Speed Strobe"
+            },
+            {
+                "type": "LED",
+                "scale": "",
+                "indication": "Pitch Reset Indicator"
+            }
+        ],
+        "frequency_response": "",
+        "signal_path": "Analog Hardware",
+        "form_factor": "Tabletop",
+        "id": 3689,
+        "power_source": "220 V / 110 V (selectable)",
+        "dimensions_string": "45.3 cm (W) × 17.2 cm (H) × 35.5 cm (D)",
+        "manufacturers": [
+            "Technics"
+        ],
+        "deviceTypes": [
+            "Turntable"
+        ]
+    },
+    {
+        "country_of_manufacture": "Ireland",
+        "channels_voices_tracks": [
+            {
+                "type": "Channel",
+                "additional_information": "",
+                "quantity": "7.1"
+            }
+        ],
+        "dates_produced": "",
+        "title": "KH 810",
+        "controls": [],
+        "slug": "3581-neumann-kh-810",
+        "connections": [
+            {
+                "connector": "XLR",
+                "description": [],
+                "name": "Input L / Center / R / L Surround / R Surround / L Back / R Back / Directt In LFE Sum"
+            },
+            {
+                "connector": "Other",
+                "description": [],
+                "name": "Remote Control"
+            },
+            {
+                "connector": "XLR",
+                "description": [],
+                "name": "Input L / Center / R / L Surround / R Surround / L Back / R Back / Directt In LFE Sum"
+            }
+        ],
+        "displays_indicators_meters": [
+            {
+                "type": "On",
+                "scale": "",
+                "indication": "Green LED"
+            },
+            {
+                "type": "Limit / Clip",
+                "scale": "",
+                "indication": "Red LED “Flashing"
+            },
+            {
+                "type": "Bass Management Active",
+                "scale": "",
+                "indication": "Green LED"
+            }
+        ],
+        "frequency_response": "18 to 300 Hz, ± 3 dB",
+        "signal_path": "Analog Hardware",
+        "form_factor": "Floorstanding",
+        "id": 3581,
+        "power_source": "220 - 240 / 100 - 120 V AC (switchable)",
+        "dimensions_string": "360 x 330 x 645 mm",
+        "external_links": [
+            {
+                "url": "http://www.neumann-kh-line.com/neumann-kh/home_en.nsf/root/prof-monitoring_studio-monitors_subwoofer_KH810",
+                "notes": "Manufacturers Page"
+            }
+        ],
+        "manufacturers": [
+            "Neumann"
+        ],
+        "deviceTypes": [
+            "Speaker"
+        ]
+    },
+    {
+        "country_of_manufacture": "Germany",
+        "channels_voices_tracks": [
+            {
+                "type": "Channel",
+                "additional_information": "",
+                "quantity": "2"
+            }
+        ],
+        "dates_produced": "2015",
+        "title": "TRM 202 MK2",
+        "model_number": "MK2",
+        "controls": [
+            {
+                "range": "",
+                "parameter": "",
+                "control_type": "Rotary Pot"
+            }
+        ],
+        "slug": "5770-omnitronic-trm-202-mk2",
+        "connections": [
+            {
+                "connector": "RCA (Phono, Cinch)",
+                "name": "3 per Channel + Master/Booth",
+                "description": []
+            },
+            {
+                "connector": "XLR",
+                "name": "Master/Booth/Mic",
+                "description": []
+            }
+        ],
+        "displays_indicators_meters": [],
+        "signal_path": "Analog Hardware",
+        "form_factor": "Desktop",
+        "id": 5770,
+        "power_source": "230 V AC, 50 Hz",
+        "dimensions_string": "235 x 190 x 90 mm",
+        "external_links": [
+            {
+                "url": "http://eshop.steinigke.de/de/Audio/Mischpulte--Audiomixer/Tabletop-Mixer/TRM-202MK2-2-Kanal-Rotary-Mixer/category-06b605e2facf804890887fddb05c48c7/product-ARTI_10355921.html",
+                "notes": "Official Shop"
+            }
+        ],
+        "manufacturers": [
+            "Omnitronic"
+        ],
+        "deviceTypes": [
+            "DJ Mixer"
+        ]
+    },
+    {
+        "country_of_manufacture": "Japan",
+        "title": "ES-1",
+        "dates_produced": "1976",
+        "channels_voices_tracks": [
+            {
+                "type": "Channel",
+                "additional_information": "",
+                "quantity": "2"
+            }
+        ],
+        "model_number": "ME-10D",
+        "controls": [
+            {
+                "range": "2",
+                "parameter": "Speakers/Headphones (On)",
+                "control_type": "Rotary Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Reset",
+                "control_type": "Latching Push Switch"
+            }
+        ],
+        "slug": "53681-infinity-es-1",
+        "connections": [
+            {
+                "connector": "Other",
+                "name": "Input",
+                "description": [
+                    "Stereo",
+                    "Cable Mount"
+                ]
+            },
+            {
+                "connector": "Spring Terminal",
+                "description": [
+                    "Stereo"
+                ],
+                "name": "Speaker Pass-Through"
+            },
+            {
+                "connector": "DIN",
+                "description": [
+                    "Stereo",
+                    "Socket (Female)"
+                ],
+                "name": "Headphone Output"
+            },
+            {
+                "connector": "DIN",
+                "description": [
+                    "Stereo",
+                    "Socket (Female)"
+                ],
+                "name": "Headphone Output"
+            }
+        ],
+        "displays_indicators_meters": [
+            {
+                "indication": "Power",
+                "scale": "",
+                "type": "LED"
+            }
+        ],
+        "frequency_response": "20Hz-25kHz ±2dB",
+        "form_factor": "Headphone - Supra-aural",
+        "id": 53681,
+        "power_source": "117VAC/220VAC, 50-60Hz",
+        "dimensions_string": "Headband: 11.4-13.8, Power Supply: 3x5.2x7.3 (HxWxD)",
+        "signal_path": "Analog Hardware",
+        "manufacturers": [
+            "Infinity"
+        ],
+        "deviceTypes": [
+            "Headphones"
+        ]
+    },
+    {
+        "country_of_manufacture": "UK",
+        "title": "Cirklon",
+        "dates_produced": "2011 to present",
+        "channels_voices_tracks": [
+            {
+                "type": "Track",
+                "additional_information": "Sequencer",
+                "quantity": "64"
+            }
+        ],
+        "controls": [
+            {
+                "parameter": "Step 1 to 16",
+                "range": "",
+                "group": "",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "parameter": "Step 1 to 16 Value",
+                "range": "",
+                "group": "",
+                "control_type": "Rotary Encoder with Momentary Push Switch"
+            },
+            {
+                "parameter": "Row, Bar, Value",
+                "range": "",
+                "group": "",
+                "control_type": "Rotary Encoder with Momentary Push Switch"
+            },
+            {
+                "parameter": "A, B",
+                "range": "",
+                "group": "",
+                "control_type": "Rotary Pot"
+            },
+            {
+                "range": "",
+                "parameter": "Stop",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Play",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Record",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Song",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Scene",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Track",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Pattern",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Fill",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Solo",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Next",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Shift",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Save",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Last",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Sculpt",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Menu",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Copy",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Delete",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Insert",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Gang",
+                "control_type": "Momentary Push Switch"
+            }
+        ],
+        "slug": "18-sequentix-cirklon",
+        "connections": [
+            {
+                "connector": "USB",
+                "name": "USB",
+                "description": []
+            },
+            {
+                "connector": "DIN",
+                "description": [],
+                "name": "Midi In / Out 1 to 5"
+            },
+            {
+                "connector": "DIN",
+                "description": [
+                    "5 Way"
+                ],
+                "name": "Sync"
+            },
+            {
+                "connector": "D-Sub",
+                "name": "Analogue Bus (optional)",
+                "description": [
+                    "25 Way"
+                ]
+            }
+        ],
+        "displays_indicators_meters": [
+            {
+                "type": "240x64 pixel graphic LED display",
+                "scale": "",
+                "indication": ""
+            }
+        ],
+        "signal_path": "No Audio",
+        "form_factor": "Desktop / 19 Rackmount Convertible",
+        "id": 18,
+        "power_source": "5V DC",
+        "dimensions_string": "3U",
+        "external_links": [
+            {
+                "url": "http://www.sequentix.com/cirklon.htm",
+                "notes": "Official Site"
+            }
+        ],
+        "manufacturers": [
+            "Sequentix"
+        ],
+        "deviceTypes": [
+            "Sequencer"
+        ]
+    },
+    {
+        "external_links": [
+            {
+                "url": "http://www.roland.com/products/vp-9000/",
+                "notes": "Product Page"
+            },
+            {
+                "url": "http://www.rolandus.com/support/by_product/vp-9000/owners_manuals/7282",
+                "notes": "Roland VP-9000 Owners manual download"
+            }
+        ],
+        "country_of_manufacture": "Japan",
+        "title": "VP-9000 VariPhrase Processor",
+        "dates_produced": "2000-? (DISCONTINUED)",
+        "channels_voices_tracks": [
+            {
+                "type": "Voice",
+                "additional_information": "",
+                "quantity": "6"
+            }
+        ],
+        "model_number": "VP-9000",
+        "controls": [
+            {
+                "range": "MIN / MAX",
+                "parameter": "VOLUME",
+                "control_type": "Rotary Pot"
+            },
+            {
+                "range": "MIN / MAX",
+                "parameter": "REC LEVEL",
+                "control_type": "Rotary Pot"
+            },
+            {
+                "range": "Endless",
+                "parameter": "VALUE",
+                "control_type": "Rotary Encoder with Momentary Push Switch"
+            },
+            {
+                "range": "- (Center) +",
+                "parameter": "PITCH",
+                "control_type": "Rotary Pot"
+            },
+            {
+                "range": "- (Center) +",
+                "parameter": "TIME",
+                "control_type": "Rotary Pot"
+            },
+            {
+                "range": "- (Center) +",
+                "parameter": "FORMANT/GROOVE",
+                "control_type": "Rotary Pot"
+            },
+            {
+                "range": "OFF/ON",
+                "parameter": "POWER",
+                "control_type": "Latching Push Switch"
+            }
+        ],
+        "slug": "3023-roland-vp-9000-variphrase-processor",
+        "connections": [
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "description": [
+                    "Stereo"
+                ],
+                "name": "PHONES"
+            },
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "description": [
+                    "Balanced"
+                ],
+                "name": "AUDIO IN"
+            },
+            {
+                "connector": "RCA (Phono, Cinch)",
+                "description": [
+                    "Socket (Female)"
+                ],
+                "name": "COAXIAL S/PDIF - IN, OUT"
+            },
+            {
+                "connector": "JIS F05 (Toslink, ADAT Lightpipe)",
+                "description": [
+                    "Socket (Female)"
+                ],
+                "name": "OPTICAL S/PDIF - IN, OUT"
+            },
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "description": [
+                    "Balanced"
+                ],
+                "name": "STEREO INPUT - L, R"
+            },
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "name": "MAIN OUT - L (MONO), R",
+                "description": [
+                    "Balanced"
+                ]
+            },
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "description": [
+                    "Balanced"
+                ],
+                "name": "DIRECT OUT 1 - L, R"
+            },
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "name": "DIRECT OUT 2 - L, R",
+                "description": [
+                    "Balanced"
+                ]
+            },
+            {
+                "connector": "DIN",
+                "description": [
+                    "5 Way"
+                ],
+                "name": "MIDI - IN, OUT, THRU"
+            },
+            {
+                "connector": "D-Sub",
+                "name": "SCSI-A",
+                "description": [
+                    "25 Way"
+                ]
+            },
+            {
+                "connector": "D-Sub",
+                "description": [
+                    "50 Way"
+                ],
+                "name": "SCSI-B"
+            }
+        ],
+        "displays_indicators_meters": [
+            {
+                "indication": "DISPLAY SCREEN",
+                "scale": "240 x 64",
+                "type": "Backlit LCD"
+            }
+        ],
+        "frequency_response": "20 Hz to 20kHz -3 / -3 dB",
+        "signal_path": "Digital Hardware (including Analog Connections)",
+        "form_factor": "19 Rackmount",
+        "id": 3023,
+        "power_source": "(25 W) AC 100V, (25 W) AC 117V, (25 W) AC 230V or (25 W) AC 240V",
+        "dimensions_string": "482 (W) x 302 (D) x 87.8 (H) mm, 19 (W) x 11-15/16 (D) x 3-1/2 (H) inches",
+        "manufacturers": [
+            "Roland"
+        ],
+        "deviceTypes": [
+            "Sampler"
+        ]
+    },
+    {
+        "country_of_manufacture": "Thailand",
+        "channels_voices_tracks": [
+            {
+                "type": "Voice",
+                "additional_information": "",
+                "quantity": "1"
+            },
+            {
+                "type": "Channel",
+                "additional_information": "MIDI",
+                "quantity": "1 to 10"
+            }
+        ],
+        "dates_produced": "",
+        "title": "Bass Bot TT-303",
+        "model_number": "",
+        "controls": [
+            {
+                "range": "Saw, Square",
+                "parameter": "Waveform",
+                "control_type": "Slide Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Tuning",
+                "control_type": "Rotary Pot"
+            },
+            {
+                "range": "",
+                "parameter": "Cut Off Frequency",
+                "control_type": "Rotary Pot"
+            },
+            {
+                "range": "",
+                "parameter": "Resonance",
+                "control_type": "Rotary Pot"
+            },
+            {
+                "range": "",
+                "parameter": "Envelope Modulation",
+                "control_type": "Rotary Pot"
+            },
+            {
+                "range": "",
+                "parameter": "Decay",
+                "control_type": "Rotary Pot"
+            },
+            {
+                "range": "",
+                "parameter": "Accent",
+                "control_type": "Rotary Pot"
+            },
+            {
+                "range": "Slow to Fast",
+                "parameter": "Tempo",
+                "control_type": "Rotary Pot"
+            },
+            {
+                "range": "1 to 7",
+                "parameter": "Track / Preset",
+                "control_type": "Rotary Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Mode",
+                "control_type": "Rotary Switch"
+            },
+            {
+                "range": "Off to Max",
+                "parameter": "Power / Volume",
+                "control_type": "Rotary Pot with Switch"
+            }
+        ],
+        "slug": "576-bass-bot-tt-303",
+        "connections": [
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "description": [
+                    "Socket (Female)"
+                ],
+                "name": "Instrument Mix In"
+            },
+            {
+                "connector": "DIN",
+                "description": [
+                    "8 Way",
+                    "Socket (Female)"
+                ],
+                "name": "MIDI IN/OUT"
+            },
+            {
+                "connector": "3.5mm Miniature Phone Jack (1/8)",
+                "name": "Control Voltage Out",
+                "description": [
+                    "Mono",
+                    "Socket (Female)"
+                ]
+            },
+            {
+                "connector": "3.5mm Miniature Phone Jack (1/8)",
+                "description": [
+                    "Mono",
+                    "Socket (Female)"
+                ],
+                "name": "Gate Out"
+            },
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "description": [
+                    "Stereo",
+                    "Socket (Female)"
+                ],
+                "name": "Headphone"
+            },
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "description": [
+                    "Mono",
+                    "Socket (Female)"
+                ],
+                "name": "Output"
+            },
+            {
+                "connector": "",
+                "description": [],
+                "name": "DC 9V"
+            }
+        ],
+        "frequency_response": "",
+        "signal_path": "Analog Hardware",
+        "form_factor": "Desktop",
+        "id": 576,
+        "power_source": "DC -9V 200mA (barrel positive, center negative) input / 4 C cell batteries",
+        "dimensions_string": "300 x 146 x 55 mm (WxDxH)",
+        "external_links": [
+            {
+                "url": "http://cyclone-analogic.com/product-description/#",
+                "notes": "Product page"
+            },
+            {
+                "url": "http://www.cyclone-analogic.fr/en/",
+                "notes": "French site"
+            },
+            {
+                "url": "http://syntaur.com/Cyclone.html",
+                "notes": "US Retailer"
+            }
+        ],
+        "manufacturers": [
+            "Cyclone Analogic"
+        ],
+        "deviceTypes": [
+            "Synthesizer",
+            "Sequencer"
+        ]
+    },
+    {
+        "country_of_manufacture": "Germany",
+        "title": "MTC",
+        "channels_voices_tracks": [],
+        "model_number": "Model 2381",
+        "controls": [],
+        "slug": "94253-spl-mtc",
+        "connections": [],
+        "displays_indicators_meters": [],
+        "frequency_response": "10 Hz - 100 kHz (+/- 3 dB)",
+        "external_links": [],
+        "form_factor": "Desktop",
+        "id": 94253,
+        "power_source": "Mains AC",
+        "signal_path": "Analog Hardware",
+        "dimensions_string": "WxHxD: 91x272x220mm; 3.58x10.7x8.66",
+        "manufacturers": [
+            "SPL"
+        ],
+        "deviceTypes": [
+            "Signal Distribution"
+        ]
+    },
+    {
+        "external_links": [
+            {
+                "url": "http://www.eventide.com/AudioDivision/Support/Harmonizers%20and%20Rack%20Products/Orville.aspx",
+                "notes": "Manufacturers Page"
+            },
+            {
+                "url": "http://www.eventide.com/~/media/Files/Audio%20Support/Orville/Everyone/orvop.ashx",
+                "notes": "Manual"
+            }
+        ],
+        "country_of_manufacture": "Little Ferry, New Jersey, USA",
+        "title": "Orville",
+        "dates_produced": "2000 to ?",
+        "channels_voices_tracks": [
+            {
+                "type": "Channel",
+                "additional_information": "",
+                "quantity": "4"
+            }
+        ],
+        "model_number": "1116",
+        "controls": [
+            {
+                "range": "",
+                "parameter": "The Knob",
+                "control_type": "Rotary Encoder"
+            },
+            {
+                "range": "",
+                "parameter": "Bypass",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Soft Keys 1 to 4",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "",
+                "parameter": "DSP A/B",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Program",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Parameter",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Select",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Cursor Keys (4)",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Numeric Keypad (12)",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Levels",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Setup",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Power",
+                "control_type": "Rocker Switch"
+            }
+        ],
+        "slug": "48-eventide-orville",
+        "connections": [
+            {
+                "connector": "Combo XLR / 1/4",
+                "description": [],
+                "name": "Analog Inputs 1 to 4"
+            },
+            {
+                "connector": "XLR",
+                "description": [
+                    "Plug (Male)"
+                ],
+                "name": "Analog Outputs 1 to 4"
+            },
+            {
+                "connector": "XLR",
+                "description": [
+                    "Socket (Female)"
+                ],
+                "name": "Digital In 1, 2 and 3, 4"
+            },
+            {
+                "connector": "XLR",
+                "description": [
+                    "Plug (Male)"
+                ],
+                "name": "Digital Out  1, 2 and 3, 4"
+            },
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "description": [],
+                "name": "Control: Relay"
+            },
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "description": [],
+                "name": "Control: Pedal 1"
+            },
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "description": [],
+                "name": "Control: Pedal 2"
+            },
+            {
+                "connector": "DIN",
+                "description": [
+                    "7 Way"
+                ],
+                "name": "Midi In"
+            },
+            {
+                "connector": "DIN",
+                "description": [
+                    "5 Way"
+                ],
+                "name": "Midi Out"
+            },
+            {
+                "connector": "DIN",
+                "description": [
+                    "5 Way"
+                ],
+                "name": "Midi Thru"
+            },
+            {
+                "connector": "Other",
+                "description": [],
+                "name": "Remote Power In"
+            },
+            {
+                "connector": "D-Sub",
+                "description": [
+                    "9 Way"
+                ],
+                "name": "Serial"
+            },
+            {
+                "connector": "RCA (Phono, Cinch)",
+                "description": [],
+                "name": "Option: SPDIF In"
+            },
+            {
+                "connector": "RCA (Phono, Cinch)",
+                "description": [],
+                "name": "Option: SPDIF Out"
+            },
+            {
+                "connector": "BNC",
+                "description": [],
+                "name": "Option: WC In (Wordclock)"
+            },
+            {
+                "connector": "BNC",
+                "description": [],
+                "name": "Option: WC Out (Wordclock)"
+            }
+        ],
+        "displays_indicators_meters": [
+            {
+                "type": "LCD, Backlit",
+                "scale": "",
+                "indication": ""
+            },
+            {
+                "indication": "Input / Output (selectable)",
+                "scale": "",
+                "type": "4 Channel, 9 Segment LED Level Meter"
+            },
+            {
+                "type": "LED",
+                "scale": "",
+                "indication": "A, B, Busy, Program, Parameter, Levels, Setup"
+            }
+        ],
+        "frequency_response": "(At Sample Rates Of 44.1kHz 48kHz 88.2kHz 96kHz)  +0/-0.1dB 20Hz-20Khz 20Hz-22kHz 20Hz-41kHz 20Hz-44kHz  +0/-3.0dB 5Hz-21Khz 5Hz-23kHz 5Hz-42kHz 5Hz-46kHz",
+        "form_factor": "19 Rackmount",
+        "id": 48,
+        "power_source": "100 watts 100-125V, 220-240V, AC 50/60Hz",
+        "dimensions_string": "2U, 8.9h x 48.3w x 31.7d",
+        "signal_path": "Digital Hardware (including Analog Connections)",
+        "manufacturers": [
+            "Eventide"
+        ],
+        "deviceTypes": [
+            "Effect"
+        ]
+    },
+    {
+        "country_of_manufacture": "USA",
+        "title": "FX40B",
+        "dates_produced": "",
+        "model_number": "",
+        "controls": [],
+        "slug": "37727-dod-fx40b",
+        "connections": [
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "description": [],
+                "name": "Input"
+            },
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "description": [],
+                "name": "Output"
+            }
+        ],
+        "displays_indicators_meters": [
+            {
+                "type": "LED",
+                "scale": "On/Bypass",
+                "indication": "Check"
+            }
+        ],
+        "signal_path": "Analog Hardware",
+        "form_factor": "Footswitch",
+        "id": 37727,
+        "power_source": "9V Alkaline Dry Battery; PS0913DC power supply",
+        "dimensions_string": "",
+        "external_links": [
+            {
+                "url": "http://dod.com/en-US/products/fx40b",
+                "notes": "DOD Site"
+            }
+        ],
+        "manufacturers": [
+            "DOD"
+        ],
+        "deviceTypes": [
+            "EQ"
+        ]
+    },
+    {
+        "country_of_manufacture": "USA ",
+        "external_references": [],
+        "channels_voices_tracks": [],
+        "dates_produced": "10/15/2018",
+        "title": "7 Sick Sad World Slipmat",
+        "controls": [],
+        "slug": "93059-kromatik-7-sick-sad-world-slipmat",
+        "connections": [],
+        "displays_indicators_meters": [],
+        "signal_path": "No Audio",
+        "form_factor": "Part",
+        "id": 93059,
+        "dimensions_string": "7 Slipmat",
+        "manufacturers": [
+            "Kromatik"
+        ],
+        "deviceTypes": [
+            "Turntable Accessory"
+        ]
+    },
+    {
+        "external_links": [
+            {
+                "url": "http://www.coincidentspeaker.com/preamps.html",
+                "notes": "Product Page"
+            }
+        ],
+        "country_of_manufacture": "Canada",
+        "title": "Statement RC Line Stage",
+        "dates_produced": "2014-2016",
+        "channels_voices_tracks": [
+            {
+                "type": "Channel",
+                "additional_information": "",
+                "quantity": "2"
+            }
+        ],
+        "model_number": "Statement Remote Control Line Stage",
+        "controls": [
+            {
+                "range": "",
+                "parameter": "Balanced/Unbalanced",
+                "control_type": "Toggle Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Mute",
+                "control_type": "Toggle Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Input Selector",
+                "control_type": "Toggle Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Volume",
+                "control_type": "Rotary Pot"
+            },
+            {
+                "range": "",
+                "parameter": "Power",
+                "control_type": "Toggle Switch"
+            },
+            {
+                "range": "115V, 230V",
+                "parameter": "Transformer Voltage",
+                "control_type": "Slide Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Remote Control",
+                "control_type": ""
+            }
+        ],
+        "slug": "64725-coincident-speaker-technology-statement-rc-line-stage",
+        "connections": [
+            {
+                "connector": "RCA (Phono, Cinch)",
+                "description": [
+                    "Stereo",
+                    "Unbalanced",
+                    "Socket (Female)"
+                ],
+                "name": "Input (x2)"
+            },
+            {
+                "connector": "XLR",
+                "description": [
+                    "Stereo",
+                    "Balanced"
+                ],
+                "name": "Input"
+            },
+            {
+                "connector": "RCA (Phono, Cinch)",
+                "description": [
+                    "Stereo",
+                    "Unbalanced",
+                    "Socket (Female)"
+                ],
+                "name": "Output (x2)"
+            },
+            {
+                "connector": "XLR",
+                "description": [
+                    "Stereo",
+                    "Balanced"
+                ],
+                "name": "Output"
+            }
+        ],
+        "displays_indicators_meters": [],
+        "frequency_response": "10Hz-30kHz ±0.2dB",
+        "signal_path": "Analog Hardware",
+        "form_factor": "Half-Width",
+        "id": 64725,
+        "power_source": "115V/230VAC, 50/60Hz",
+        "dimensions_string": "Line Stage: 8x10.25x14 Power Supply: 8x10.25x14 (HxWxD)",
+        "manufacturers": [
+            "Coincident Speaker Technology"
+        ],
+        "deviceTypes": [
+            "Amplifier, Pre"
+        ]
+    },
+    {
+        "external_links": [],
+        "country_of_manufacture": "Japan",
+        "channels_voices_tracks": [
+            {
+                "type": "Channel",
+                "additional_information": "",
+                "quantity": "2"
+            }
+        ],
+        "dates_produced": "1976",
+        "title": "SA-9500",
+        "model_number": "",
+        "controls": [
+            {
+                "range": "0dB, -15dB, -30DB",
+                "parameter": "Attenuator",
+                "control_type": "Toggle Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Balance",
+                "control_type": "Rotary Pot"
+            },
+            {
+                "range": "",
+                "parameter": "Bass",
+                "control_type": "Rotary Pot"
+            },
+            {
+                "range": "100Hz, 200Hz, 400Hz",
+                "parameter": "Bass Turn Over Switch",
+                "control_type": "Rotary Pot with Switch"
+            },
+            {
+                "range": "12kHz / Off / 8kHz",
+                "parameter": "Filter (High)",
+                "control_type": "Toggle Switch"
+            },
+            {
+                "range": "15Hz / Off / 30Hz",
+                "parameter": "Filter (Low)",
+                "control_type": "Toggle Switch"
+            },
+            {
+                "range": "Phono1 / Mic/Phono2 / Tuner / Aux1 / Aux 2",
+                "parameter": "Function (source)",
+                "control_type": "Rotary Pot with Switch"
+            },
+            {
+                "range": "Stereo Rev / Stereo Norm /  Mono L+R / Mono L / Mono R",
+                "parameter": "Mode",
+                "control_type": "Rotary Pot with Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Power",
+                "control_type": "Toggle Switch"
+            },
+            {
+                "range": "Off / A / B / A+B",
+                "parameter": "Speakers",
+                "control_type": "Rotary Switch"
+            },
+            {
+                "range": "On / Off",
+                "parameter": "Tone",
+                "control_type": "Toggle Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Treble",
+                "control_type": "Rotary Pot"
+            },
+            {
+                "range": "2kHz, 4kHz, 8kHz",
+                "parameter": "Treble",
+                "control_type": "Rotary Pot with Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Volume",
+                "control_type": "Rotary Pot"
+            },
+            {
+                "range": "1 / Source / 2",
+                "parameter": "Tape Monitor",
+                "control_type": "Toggle Switch"
+            },
+            {
+                "range": "On / Off",
+                "parameter": "Tape Duplicate",
+                "control_type": "Toggle Switch"
+            },
+            {
+                "range": "35 / 50 / 70 / 100KU",
+                "parameter": "Phono 2 Impedance (Rear panel)",
+                "control_type": "Rotary Pot with Switch"
+            },
+            {
+                "range": "-12 to OdB",
+                "parameter": "Phono 2 MIC Level (Rear panel)",
+                "control_type": "Rotary Pot"
+            }
+        ],
+        "slug": "495-pioneer-sa-9500",
+        "connections": [
+            {
+                "connector": "Other",
+                "description": [],
+                "name": "AC Outlet 1 (Unswitched, 100W max)"
+            },
+            {
+                "connector": "Other",
+                "name": "AC Outlet 2 (Switched, 100W max 2&3)",
+                "description": []
+            },
+            {
+                "connector": "Other",
+                "name": "AC Outlet 3 (Switched, 100W max 2&3)",
+                "description": []
+            },
+            {
+                "connector": "RCA (Phono, Cinch)",
+                "name": "Aux 1",
+                "description": [
+                    "Socket (Female)",
+                    "Stereo"
+                ]
+            },
+            {
+                "connector": "RCA (Phono, Cinch)",
+                "name": "Aux 2",
+                "description": [
+                    "Socket (Female)",
+                    "Stereo"
+                ]
+            },
+            {
+                "connector": "Binding Post",
+                "description": [],
+                "name": "GND 1"
+            },
+            {
+                "connector": "Binding Post",
+                "name": "GND 2",
+                "description": []
+            },
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "description": [
+                    "Socket (Female)",
+                    "Stereo"
+                ],
+                "name": "Headphone"
+            },
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "name": "Microphone",
+                "description": [
+                    "Socket (Female)",
+                    "Stereo"
+                ]
+            },
+            {
+                "connector": "RCA (Phono, Cinch)",
+                "name": "Phono 1",
+                "description": [
+                    "Socket (Female)",
+                    "Stereo"
+                ]
+            },
+            {
+                "connector": "RCA (Phono, Cinch)",
+                "name": "Phono 2",
+                "description": [
+                    "Socket (Female)",
+                    "Stereo"
+                ]
+            },
+            {
+                "connector": "Binding Post",
+                "name": "Speakers (A)",
+                "description": [
+                    "Stereo"
+                ]
+            },
+            {
+                "connector": "Binding Post",
+                "name": "Speakers (B)",
+                "description": [
+                    "Stereo"
+                ]
+            },
+            {
+                "connector": "RCA (Phono, Cinch)",
+                "name": "Tuner",
+                "description": [
+                    "Socket (Female)",
+                    "Stereo"
+                ]
+            },
+            {
+                "connector": "RCA (Phono, Cinch)",
+                "name": "Tape 1 (PB)",
+                "description": [
+                    "Socket (Female)",
+                    "Stereo"
+                ]
+            },
+            {
+                "connector": "RCA (Phono, Cinch)",
+                "description": [
+                    "Socket (Female)",
+                    "Stereo"
+                ],
+                "name": "Tape 1 (rec)"
+            },
+            {
+                "connector": "RCA (Phono, Cinch)",
+                "name": "Tape 2 (PB)",
+                "description": [
+                    "Socket (Female)",
+                    "Stereo"
+                ]
+            },
+            {
+                "connector": "RCA (Phono, Cinch)",
+                "description": [
+                    "Socket (Female)",
+                    "Stereo"
+                ],
+                "name": "Tape 2 (rec)"
+            },
+            {
+                "connector": "DIN",
+                "name": "Tape 2 (rec/PB)",
+                "description": [
+                    "Socket (Female)",
+                    "Stereo"
+                ]
+            }
+        ],
+        "displays_indicators_meters": [],
+        "frequency_response": "10Hz to 80kHz",
+        "signal_path": "Analog Hardware",
+        "form_factor": "Standard Width",
+        "id": 495,
+        "power_source": "AC 120V 60Hz or 220V 50/60 Hz or 120, 220 and 240V (switchable) 50/60 Hz",
+        "dimensions_string": "420 x 165 x 403mm",
+        "manufacturers": [
+            "Pioneer"
+        ],
+        "deviceTypes": [
+            "Amplifier, Power"
+        ]
+    },
+    {
+        "external_links": [
+            {
+                "url": "http://manuals.fdiskc.com/flat/Boss%20DRP-1-2-3%20Owners%20Manual.pdf",
+                "notes": "Manual"
+            }
+        ],
+        "country_of_manufacture": "Japan",
+        "channels_voices_tracks": [],
+        "dates_produced": "1986",
+        "title": "DRP-2 Dr. Pad",
+        "model_number": "DRP-II",
+        "controls": [
+            {
+                "range": "",
+                "parameter": "Sweep Time",
+                "control_type": "Rotary Pot"
+            },
+            {
+                "range": "",
+                "parameter": "Sweep Range",
+                "control_type": "Rotary Pot"
+            },
+            {
+                "range": "",
+                "parameter": "Decay",
+                "control_type": "Rotary Pot"
+            },
+            {
+                "range": "",
+                "parameter": "Pitch Sens",
+                "control_type": "Rotary Pot"
+            },
+            {
+                "range": "",
+                "parameter": "Pitch",
+                "control_type": "Rotary Pot"
+            },
+            {
+                "range": "",
+                "parameter": "Sound Select",
+                "control_type": "Rotary Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Level",
+                "control_type": "Rotary Pot"
+            },
+            {
+                "range": "",
+                "parameter": "Minimum Sens",
+                "control_type": "Rotary Pot"
+            },
+            {
+                "range": "",
+                "parameter": "Trigger",
+                "control_type": "Momentary Push Switch"
+            }
+        ],
+        "slug": "63563-boss-drp-2-dr-pad",
+        "connections": [
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "description": [
+                    "Mono"
+                ],
+                "name": "Output"
+            },
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "name": "Trigger In",
+                "description": [
+                    "Mono"
+                ]
+            },
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "name": "Mix In",
+                "description": [
+                    "Mono"
+                ]
+            }
+        ],
+        "displays_indicators_meters": [
+            {
+                "indication": "Power On",
+                "scale": "",
+                "type": "LED"
+            }
+        ],
+        "form_factor": "Tabletop",
+        "id": 63563,
+        "power_source": "9V DC PSU or battery",
+        "dimensions_string": "152 (W) x 168 (D) x 60 (H) mm",
+        "signal_path": "Digital Hardware (including Analog Connections)",
+        "manufacturers": [
+            "Boss",
+            "Roland"
+        ],
+        "deviceTypes": [
+            "Drum Machine"
+        ]
+    },
+    {
+        "country_of_manufacture": "Germany",
+        "channels_voices_tracks": [],
+        "title": "A-100 Mini Case",
+        "model_number": "A-100MC",
+        "controls": [],
+        "slug": "95140-doepfer-a-100-mini-case",
+        "connections": [],
+        "displays_indicators_meters": [],
+        "signal_path": "No Audio",
+        "form_factor": "Portable",
+        "id": 95140,
+        "power_source": "See 'Additional Specs' below",
+        "dimensions_string": "180mm (W) x 155mm (H) x 125mm (D)",
+        "external_links": [
+            {
+                "url": "http://www.doepfer.de/a100_mc.htm",
+                "notes": "Manufacturer's product page"
+            }
+        ],
+        "manufacturers": [
+            "Doepfer"
+        ],
+        "deviceTypes": [
+            "Enclosure / Casing",
+            "Power Supply"
+        ]
+    },
+    {
+        "external_links": [
+            {
+                "url": "https://de.yamaha.com/files/download/other_assets/1/327861/02r96v2_de_om_g0.pdf",
+                "notes": "Anleitung"
+            },
+            {
+                "url": "https://de.yamaha.com/files/download/other_assets/4/334244/02r96v2_om_en_g0.pdf",
+                "notes": "Manual"
+            },
+            {
+                "url": "http://www.yamahaproaudio.com/global/en/products/interfaces/miniygdai/",
+                "notes": "MY-Slot (Option Cards)"
+            }
+        ],
+        "country_of_manufacture": "Japan",
+        "title": "02R96",
+        "dates_produced": "2002 to today",
+        "channels_voices_tracks": [
+            {
+                "type": "Channel",
+                "additional_information": "Mix",
+                "quantity": "56"
+            },
+            {
+                "type": "Channel",
+                "additional_information": "Aux",
+                "quantity": "8"
+            },
+            {
+                "type": "Channel",
+                "additional_information": "Bus",
+                "quantity": "8"
+            },
+            {
+                "type": "Channel",
+                "additional_information": "Stereo Master",
+                "quantity": "1"
+            },
+            {
+                "type": "Voice",
+                "additional_information": "MY-Slot (Option Cards)",
+                "quantity": "4"
+            },
+            {
+                "type": "Voice",
+                "additional_information": "FX Racks",
+                "quantity": "4"
+            }
+        ],
+        "model_number": "v2",
+        "controls": [
+            {
+                "range": "User Defined MIDI",
+                "parameter": "Remote Layer",
+                "control_type": ""
+            },
+            {
+                "range": "Pro Tools",
+                "parameter": "Remote Layer",
+                "control_type": ""
+            },
+            {
+                "range": "Nuendo",
+                "parameter": "Remote Layer",
+                "control_type": ""
+            },
+            {
+                "range": "Cubase SX",
+                "parameter": "Remote Layer",
+                "control_type": ""
+            },
+            {
+                "range": "General DAW",
+                "parameter": "Remote Layer",
+                "control_type": ""
+            }
+        ],
+        "slug": "53407-yamaha-02r96",
+        "displays_indicators_meters": [
+            {
+                "indication": "",
+                "scale": "",
+                "type": "Meterbridge (optional)"
+            }
+        ],
+        "frequency_response": "20 Hz-20 kHz, 0.5, -1.5 dB @ +4 dB at 600  Ω  (fs=48 kH",
+        "form_factor": "Desktop",
+        "id": 53407,
+        "power_source": "120V/60Hz, 220V-240V/50/60Hz",
+        "dimensions_string": "239 x 697 x 667mm (H x D x W)",
+        "signal_path": "Digital Hardware (including Analog Connections)",
+        "manufacturers": [
+            "Yamaha"
+        ],
+        "deviceTypes": [
+            "Mixing Desk"
+        ]
+    },
+    {
+        "country_of_manufacture": "China",
+        "title": "Composer",
+        "dates_produced": "1995",
+        "model_number": "MDX 2100",
+        "controls": [
+            {
+                "range": "",
+                "parameter": ""
+            }
+        ],
+        "slug": "32825-behringer-composer",
+        "connections": [
+            {
+                "connector": "XLR",
+                "name": "2x Audio in",
+                "description": [
+                    "Mono"
+                ]
+            },
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "name": "2x Audio in",
+                "description": [
+                    "Mono"
+                ]
+            },
+            {
+                "connector": "XLR",
+                "name": "2x Audio out",
+                "description": [
+                    "Mono"
+                ]
+            },
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "name": "2x Audio out",
+                "description": [
+                    "Mono"
+                ]
+            },
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "name": "2x Send",
+                "description": [
+                    "Mono"
+                ]
+            },
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "name": "2x Return",
+                "description": [
+                    "Mono"
+                ]
+            }
+        ],
+        "displays_indicators_meters": [
+            {
+                "type": "LED",
+                "scale": "1/2/4/6/10/15/20/30 dB",
+                "indication": "Gain Reduction"
+            },
+            {
+                "type": "LED",
+                "scale": "-20/-15/-10/-5/0/+5/+10/+15 dB",
+                "indication": "Input / Output Level"
+            }
+        ],
+        "frequency_response": "5 Hz to 50 kHz",
+        "signal_path": "Analog Hardware",
+        "form_factor": "19 Rackmount",
+        "id": 32825,
+        "power_source": "200 - 240 V",
+        "dimensions_string": "44,5mm x 482,6mm * 217 mm",
+        "external_links": [
+            {
+                "url": "http://www.wagner-sound.de/manuals/Behringer_MDX_2100_Schnellanleitung_German.pdf",
+                "notes": "Manual (German)"
+            }
+        ],
+        "manufacturers": [
+            "Behringer"
+        ],
+        "deviceTypes": [
+            "Dynamics"
+        ]
+    },
+    {
+        "channels_voices_tracks": [],
+        "dates_produced": "1991-1993",
+        "connections": [],
+        "form_factor": "Tabletop",
+        "dimensions_string": "430 x 102.6 x 280 mm",
+        "id": 5886,
+        "dimensions": [
+            {
+                "width": 0.1026,
+                "depth": 0.28,
+                "height": 0.43
+            }
+        ],
+        "country_of_manufacture": "Japan",
+        "title": "SL-PG100",
+        "model_number": "",
+        "controls": [],
+        "displays_indicators_meters": [],
+        "signal_path": "Digital Hardware (including Analog Connections)",
+        "external_references": [],
+        "slug": "5886-sl-pg100",
+        "frequency_response": "",
+        "power_source": "",
+        "manufacturers": [
+            "Technics",
+            "Matsushita Electric Trading Co., Ltd."
+        ],
+        "deviceTypes": [
+            "CD"
+        ]
+    },
+    {
+        "external_links": [
+            {
+                "url": "http://www.jp.onkyo.com/wavio/seu33gx/",
+                "notes": "Manufacturers Page (Japanese)"
+            },
+            {
+                "url": "http://www.jp.onkyo.com/support/manual/manualpdf/seu33gx.pdf",
+                "notes": "User Manual (Japanese)"
+            }
+        ],
+        "country_of_manufacture": "Japan",
+        "channels_voices_tracks": [],
+        "dates_produced": "2004",
+        "title": "SE-U33GX",
+        "model_number": "",
+        "controls": [
+            {
+                "range": "",
+                "parameter": "Phones level",
+                "control_type": "Rotary Pot"
+            },
+            {
+                "range": "",
+                "parameter": "Input level",
+                "control_type": "Rotary Pot"
+            },
+            {
+                "range": "Phono / Mic / Line",
+                "parameter": "",
+                "control_type": "Slide Switch"
+            },
+            {
+                "range": "Rec / Play",
+                "parameter": "",
+                "control_type": "Slide Switch"
+            }
+        ],
+        "slug": "3549-onkyo-se-u33gx",
+        "connections": [
+            {
+                "connector": "Other",
+                "name": "USB",
+                "description": []
+            },
+            {
+                "connector": "RCA (Phono, Cinch)",
+                "name": "Output",
+                "description": []
+            },
+            {
+                "connector": "RCA (Phono, Cinch)",
+                "name": "Input",
+                "description": []
+            },
+            {
+                "connector": "Other",
+                "name": "GND",
+                "description": []
+            },
+            {
+                "connector": "3.5mm Miniature Phone Jack (1/8)",
+                "name": "Phones",
+                "description": []
+            },
+            {
+                "connector": "3.5mm Miniature Phone Jack (1/8)",
+                "name": "Mic",
+                "description": []
+            }
+        ],
+        "displays_indicators_meters": [
+            {
+                "indication": "Power",
+                "scale": "",
+                "type": "Blue LED"
+            }
+        ],
+        "frequency_response": "0.3 Hz ~ 44 kHz",
+        "form_factor": "Tabletop",
+        "id": 3549,
+        "power_source": "USB supply",
+        "dimensions_string": "137 mm (W) x 30 mm (H) x 102.5 mm (D)",
+        "signal_path": "Software with Digital Hardware",
+        "manufacturers": [
+            "Onkyo"
+        ],
+        "deviceTypes": [
+            "Audio Interface"
+        ]
+    },
+    {
+        "external_links": [
+            {
+                "url": "http://www.bossus.com/gear/productdetails.php?ProductId=120",
+                "notes": "Manufacturers Page"
+            }
+        ],
+        "country_of_manufacture": "Japan",
+        "title": "TU-12 Chromatic Tuner",
+        "channels_voices_tracks": [
+            {
+                "type": "Channel",
+                "additional_information": "",
+                "quantity": "1"
+            }
+        ],
+        "model_number": "",
+        "controls": [
+            {
+                "range": "Off / Guitar / Chromatic",
+                "parameter": "Function",
+                "control_type": "Slide Switch"
+            }
+        ],
+        "slug": "84-boss-tu-12-chromatic-tuner",
+        "connections": [
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "description": [],
+                "name": "In"
+            },
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "name": "Out",
+                "description": []
+            }
+        ],
+        "signal_path": "Analog Hardware",
+        "form_factor": "Portable",
+        "id": 84,
+        "power_source": "9 Volt battery / 9 Volt AC Adapter",
+        "dimensions_string": "145 mm, 53 mm, 35 mm wdh",
+        "manufacturers": [
+            "Boss"
+        ],
+        "deviceTypes": [
+            "Instrument Tuner"
+        ]
+    },
+    {
+        "external_links": [
+            {
+                "url": "http://www.turntableneedles.com/assets/images/productimages/nagaoka_MP_series.pdf",
+                "notes": "Operation Manual"
+            },
+            {
+                "url": "http://www.nagaoka.eu/",
+                "notes": "Manufactures Site"
+            },
+            {
+                "url": "http://www.nagaoka.eu/index.php?item=nagaoka-mp-110&action=article&group_id=10000003&aid=42&lang=en",
+                "notes": "Manufacturers Product Page"
+            }
+        ],
+        "country_of_manufacture": "Japan",
+        "title": "MP-110",
+        "channels_voices_tracks": [
+            {
+                "type": "Channel",
+                "additional_information": "",
+                "quantity": "2"
+            }
+        ],
+        "model_number": "MP110",
+        "controls": [],
+        "slug": "135-nagaoka-mp-110",
+        "connections": [],
+        "displays_indicators_meters": [],
+        "frequency_response": "20 Hz - 20 kHz",
+        "signal_path": "Analog Hardware",
+        "form_factor": "½ Standard Mount",
+        "id": 135,
+        "manufacturers": [
+            "Nagaoka"
+        ],
+        "deviceTypes": [
+            "Turntable Cartridge"
+        ]
+    },
+    {
+        "external_links": [
+            {
+                "url": "http://www.dutchaudioclassics.nl/marantz_dd82_dcc_recorder/",
+                "notes": "Specifications"
+            }
+        ],
+        "country_of_manufacture": "Japan",
+        "title": "DD-82",
+        "dates_produced": "1992",
+        "channels_voices_tracks": [
+            {
+                "type": "Channel",
+                "additional_information": "",
+                "quantity": "2"
+            }
+        ],
+        "controls": [
+            {
+                "range": "",
+                "parameter": "Remote",
+                "control_type": ""
+            },
+            {
+                "range": "",
+                "parameter": "",
+                "control_type": ""
+            }
+        ],
+        "slug": "43135-marantz-dd-82",
+        "connections": [
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "description": [
+                    "Stereo",
+                    "Socket (Female)"
+                ],
+                "name": "Headphones"
+            },
+            {
+                "connector": "RCA (Phono, Cinch)",
+                "name": "Line Out (Variable)",
+                "description": [
+                    "Stereo",
+                    "Socket (Female)"
+                ]
+            },
+            {
+                "connector": "RCA (Phono, Cinch)",
+                "description": [
+                    "Stereo",
+                    "Socket (Female)"
+                ],
+                "name": "Line Out (Fix)"
+            },
+            {
+                "connector": "RCA (Phono, Cinch)",
+                "description": [
+                    "Stereo",
+                    "Socket (Female)"
+                ],
+                "name": "Line In"
+            },
+            {
+                "connector": "JIS F05 (Toslink, ADAT Lightpipe)",
+                "name": "Line Out",
+                "description": [
+                    "Stereo",
+                    "Socket (Female)"
+                ]
+            },
+            {
+                "connector": "JIS F05 (Toslink, ADAT Lightpipe)",
+                "name": "Line In",
+                "description": [
+                    "Stereo",
+                    "Socket (Female)"
+                ]
+            },
+            {
+                "connector": "RCA (Phono, Cinch)",
+                "name": "Line Out (Digital Coaxial)",
+                "description": [
+                    "Stereo"
+                ]
+            },
+            {
+                "connector": "RCA (Phono, Cinch)",
+                "name": "Line In (Digital Coaxial)",
+                "description": [
+                    "Stereo"
+                ]
+            }
+        ],
+        "displays_indicators_meters": [
+            {
+                "indication": "Segments",
+                "scale": "",
+                "type": "Display"
+            }
+        ],
+        "frequency_response": "48kHz sampling: 10-Hz - 22kHz +/- 0,2dB (Digital Mode)",
+        "signal_path": "Digital Hardware (including Analog Connections)",
+        "form_factor": "Bookshelf / Stand Mounted",
+        "id": 43135,
+        "power_source": "230V AC 50/60Hz",
+        "dimensions_string": "420 x 132 x 344 mm",
+        "manufacturers": [
+            "Marantz"
+        ],
+        "deviceTypes": [
+            "Digital Recorder"
+        ]
+    },
+    {
+        "external_links": [
+            {
+                "url": "http://www.firestoneaudioproducts.com/firestone-audio-products/supplier/",
+                "notes": "Product page"
+            }
+        ],
+        "country_of_manufacture": "Taiwan",
+        "title": "Supplier",
+        "dates_produced": "",
+        "controls": [
+            {
+                "range": "On / Off",
+                "parameter": "Power",
+                "control_type": "Toggle Switch"
+            }
+        ],
+        "slug": "190-firestone-audio-supplier",
+        "connections": [],
+        "signal_path": "No Audio",
+        "form_factor": "Desktop",
+        "id": 190,
+        "power_source": "220-230VAC / 50 & 60 Hz",
+        "dimensions_string": "117 x 80 x 50 mm (D x W x H)",
+        "manufacturers": [
+            "Firestone Audio"
+        ],
+        "deviceTypes": [
+            "Power Supply"
+        ]
+    },
+    {
+        "country_of_manufacture": "China",
+        "title": "Mixtrack Pro 3",
+        "dates_produced": "2015",
+        "channels_voices_tracks": [
+            {
+                "type": "Channel",
+                "additional_information": "",
+                "quantity": "2"
+            }
+        ],
+        "model_number": "MTPRO3",
+        "controls": [
+            {
+                "range": "",
+                "parameter": "MIC Gain",
+                "control_type": "Rotary Pot"
+            },
+            {
+                "range": "",
+                "parameter": "Crossfader",
+                "control_type": "Slide Encoder"
+            }
+        ],
+        "slug": "11970-numark-mixtrack-pro-3",
+        "connections": [
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "description": [
+                    "Stereo",
+                    "Socket (Female)"
+                ],
+                "name": "Headphones"
+            },
+            {
+                "connector": "3.5mm Miniature Phone Jack (1/8)",
+                "description": [
+                    "Stereo",
+                    "Socket (Female)"
+                ],
+                "name": "Headphones"
+            },
+            {
+                "connector": "RCA (Phono, Cinch)",
+                "description": [
+                    "Unbalanced",
+                    "Socket (Female)"
+                ],
+                "name": "2 x Line Out"
+            },
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "name": "Microphone",
+                "description": [
+                    "Unbalanced",
+                    "Socket (Female)"
+                ]
+            },
+            {
+                "connector": "USB",
+                "description": [],
+                "name": "USB"
+            }
+        ],
+        "displays_indicators_meters": [],
+        "signal_path": "Digital Hardware (including Analog Connections)",
+        "form_factor": "Desktop",
+        "id": 11970,
+        "power_source": "USB Bus Powered",
+        "dimensions_string": "550 x 232 x 30 mm (WxDxH)",
+        "external_links": [
+            {
+                "url": "https://www.numark.com/product/mixtrack-pro-3",
+                "notes": "Numark - Mixtrack Pro III - Product Page"
+            },
+            {
+                "url": "https://www.numark.com/images/product_downloads/MixtrackPro3-UserGuide-v1.1.pdf",
+                "notes": "Numark - Mixtrack Pro III - User Guide PDF"
+            }
+        ],
+        "manufacturers": [
+            "Numark"
+        ],
+        "deviceTypes": [
+            "Control Surface",
+            "DJ Mixer",
+            "Audio Interface"
+        ]
+    },
+    {
+        "external_links": [
+            {
+                "url": "https://www.pioneerdj.com/en-us/product/player/archive/cdj-2000/black/overview/#/color-picker",
+                "notes": "Pioneer Site"
+            }
+        ],
+        "country_of_manufacture": "Japan",
+        "channels_voices_tracks": [],
+        "dates_produced": "",
+        "title": "CDJ-2000",
+        "model_number": "",
+        "controls": [],
+        "slug": "48552-pioneer-cdj-2000",
+        "connections": [],
+        "displays_indicators_meters": [],
+        "frequency_response": "4 - 20,000 Hz",
+        "signal_path": "Digital Hardware (including Analog Connections)",
+        "form_factor": "Desktop",
+        "id": 48552,
+        "power_source": "28 W",
+        "dimensions_string": "320 mm x 106.4 mm x 405.7 mm",
+        "manufacturers": [
+            "Pioneer"
+        ],
+        "deviceTypes": [
+            "Media Player",
+            "CD"
+        ]
+    },
+    {
+        "external_links": [],
+        "country_of_manufacture": "Japan",
+        "channels_voices_tracks": [
+            {
+                "type": "Channel",
+                "additional_information": "",
+                "quantity": "2"
+            }
+        ],
+        "dates_produced": "",
+        "title": "SA-6500",
+        "model_number": "",
+        "controls": [
+            {
+                "range": "",
+                "parameter": "Balance",
+                "control_type": "Rotary Pot"
+            },
+            {
+                "range": "",
+                "parameter": "Bass",
+                "control_type": "Rotary Pot"
+            },
+            {
+                "range": "MC/Phono / Tuner / Aux",
+                "parameter": "Function (source)",
+                "control_type": "Rotary Pot with Switch"
+            },
+            {
+                "range": "On / Off",
+                "parameter": "Loudness",
+                "control_type": "Toggle Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Monitor Tape 1",
+                "control_type": "Toggle Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Monitor Tape 2",
+                "control_type": "Toggle Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Power",
+                "control_type": "Toggle Switch"
+            },
+            {
+                "range": "Off / A / B / A+B",
+                "parameter": "Speakers",
+                "control_type": "Rotary Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Tape 1 Monitor",
+                "control_type": "Toggle Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Tape 2 Monitor",
+                "control_type": "Toggle Switch"
+            },
+            {
+                "range": "On / Off",
+                "parameter": "Tone",
+                "control_type": "Toggle Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Treble",
+                "control_type": "Rotary Pot"
+            },
+            {
+                "range": "",
+                "parameter": "Volume",
+                "control_type": "Rotary Pot"
+            }
+        ],
+        "slug": "488-pioneer-sa-6500",
+        "connections": [
+            {
+                "connector": "Other",
+                "description": [],
+                "name": "AC Outlet (switched)"
+            },
+            {
+                "connector": "Other",
+                "description": [],
+                "name": "AC Outlet (switched)"
+            },
+            {
+                "connector": "Other",
+                "description": [],
+                "name": "AC Outlet (Unswitched)"
+            },
+            {
+                "connector": "Other",
+                "name": "AC Outlet (Unswitched)",
+                "description": []
+            },
+            {
+                "connector": "RCA (Phono, Cinch)",
+                "description": [
+                    "Socket (Female)",
+                    "Stereo"
+                ],
+                "name": "Aux"
+            },
+            {
+                "connector": "Binding Post",
+                "description": [],
+                "name": "GND"
+            },
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "description": [
+                    "Socket (Female)",
+                    "Stereo"
+                ],
+                "name": "Headphone"
+            },
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "description": [
+                    "Socket (Female)",
+                    "Stereo"
+                ],
+                "name": "Microphone"
+            },
+            {
+                "connector": "RCA (Phono, Cinch)",
+                "description": [
+                    "Socket (Female)",
+                    "Stereo"
+                ],
+                "name": "Phono"
+            },
+            {
+                "connector": "Binding Post",
+                "description": [
+                    "Stereo"
+                ],
+                "name": "Speakers (A)"
+            },
+            {
+                "connector": "Binding Post",
+                "description": [
+                    "Stereo"
+                ],
+                "name": "Speakers (B)"
+            },
+            {
+                "connector": "RCA (Phono, Cinch)",
+                "description": [
+                    "Socket (Female)",
+                    "Stereo"
+                ],
+                "name": "Tape 1 (play)"
+            },
+            {
+                "connector": "RCA (Phono, Cinch)",
+                "description": [
+                    "Socket (Female)",
+                    "Stereo"
+                ],
+                "name": "Tape 1 (rec)"
+            },
+            {
+                "connector": "RCA (Phono, Cinch)",
+                "description": [
+                    "Socket (Female)",
+                    "Stereo"
+                ],
+                "name": "Tape 2 (play)"
+            },
+            {
+                "connector": "DIN",
+                "description": [
+                    "Socket (Female)",
+                    "Stereo"
+                ],
+                "name": "Tape 2"
+            },
+            {
+                "connector": "RCA (Phono, Cinch)",
+                "description": [
+                    "Socket (Female)",
+                    "Stereo"
+                ],
+                "name": "Tape 2 (rec)"
+            },
+            {
+                "connector": "RCA (Phono, Cinch)",
+                "description": [
+                    "Socket (Female)",
+                    "Stereo"
+                ],
+                "name": "Tuner"
+            }
+        ],
+        "displays_indicators_meters": [],
+        "frequency_response": "",
+        "form_factor": "Standard Width",
+        "id": 488,
+        "power_source": "AC 230V, 50Hz (Europe) / 120V, 60Hz (USA)",
+        "dimensions_string": "380 x 139 x 306mm",
+        "signal_path": "Analog Hardware",
+        "manufacturers": [
+            "Pioneer"
+        ],
+        "deviceTypes": [
+            "Amplifier, Integrated"
+        ]
+    },
+    {
+        "country_of_manufacture": "Japan",
+        "title": "RS-AZ7",
+        "dates_produced": "1995-1998",
+        "channels_voices_tracks": [],
+        "model_number": "RS-AZ7E-K",
+        "controls": [],
+        "slug": "57996-rs-az7",
+        "connections": [
+            {
+                "connector": "RCA (Phono, Cinch)",
+                "description": [
+                    "Stereo"
+                ],
+                "name": "Audio In / Out"
+            }
+        ],
+        "displays_indicators_meters": [],
+        "frequency_response": "20Hz to 23kHz (Metal Tape)",
+        "external_links": [
+            {
+                "url": "http://www.technics.com/global/chronicle/rs-az7/",
+                "notes": "Technics Website"
+            },
+            {
+                "url": "http://www.vintagecassette.com/technics/rs-az7",
+                "notes": "Vintage Cassette"
+            }
+        ],
+        "form_factor": "Desktop",
+        "id": 57996,
+        "power_source": "AC 230-240V 26W 50Hz",
+        "dimensions": [
+            {
+                "width": 0.43,
+                "depth": 0.29,
+                "height": 0.125
+            }
+        ],
+        "signal_path": "Digital Hardware (including Analog Connections)",
+        "manufacturers": [
+            "Technics"
+        ],
+        "deviceTypes": [
+            "Cassette Deck"
+        ]
+    },
+    {
+        "country_of_manufacture": "Japan",
+        "external_references": [],
+        "title": "M-727",
+        "dates_produced": "1994",
+        "channels_voices_tracks": [
+            {
+                "type": "Channel",
+                "additional_information": "",
+                "quantity": "1"
+            }
+        ],
+        "model_number": "",
+        "controls": [
+            {
+                "range": "",
+                "parameter": "Rec",
+                "control_type": "Latching Push Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Play",
+                "control_type": "Latching Push Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Stop / Eject",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Cue marker",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Pause",
+                "control_type": "Slide Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Fast forward / Rewind",
+                "control_type": "Slide Switch"
+            },
+            {
+                "range": "2.4 cm/s / 1.2 cm/s",
+                "parameter": "Tape speed",
+                "control_type": "Slide Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Fast playback",
+                "control_type": "Slide Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Volume",
+                "control_type": "Rotary Pot"
+            },
+            {
+                "range": "Off / Low / High",
+                "parameter": "VOR",
+                "control_type": "Slide Switch"
+            }
+        ],
+        "slug": "3539-sony-m-727",
+        "connections": [
+            {
+                "connector": "3.5mm Miniature Phone Jack (1/8)",
+                "name": "Mic In",
+                "description": []
+            },
+            {
+                "connector": "Other",
+                "name": "DC In",
+                "description": []
+            }
+        ],
+        "displays_indicators_meters": [
+            {
+                "type": "",
+                "scale": "",
+                "indication": "3-digit tape counter"
+            },
+            {
+                "type": "LED",
+                "scale": "",
+                "indication": "Rec / Battery"
+            }
+        ],
+        "frequency_response": "250 ~ 4,000 Hz (EIAJ)",
+        "form_factor": "Handheld",
+        "id": 3539,
+        "power_source": "(AA, LR6) x 2 / DC 3V (Center plus)",
+        "dimensions_string": "66.7 mm (W) x 120.8 mm (H) x 25 mm (D)",
+        "signal_path": "Analog Hardware",
+        "manufacturers": [
+            "Sony"
+        ],
+        "deviceTypes": [
+            "Tape Machine",
+            "Amplifier, Integrated",
+            "Speaker"
+        ]
+    },
+    {
+        "external_links": [
+            {
+                "url": "http://www.brinkmann-audio.com/main.php?prod=fein&lang=en",
+                "notes": "Product Page"
+            }
+        ],
+        "country_of_manufacture": "Germany",
+        "channels_voices_tracks": [
+            {
+                "type": "Channel",
+                "additional_information": "",
+                "quantity": "2"
+            }
+        ],
+        "dates_produced": "1985-2017",
+        "title": "Fein",
+        "controls": [
+            {
+                "range": "",
+                "parameter": "Gain",
+                "control_type": "Rotary Pot"
+            }
+        ],
+        "slug": "62452-brinkmann-fein",
+        "connections": [
+            {
+                "connector": "RCA (Phono, Cinch)",
+                "name": "Input",
+                "description": [
+                    "Balanced",
+                    "Stereo",
+                    "Socket (Female)"
+                ]
+            },
+            {
+                "connector": "RCA (Phono, Cinch)",
+                "name": "Output",
+                "description": [
+                    "Balanced",
+                    "Stereo",
+                    "Socket (Female)"
+                ]
+            },
+            {
+                "connector": "",
+                "name": "Power",
+                "description": []
+            }
+        ],
+        "displays_indicators_meters": [
+            {
+                "indication": "Power",
+                "scale": "",
+                "type": "LED"
+            }
+        ],
+        "frequency_response": "20Hz-50kHz",
+        "form_factor": "Half-Width",
+        "id": 62452,
+        "power_source": "",
+        "dimensions_string": "Phono Stage: 80mmx120mmx160mm Power Supply: 60mmx105mmx100mm (HxWxD)",
+        "signal_path": "Analog Hardware",
+        "manufacturers": [
+            "Brinkmann"
+        ],
+        "deviceTypes": [
+            "Amplifier, Phono"
+        ]
+    },
+    {
+        "country_of_manufacture": "China",
+        "channels_voices_tracks": [],
+        "dates_produced": "2015",
+        "title": "MC-3 Mini Cable",
+        "controls": [],
+        "slug": "12342-teenage-engineering-mc-3-mini-cable",
+        "connections": [],
+        "displays_indicators_meters": [],
+        "signal_path": "No Audio",
+        "form_factor": "Component - Cable",
+        "id": 12342,
+        "power_source": "",
+        "dimensions_string": "",
+        "manufacturers": [
+            "Teenage Engineering",
+            "Cheap Monday"
+        ],
+        "deviceTypes": [
+            "Cable"
+        ]
+    },
+    {
+        "external_links": [
+            {
+                "url": "http://stereonomono.blogspot.no/2014/09/tandberg-slvsuper-12-12c.html",
+                "notes": "http://stereonomono.blogspot.no/"
+            }
+        ],
+        "country_of_manufacture": "Norway",
+        "title": "Sølvsuper 12",
+        "dates_produced": "1974-1977",
+        "channels_voices_tracks": [],
+        "model_number": "TB SS-12",
+        "controls": [],
+        "slug": "24775-tandberg-solvsuper-12",
+        "connections": [],
+        "displays_indicators_meters": [],
+        "frequency_response": "20 to 25.000 Hz",
+        "form_factor": "Tabletop",
+        "id": 24775,
+        "power_source": "120/220/240V AC",
+        "dimensions_string": "495 x 240 x 117mm",
+        "signal_path": "Analog Hardware",
+        "manufacturers": [
+            "Tandberg",
+            "Tandbergs Radiofabrikk"
+        ],
+        "deviceTypes": [
+            "Radio Receiver",
+            "Amplifier, Integrated"
+        ]
+    },
+    {
+        "external_links": [
+            {
+                "url": "http://pioneer.jp/corp/news/press/1998/0415-1.html",
+                "notes": "Manufacturers Page (Japanese)"
+            }
+        ],
+        "country_of_manufacture": "Japan",
+        "title": "MJ-D7",
+        "dates_produced": "1998",
+        "controls": [
+            {
+                "range": "",
+                "parameter": "Power On / Off",
+                "control_type": "Latching Push Switch"
+            },
+            {
+                "range": "Rec / Off / Play",
+                "parameter": "Timer",
+                "control_type": "Slide Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Digital NR",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Repeat",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "",
+                "parameter": "A-B",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Time skip",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Play mode",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Rec mode",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Name clip",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Display / chara",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Push enter",
+                "control_type": "Rotary Encoder with Momentary Push Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Edit / ND",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Name",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "Analog / Coax / Opt1 / Opt2",
+                "parameter": "Input selector",
+                "control_type": "Rotary Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Rec level",
+                "control_type": "Rotary Pot"
+            },
+            {
+                "range": "",
+                "parameter": "Fast forward",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Rewind",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Synchro rec",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Rec",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Play",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Pause",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Stop",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Eject",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "",
+                "parameter": "Level (Phones)",
+                "control_type": "Rotary Pot"
+            }
+        ],
+        "slug": "3544-pioneer-mj-d7",
+        "connections": [
+            {
+                "connector": "Other",
+                "description": [],
+                "name": "AC In"
+            },
+            {
+                "connector": "RCA (Phono, Cinch)",
+                "name": "Line input",
+                "description": []
+            },
+            {
+                "connector": "RCA (Phono, Cinch)",
+                "description": [],
+                "name": "Line output"
+            },
+            {
+                "connector": "Other",
+                "description": [],
+                "name": "Digital input"
+            },
+            {
+                "connector": "Other",
+                "name": "Control",
+                "description": []
+            },
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "description": [],
+                "name": "Phones"
+            }
+        ],
+        "displays_indicators_meters": [],
+        "frequency_response": "8 Hz ~ 20 kHz",
+        "form_factor": "Standard Width",
+        "id": 3544,
+        "power_source": "AC100V 50Hz / 60Hz",
+        "dimensions_string": "420 mm (W) x 105 mm (H) x 294 mm (D)",
+        "signal_path": "Digital Hardware",
+        "manufacturers": [
+            "Pioneer"
+        ],
+        "deviceTypes": [
+            "Minidisc"
+        ]
+    },
+    {
+        "external_links": [
+            {
+                "url": "http://www.tonar.eu/index.php?item=tonar-banana-stylus&action=article&group_id=23&aid=68&lang=en",
+                "notes": "Company Product Page"
+            }
+        ],
+        "country_of_manufacture": "Netherlands",
+        "channels_voices_tracks": [],
+        "title": "Banana stylus",
+        "model_number": "1812",
+        "slug": "34805-tonar-banana-stylus",
+        "connections": [],
+        "frequency_response": "",
+        "signal_path": "Analog Hardware",
+        "form_factor": "Part",
+        "id": 34805,
+        "manufacturers": [
+            "Tonar"
+        ],
+        "deviceTypes": [
+            "Turntable Stylus"
+        ]
+    },
+    {
+        "country_of_manufacture": "Japan",
+        "external_references": [],
+        "channels_voices_tracks": [],
+        "dates_produced": "1982",
+        "title": "EPA-100MK2",
+        "controls": [],
+        "slug": "54448-technics-epa-100mk2",
+        "connections": [
+            {
+                "connector": "Other",
+                "name": "Cartridge",
+                "description": [
+                    "Stereo"
+                ]
+            },
+            {
+                "connector": "Other",
+                "name": "Output",
+                "description": [
+                    "Stereo",
+                    "Unbalanced"
+                ]
+            }
+        ],
+        "displays_indicators_meters": [],
+        "form_factor": "Part",
+        "id": 54448,
+        "power_source": "",
+        "dimensions_string": "",
+        "signal_path": "Passive Hardware",
+        "manufacturers": [
+            "Technics"
+        ],
+        "deviceTypes": [
+            "Turntable Tonearm"
+        ]
+    },
+    {
+        "country_of_manufacture": "Japan",
+        "title": "S-7100",
+        "dates_produced": "1970-1971",
+        "channels_voices_tracks": [],
+        "controls": [
+            {
+                "range": "AM and FM",
+                "parameter": "Tuning",
+                "control_type": "Rotary Pot"
+            },
+            {
+                "range": "On/Off, Volume",
+                "parameter": "Loudness",
+                "control_type": "Rotary Pot with Switch"
+            },
+            {
+                "range": "Aux, Phono, FM, AM",
+                "parameter": "Selector",
+                "control_type": "Rotary Switch"
+            },
+            {
+                "range": "Out, In",
+                "parameter": "Tape Mon",
+                "control_type": "Rocker Switch"
+            },
+            {
+                "range": "Stereo, Mono",
+                "parameter": "Mode"
+            },
+            {
+                "range": "Out, In",
+                "parameter": "FM Hush"
+            },
+            {
+                "range": "On, Off",
+                "parameter": "Loudness"
+            }
+        ],
+        "slug": "95383-sherwood-s-7100",
+        "connections": [
+            {
+                "connector": "RCA (Phono, Cinch)",
+                "description": [
+                    "Socket (Female)"
+                ],
+                "name": "Phono"
+            },
+            {
+                "connector": "RCA (Phono, Cinch)",
+                "description": [
+                    "Socket (Female)"
+                ],
+                "name": "Aux"
+            },
+            {
+                "connector": "RCA (Phono, Cinch)",
+                "description": [
+                    "Socket (Female)"
+                ],
+                "name": "Tape Moniotor (TP Mon)"
+            },
+            {
+                "connector": "RCA (Phono, Cinch)",
+                "description": [
+                    "Socket (Female)"
+                ],
+                "name": "Rec Out"
+            }
+        ],
+        "displays_indicators_meters": [
+            {
+                "type": "Radio Signal Strength",
+                "indication": "meter"
+            }
+        ],
+        "frequency_response": "30Hz to 20kHz",
+        "external_links": [
+            {
+                "url": "https://www.hifiengine.com/manual_library/sherwood/s-7100.shtml",
+                "notes": "Hi-fi Engine"
+            }
+        ],
+        "form_factor": "Standard Width",
+        "id": 95383,
+        "power_source": "110V",
+        "dimensions_string": "17.5 x 13.5 x 5.75 inches",
+        "signal_path": "Analog Hardware",
+        "manufacturers": [
+            "Sherwood"
+        ],
+        "deviceTypes": [
+            "Receiver",
+            "Amplifier, Phono",
+            "Amplifier, Power"
+        ]
+    },
+    {
+        "country_of_manufacture": "China",
+        "title": "OX Amp Top Box",
+        "channels_voices_tracks": [
+            {
+                "type": "Channel",
+                "quantity": 1
+            }
+        ],
+        "model_number": "OX AMP TOP BOX",
+        "controls": [
+            {
+                "range": "1-6",
+                "parameter": "RIG",
+                "control_type": "Rotary Switch"
+            },
+            {
+                "parameter": "ROOM",
+                "control_type": "Rotary Pot"
+            },
+            {
+                "range": "1-6",
+                "parameter": "SPEAKER VOLUME",
+                "control_type": "Rotary Switch"
+            },
+            {
+                "parameter": "LINE OUT",
+                "control_type": "Rotary Pot"
+            },
+            {
+                "parameter": "HEADPHONE",
+                "control_type": "Rotary Pot"
+            },
+            {
+                "parameter": "POWER Switch",
+                "control_type": "Toggle Switch"
+            },
+            {
+                "range": "4-8-16 Ohm",
+                "parameter": "IMPEDANCE",
+                "control_type": "Rotary Switch"
+            }
+        ],
+        "slug": "119708-ox-amp-top-box",
+        "connections": [
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "description": [
+                    "Unbalanced",
+                    "Socket (Female)"
+                ],
+                "name": "Amplifier Input"
+            },
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "name": "Amplifier Input",
+                "description": [
+                    "Unbalanced",
+                    "Socket (Female)"
+                ]
+            },
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "name": "Line Output Left",
+                "description": [
+                    "Socket (Female)",
+                    "Balanced"
+                ]
+            },
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "name": "Line Output Right",
+                "description": [
+                    "Socket (Female)",
+                    "Balanced"
+                ]
+            },
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "name": "Headphone Output",
+                "description": [
+                    "Stereo",
+                    "Socket (Female)"
+                ]
+            },
+            {
+                "connector": "RCA (Phono, Cinch)",
+                "name": "Digital Output",
+                "description": [
+                    "Socket (Female)"
+                ]
+            },
+            {
+                "connector": "JIS F05 (Toslink, ADAT Lightpipe)",
+                "name": "Digital Output",
+                "description": [
+                    "Socket (Female)"
+                ]
+            },
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "name": "FOOT SWITCH",
+                "description": [
+                    "Socket (Female)"
+                ]
+            },
+            {
+                "connector": "Other",
+                "name": "Power supply",
+                "description": [
+                    "Socket (Female)"
+                ]
+            },
+            {
+                "connector": "USB",
+                "name": "Type-B Port",
+                "description": [
+                    "Socket (Female)"
+                ]
+            },
+            {
+                "connector": "USB",
+                "name": "Type-A  Port 1",
+                "description": [
+                    "Socket (Female)"
+                ]
+            },
+            {
+                "connector": "USB",
+                "name": "Type-A Port 2",
+                "description": [
+                    "Socket (Female)"
+                ]
+            }
+        ],
+        "displays_indicators_meters": [],
+        "frequency_response": "20 Hz - 20 kHz, ±0.1 dB",
+        "external_links": [
+            {
+                "url": "https://www.uaudio.com/hardware/ox.html",
+                "notes": "Official Website"
+            }
+        ],
+        "form_factor": "Desktop",
+        "id": 119708,
+        "power_source": "100V - 240V AC, 50 - 60 Hz",
+        "signal_path": "Hybrid Analog / Digital Hardware",
+        "dimensions": [
+            {
+                "width": 0.38125,
+                "depth": 0.22958,
+                "notes": "Depth Including Rubber Feet, Knob & Jack Protrusions",
+                "height": 0.13844
+            }
+        ],
+        "manufacturers": [
+            "Universal Audio"
+        ],
+        "deviceTypes": [
+            "Accessory",
+            "Accessory",
+            "Analog-to-Digital Converter (ADC)"
+        ]
+    },
+    {
+        "external_references": [],
+        "country_of_manufacture": "UK",
+        "title": "Little MCV",
+        "dates_produced": "1996",
+        "controls": [
+            {
+                "range": "1 to 16",
+                "parameter": "MIDI CHANNEL",
+                "control_type": "Rotary Switch"
+            },
+            {
+                "range": "V/Hz or V/oct",
+                "parameter": "LIN/LOG",
+                "control_type": "Slide Switch"
+            }
+        ],
+        "slug": "13477-philip-rees-little-mcv",
+        "connections": [
+            {
+                "connector": "DIN",
+                "name": "MIDI IN",
+                "description": [
+                    "Socket (Female)"
+                ]
+            },
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "name": "CV OUT",
+                "description": [
+                    "Mono",
+                    "Unbalanced",
+                    "Socket (Female)"
+                ]
+            },
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "name": "GATE OUT",
+                "description": [
+                    "Mono",
+                    "Unbalanced",
+                    "Socket (Female)"
+                ]
+            }
+        ],
+        "displays_indicators_meters": [
+            {
+                "indication": "Power ON",
+                "scale": "",
+                "type": "LED"
+            }
+        ],
+        "signal_path": "Hybrid Analog / Digital Hardware",
+        "form_factor": "Portable",
+        "id": 13477,
+        "power_source": "230 VAC",
+        "dimensions_string": "109 x 109 x 40 mm (WxDxH)",
+        "manufacturers": [
+            "Philip Rees"
+        ],
+        "deviceTypes": [
+            "Synchronizer / Clock Generator"
+        ]
+    },
+    {
+        "country_of_manufacture": "Germany",
+        "title": "KM 140",
+        "dates_produced": "1988 to 2014",
+        "channels_voices_tracks": [
+            {
+                "type": "Channel",
+                "quantity": 1
+            }
+        ],
+        "model_number": "KM 100 (Body) AK 40 (Capsule)",
+        "controls": [
+            {
+                "parameter": "Pad",
+                "control_type": "Slide Switch"
+            }
+        ],
+        "slug": "94240-georg-neumann-gmbh-km-140",
+        "connections": [
+            {
+                "connector": "XLR",
+                "description": [],
+                "name": "Microphone Connector"
+            }
+        ],
+        "displays_indicators_meters": [],
+        "frequency_response": "20 to 20000 Hz",
+        "external_links": [],
+        "form_factor": "Bookshelf / Stand Mounted",
+        "id": 94240,
+        "power_source": "48 V Phantom Power",
+        "signal_path": "Analog Hardware",
+        "dimensions_string": "Length 92 mm Max diameter 22 mm",
+        "manufacturers": [
+            "Georg Neumann GmbH"
+        ],
+        "deviceTypes": [
+            "Microphone"
+        ]
+    },
+    {
+        "external_links": [
+            {
+                "url": "http://www.fiio.net/en/products/27",
+                "notes": "Product Information"
+            },
+            {
+                "url": "http://www.fiio.net",
+                "notes": "Official Site"
+            }
+        ],
+        "country_of_manufacture": "China",
+        "title": "OLYMPUS 2-E10K",
+        "channels_voices_tracks": [],
+        "model_number": "5010109",
+        "controls": [
+            {
+                "range": "L - H",
+                "parameter": "Gain",
+                "control_type": "Toggle Switch"
+            },
+            {
+                "range": "Off - On",
+                "parameter": "Bass",
+                "control_type": "Toggle Switch"
+            }
+        ],
+        "slug": "82224-fiio-olympus-2-e10k",
+        "connections": [
+            {
+                "connector": "3.5mm Miniature Phone Jack (1/8)",
+                "description": [
+                    "Socket (Female)"
+                ],
+                "name": "Headphones"
+            },
+            {
+                "connector": "RCA (Phono, Cinch)",
+                "description": [
+                    "Socket (Female)"
+                ],
+                "name": "Coaxial Out"
+            },
+            {
+                "connector": "3.5mm Miniature Phone Jack (1/8)",
+                "description": [
+                    "Socket (Female)"
+                ],
+                "name": "Line Out"
+            },
+            {
+                "connector": "USB",
+                "description": [],
+                "name": "Micro USB"
+            }
+        ],
+        "displays_indicators_meters": [
+            {
+                "indication": "Blue LED Solid",
+                "scale": "",
+                "type": "Power ON"
+            }
+        ],
+        "frequency_response": "20Hz - 20KHz",
+        "form_factor": "Desktop",
+        "id": 82224,
+        "power_source": "USB (PC)",
+        "dimensions_string": "49,1x80x21mm",
+        "signal_path": "Analog Hardware",
+        "manufacturers": [
+            "FiiO"
+        ],
+        "deviceTypes": [
+            "Amplifier, Headphone",
+            "Audio Interface"
+        ]
+    },
+    {
+        "country_of_manufacture": "Japan",
+        "title": "TU-1500RD",
+        "dates_produced": "1999-2006",
+        "controls": [
+            {
+                "range": "On / Off-Standby",
+                "parameter": "On/Standby",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "Wide / Narrow",
+                "parameter": "IF Band Buton",
+                "control_type": "Momentary Push Switch"
+            },
+            {
+                "range": "Shift between Memory Blocks",
+                "parameter": "Shift / PTY",
+                "control_type": "Momentary Push Switch"
+            }
+        ],
+        "slug": "100337-tu-1500rd",
+        "connections": [
+            {
+                "connector": "RCA (Phono, Cinch)",
+                "name": "Output"
+            }
+        ],
+        "displays_indicators_meters": [],
+        "frequency_response": "20Hz to 15kHz (FM)",
+        "signal_path": "Analog Hardware",
+        "form_factor": "Desktop",
+        "id": 100337,
+        "power_source": "120 VAC",
+        "dimensions_string": "435 x 75 x 242mm",
+        "manufacturers": [
+            "Denon"
+        ],
+        "deviceTypes": [
+            "Radio Tuner"
+        ]
+    },
+    {
+        "country_of_manufacture": "Indonesia",
+        "channels_voices_tracks": [
+            {
+                "type": "Channel",
+                "quantity": 1
+            }
+        ],
+        "dates_produced": "2002 - 2010",
+        "title": "Frontman 15G",
+        "model_number": "PR 495 ~ Manufacturer Part Number: 0231500001",
+        "controls": [
+            {
+                "parameter": "Volume",
+                "control_type": "Rotary Pot"
+            },
+            {
+                "parameter": "EQ",
+                "control_type": "Rotary Pot"
+            },
+            {
+                "parameter": "Drive Select",
+                "control_type": "Latching Push Switch"
+            },
+            {
+                "parameter": "Power",
+                "control_type": "Rocker Switch"
+            },
+            {
+                "parameter": "Gain",
+                "control_type": "Rotary Pot"
+            },
+            {
+                "parameter": "Drive Volume",
+                "control_type": "Rotary Pot"
+            }
+        ],
+        "slug": "99826-frontman-15g",
+        "connections": [
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "name": "Input"
+            },
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "name": "Headphones"
+            },
+            {
+                "connector": "RCA (Phono, Cinch)",
+                "name": "Aux Input"
+            }
+        ],
+        "signal_path": "Analog Hardware",
+        "form_factor": "Portable",
+        "id": 99826,
+        "power_source": "120 VAC ~ 60Hz  38W",
+        "dimensions_string": "Height: 12.5 (31.8 cm), Width: 13.25 (33.65 cm), Depth: 7.25 (18.41 cm)",
+        "manufacturers": [
+            "Fender"
+        ],
+        "deviceTypes": [
+            "Amplifier, Guitar"
+        ]
+    },
+    {
+        "country_of_manufacture": "Russia",
+        "title": "Walnut",
+        "controls": [
+            {
+                "range": "",
+                "parameter": "",
+                "control_type": ""
+            }
+        ],
+        "slug": "63857-window-walnut",
+        "connections": [
+            {
+                "connector": "",
+                "name": "",
+                "description": []
+            }
+        ],
+        "signal_path": "No Audio",
+        "form_factor": "Floorstanding",
+        "id": 63857,
+        "dimensions_string": "400mm x400mm x 360mm   (15 3/4' x 15 3/4' x 14')",
+        "manufacturers": [
+            "Window",
+            "Merkle Sound Stands"
+        ],
+        "deviceTypes": [
+            "Media & Data Storage"
+        ]
+    },
+    {
+        "country_of_manufacture": "United Kingdom",
+        "channels_voices_tracks": [
+            {
+                "type": "Channel",
+                "additional_information": "One channel mic/line/DI input, noise reduction, compressor, equaliser and output.",
+                "quantity": 1
+            }
+        ],
+        "title": "MPX10",
+        "model_number": "Microphone Processor",
+        "controls": [],
+        "slug": "94382-la-audio-mpx10",
+        "connections": [],
+        "displays_indicators_meters": [],
+        "frequency_response": "±1dB, 20Hz to 20kHz",
+        "external_links": [],
+        "form_factor": "19 Rackmount",
+        "id": 94382,
+        "power_source": "Mains AC",
+        "dimensions_string": "483mm (19)W 150mm (6)D 44mm(1.75)H",
+        "signal_path": "Analog Hardware",
+        "manufacturers": [
+            "LA Audio",
+            "CSV Electronics Ltd"
+        ],
+        "deviceTypes": [
+            "Amplifier, Microphone"
+        ]
+    },
+    {
+        "external_references": [],
+        "country_of_manufacture": "England",
+        "channels_voices_tracks": [
+            {
+                "type": "Channel",
+                "additional_information": "",
+                "quantity": "2 in / 8 out"
+            }
+        ],
+        "dates_produced": "1990",
+        "title": "FDS - 388",
+        "model_number": "Omnidrive",
+        "slug": "48095-bss-fds-388",
+        "connections": [
+            {
+                "connector": "XLR",
+                "name": "",
+                "description": []
+            }
+        ],
+        "displays_indicators_meters": [
+            {
+                "type": "",
+                "scale": "",
+                "indication": ""
+            }
+        ],
+        "frequency_response": "20 Hz - 20 kHz",
+        "form_factor": "19 Rackmount",
+        "id": 48095,
+        "power_source": "120 V / 240 V",
+        "dimensions_string": "482 mm x 88 mm x 357 mm",
+        "signal_path": "Analog Hardware",
+        "manufacturers": [
+            "BSS"
+        ],
+        "deviceTypes": [
+            "Crossover",
+            "Dynamics",
+            "EQ"
+        ]
+    },
+    {
+        "country_of_manufacture": "Netherlands",
+        "title": "Shell wire CU-litz",
+        "model_number": "5970",
+        "slug": "34939-tonar-shell-wire-cu-litz",
+        "signal_path": "No Audio",
+        "form_factor": "Part",
+        "id": 34939,
+        "external_links": [
+            {
+                "url": "http://www.tonar.eu/index.php?item=tonar-shell-wire-cu-litz-_ofc-copper_&action=article&group_id=19&aid=25&lang=en",
+                "notes": "Tonar Site"
+            }
+        ],
+        "manufacturers": [
+            "Tonar"
+        ],
+        "deviceTypes": [
+            "Turntable Spare Part"
+        ]
+    },
+    {
+        "country_of_manufacture": "Germany",
+        "dimensions": [
+            {
+                "width": 0.485,
+                "depth": 0.41,
+                "height": 0.083
+            }
+        ],
+        "channels_voices_tracks": [
+            {
+                "type": "Channel",
+                "additional_information": "single instrument input, 16 programmable preamp presets",
+                "quantity": 1
+            }
+        ],
+        "dates_produced": "1985",
+        "title": "Reference 4000",
+        "controls": [
+            {
+                "range": "0 - 10",
+                "parameter": "input level",
+                "control_type": "Rotary Pot"
+            },
+            {
+                "range": "0 - 10",
+                "parameter": "input volume",
+                "control_type": "Rotary Pot"
+            },
+            {
+                "range": "0 - 10",
+                "parameter": "parametric equalizer - 7bands",
+                "control_type": "Slide Pot"
+            },
+            {
+                "range": "equalizer presets",
+                "parameter": "up & down, store & go buttons",
+                "control_type": "Toggle Switch"
+            },
+            {
+                "range": "0 - 10",
+                "parameter": "chorus",
+                "control_type": "Rotary Pot"
+            },
+            {
+                "range": "0 - 10",
+                "parameter": "external effect",
+                "control_type": "Rotary Pot"
+            },
+            {
+                "range": "100Hz - 2000Hz",
+                "parameter": "cross over frequency",
+                "control_type": "Rotary Pot"
+            },
+            {
+                "range": "",
+                "parameter": "normal / biamp",
+                "control_type": "Toggle Switch"
+            },
+            {
+                "range": "-3  to  +3",
+                "parameter": "crossover balance",
+                "control_type": "Rotary Pot"
+            },
+            {
+                "range": "0 - 10",
+                "parameter": "master volume",
+                "control_type": "Rotary Pot"
+            }
+        ],
+        "slug": "80557-reference-4000",
+        "connections": [
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "description": [
+                    "Unbalanced"
+                ],
+                "name": "input [10mV / 220KOhm]"
+            },
+            {
+                "connector": "XLR",
+                "description": [
+                    "Mono"
+                ],
+                "name": "balanced output"
+            },
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "description": [
+                    "Unbalanced"
+                ],
+                "name": "output for tuner"
+            },
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "description": [
+                    "Socket (Female)"
+                ],
+                "name": "output speaker bridged"
+            },
+            {
+                "connector": "XLR",
+                "description": [
+                    "Plug (Male)"
+                ],
+                "name": "output speaker biamping"
+            },
+            {
+                "connector": "DIN",
+                "description": [
+                    "Socket (Female)"
+                ],
+                "name": "midi in/thru"
+            }
+        ],
+        "displays_indicators_meters": [
+            {
+                "type": "peak",
+                "scale": "input signal",
+                "indication": "led"
+            },
+            {
+                "type": "channel number",
+                "scale": "16 presets",
+                "indication": "preset memory display"
+            }
+        ],
+        "external_links": [
+            {
+                "url": "https://www.gearogs.com/gear/80560-dynacord-reference-bass-speaker-system-1510",
+                "notes": "Dynacord Reference bass speaker system '1510'"
+            },
+            {
+                "url": "https://www.talkbass.com/threads/has-anybody-heard-of-this-amp.215208/",
+                "notes": "TalkBass forum"
+            }
+        ],
+        "form_factor": "19 Rackmount",
+        "id": 80557,
+        "power_source": "220V",
+        "signal_path": "Analog Hardware",
+        "manufacturers": [
+            "Dynacord"
+        ],
+        "deviceTypes": [
+            "Amplifier, Bass"
+        ]
+    },
+    {
+        "country_of_manufacture": "Japan",
+        "channels_voices_tracks": [],
+        "title": "RQ-823",
+        "controls": [
+            {
+                "range": "0 - 10",
+                "parameter": "Volume",
+                "control_type": "Rotary Pot"
+            }
+        ],
+        "slug": "98671-rq-823",
+        "displays_indicators_meters": [
+            {
+                "type": "Program",
+                "scale": "1 - 4",
+                "indication": "Indicator"
+            }
+        ],
+        "signal_path": "Analog Hardware",
+        "form_factor": "Portable",
+        "id": 98671,
+        "power_source": "6 Volts DC. Power Adapter or 4 C Size Batteries",
+        "dimensions": [
+            {
+                "width": 0.223,
+                "depth": 0.087,
+                "height": 0.215
+            }
+        ],
+        "external_links": [
+            {
+                "url": "http://www.8trackheaven.com/archive/portable3.html",
+                "notes": "Portable 8-track player, sometimes referred to as  pocketbook 8-track ca. 1980's. Came in Red, White, Yellow and Blue."
+            }
+        ],
+        "manufacturers": [
+            "Panasonic",
+            "Matsushi Electric Industrial Co., Ltd."
+        ],
+        "deviceTypes": [
+            "8-track deck"
+        ]
+    },
+    {
+        "country_of_manufacture": "USA",
+        "title": "JIL",
+        "id": 122057,
+        "slug": "122057-jil",
+        "manufacturers": [
+            "Schiit"
+        ],
+        "deviceTypes": [
+            "Analog-to-Digital Converter (ADC)"
+        ]
+    },
+    {
+        "country_of_manufacture": "Japan",
+        "channels_voices_tracks": [
+            {
+                "type": "Channel",
+                "quantity": 8
+            }
+        ],
+        "title": "DA824",
+        "controls": [
+            {
+                "range": "ON to OFF",
+                "parameter": "Power ON/OFF",
+                "control_type": "Toggle Switch"
+            },
+            {
+                "range": "ON to OFF",
+                "parameter": "75Ω",
+                "control_type": "Slide Switch"
+            }
+        ],
+        "slug": "94538-yamaha-da824",
+        "connections": [
+            {
+                "connector": "XLR",
+                "description": [],
+                "name": "Output 1"
+            },
+            {
+                "connector": "XLR",
+                "description": [],
+                "name": "Output 2"
+            },
+            {
+                "connector": "XLR",
+                "description": [],
+                "name": "Output 3"
+            },
+            {
+                "connector": "XLR",
+                "description": [],
+                "name": "Output 4"
+            },
+            {
+                "connector": "XLR",
+                "description": [],
+                "name": "Output 5"
+            },
+            {
+                "connector": "XLR",
+                "description": [],
+                "name": "Output 6"
+            },
+            {
+                "connector": "XLR",
+                "description": [],
+                "name": "Output 7"
+            },
+            {
+                "connector": "XLR",
+                "description": [],
+                "name": "Output 8"
+            },
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "description": [],
+                "name": "Output 1"
+            },
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "description": [],
+                "name": "Output 2"
+            },
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "description": [],
+                "name": "Output 3"
+            },
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "description": [],
+                "name": "Output 4"
+            },
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "description": [],
+                "name": "Output 5"
+            },
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "description": [],
+                "name": "Output 6"
+            },
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "description": [],
+                "name": "Output 7"
+            },
+            {
+                "connector": "1/4 Phone Jack (6.35mm)",
+                "description": [],
+                "name": "Output 8"
+            },
+            {
+                "connector": "BNC",
+                "description": [],
+                "name": "Word Clock In"
+            },
+            {
+                "connector": "BNC",
+                "description": [],
+                "name": "Word Clock Out"
+            },
+            {
+                "connector": "D-Sub",
+                "description": [
+                    "9 Way"
+                ],
+                "name": "COM"
+            }
+        ],
+        "displays_indicators_meters": [
+            {
+                "type": "Diode (Green)",
+                "indication": "Signal 1"
+            },
+            {
+                "type": "Diode (Yellow)",
+                "indication": "Normal 1"
+            },
+            {
+                "type": "Diode (Red)",
+                "indication": "Peak 1"
+            },
+            {
+                "type": "Diode (Green)",
+                "indication": "Signal 2"
+            },
+            {
+                "type": "Diode (Yellow)",
+                "indication": "Normal 2"
+            },
+            {
+                "type": "Diode (Red)",
+                "indication": "Peak 2"
+            },
+            {
+                "type": "Diode (Green)",
+                "indication": "Signal 3"
+            },
+            {
+                "type": "Diode (Yellow)",
+                "indication": "Normal 3"
+            },
+            {
+                "type": "Diode (Red)",
+                "indication": "Peak 3"
+            },
+            {
+                "type": "Diode (Green)",
+                "indication": "Signal 4"
+            },
+            {
+                "type": "Diode (Yellow)",
+                "indication": "Normal 4"
+            },
+            {
+                "type": "Diode (Red)",
+                "indication": "Peak 4"
+            },
+            {
+                "type": "Diode (Green)",
+                "indication": "Signal 5"
+            },
+            {
+                "type": "Diode (Yellow)",
+                "indication": "Normal 5"
+            },
+            {
+                "type": "Diode (Red)",
+                "indication": "Peak 5"
+            },
+            {
+                "type": "Diode (Green)",
+                "indication": "Signal 6"
+            },
+            {
+                "type": "Diode (Yellow)",
+                "indication": "Normal 6"
+            },
+            {
+                "type": "Diode (Red)",
+                "indication": "Peak 6"
+            },
+            {
+                "type": "Diode (Green)",
+                "indication": "Signal 7"
+            },
+            {
+                "type": "Diode (Yellow)",
+                "indication": "Normal 7"
+            },
+            {
+                "type": "Diode (Red)",
+                "indication": "Peak 7"
+            },
+            {
+                "type": "Diode (Green)",
+                "indication": "Signal 8"
+            },
+            {
+                "type": "Diode (Yellow)",
+                "indication": "Normal 8"
+            },
+            {
+                "type": "Diode (Red)",
+                "indication": "Peak 8"
+            },
+            {
+                "type": "Diode (Green)",
+                "indication": "LOCK"
+            },
+            {
+                "type": "Diode (Green)",
+                "indication": "POWER"
+            }
+        ],
+        "frequency_response": "0, +1, -3dB 20Hz-20kHz",
+        "external_links": [
+            {
+                "url": "http://www.yamahaproaudio.com/global/en/products/interfaces/da824/",
+                "notes": "Manufacturers official site"
+            }
+        ],
+        "form_factor": "19 Rackmount",
+        "id": 94538,
+        "power_source": "Mains AC",
+        "dimensions_string": "W: 480mm; 18-7/8in, H: 97.5mm; 3-13/16in, D: 366.8mm; 14-7/16in",
+        "signal_path": "Digital Hardware (including Analog Connections)",
+        "manufacturers": [
+            "Yamaha"
+        ],
+        "deviceTypes": [
+            "Digital-to-Analog Converter (DAC)"
+        ]
+    }
+]
