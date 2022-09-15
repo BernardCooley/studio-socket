@@ -1,4 +1,4 @@
-export interface IEightTrackDeck {
+export type IEightTrackDeck = {
     country_of_manufacture: string;
     channels_voices_tracks: any[];
     title: string;
@@ -13,27 +13,28 @@ export interface IEightTrackDeck {
     external_links: ExternalLink[];
     manufacturers: string[];
     deviceTypes: string[];
-}
+    TYPE: "8-track deck";
+};
 
-export interface Control {
+interface Control {
     range: string;
     parameter: string;
     control_type: string;
 }
 
-export interface Dimension {
+interface Dimension {
     width: number;
     depth: number;
     height: number;
 }
 
-export interface DisplaysIndicatorsMeter {
+interface DisplaysIndicatorsMeter {
     type: string;
     scale: string;
     indication: string;
 }
 
-export interface ExternalLink {
+interface ExternalLink {
     url: string;
     notes: string;
 }

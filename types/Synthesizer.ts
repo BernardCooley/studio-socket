@@ -16,6 +16,7 @@ export interface ISynthesizer {
     external_links: ExternalLink[];
     manufacturers: string[];
     deviceTypes: string[];
+    TYPE: "Synthesizer";
 }
 
 export interface ChannelsVoicesTrack {

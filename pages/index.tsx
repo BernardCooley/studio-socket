@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import styles from "../styles/Home.module.css";
 import allDevices from "../data/all-devices.json";
 import { useEffect, useState } from "react";
-import { IDevice } from "../types";
+import { getDeviceWithInterface, IDevice } from "../types";
 
 const Home: NextPage = () => {
     const [devices, setDevices] = useState<IDevice[]>([]);
@@ -14,9 +14,18 @@ const Home: NextPage = () => {
     return (
         <div className={styles.container}>
             {devices &&
-                devices.map((device) => (
-                    <div key={device.slug}>{device.title}</div>
-                ))}
+                devices.map((device) => {
+                    const dev = getDeviceWithInterface(
+                        device.deviceTypes,
+                        device
+                    );
+                    return (
+                        <div key={dev.slug}>
+                            {dev.title}: {JSON.stringify(dev.connections)}
+                            <hr></hr>
+                        </div>
+                    );
+                })}
         </div>
     );
 };
