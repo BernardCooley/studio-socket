@@ -14,7 +14,6 @@ export interface IEightTrackDeck {
     external_links: ExternalLink[];
     manufacturers: string[];
     deviceTypes: string[];
-    TYPE: "8-track deck";
 }
 
 export interface IAccessory {
@@ -1019,6 +1018,57 @@ export enum Range {
     OffLowHigh = "Off / Low / High",
     The24CMS12CMS = "2.4 cm/s / 1.2 cm/s",
 }
+
+export type IDevice =
+    | ISynthesizer
+    | IEightTrackDeck
+    | IAccessory
+    | IAmplifierBass
+    | IAmplifierGuitar
+    | IAmplifierHeadphones
+    | IAmplifierIntegrated
+    | IAmplifierMicrophone
+    | IAmplifierPhono
+    | ITurntableTonearm
+    | ITurntableStylus
+    | ITurntableSparePart
+    | ITurnTableCartridge
+    | ITurntableAccessory
+    | ITurntable
+    | ITapeMachine
+    | IClockGenerator
+    | ISpeaker
+    | ISignalDistribution
+    | ISequencer
+    | ISampler
+    | IReceiver
+    | IRadioTuner
+    | IRadioReceiver
+    | IPowerSupply
+    | IMixingDesk
+    | IMinidisc
+    | IMicrophone
+    | IMediaPlayer
+    | IDataStorage
+    | IInstrumentTuner
+    | IHeadphones
+    | IEQ
+    | IEnclosureCasing
+    | IEffects
+    | IDynamics
+    | IDrumMachine
+    | IDJMixer
+    | IDigitalRecorder
+    | IDAC
+    | ICrossover
+    | IControlSurface
+    | ICD
+    | ICassetteDeck
+    | ICable
+    | IAudioInterface
+    | IADAC
+    | IAmplifierPre
+    | IAmplifierPower;
 
 export const getDeviceWithInterface = (types: String[], device: any) => {
     if (types.includes("Synthesizer")) return device as ISynthesizer;
