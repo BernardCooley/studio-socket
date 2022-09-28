@@ -54,18 +54,20 @@ export const AuthContextProvider = ({ children }: { children: ReactNode }) => {
         };
     }, []);
 
-    const login = (email: string, password: string) => {
-        return signInWithEmailAndPassword(auth, email, password);
+    const login = async (email: string, password: string) => {
+        return await signInWithEmailAndPassword(auth, email, password);
     };
 
-    const register = (email: string, password: string) => {
-        return createUserWithEmailAndPassword(auth, email, password);
+    const register = async (email: string, password: string) => {
+        return await createUserWithEmailAndPassword(auth, email, password);
     };
 
     const logout = async () => {
         setUser({});
         await signOut(auth);
     };
+
+    // TODO: Everything is expoerting as null
 
     return (
         <AuthContext.Provider

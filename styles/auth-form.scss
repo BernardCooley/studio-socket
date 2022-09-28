@@ -1,0 +1,21 @@
+.title {
+    position: absolute;
+    top: 50px;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 40px;
+}
+
+.changeAuth {
+    display: flex;
+    align-items: center;
+}
+
+.alreadyText {
+    margin-right: 10px;
+}

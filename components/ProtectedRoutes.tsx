@@ -7,7 +7,11 @@ const ProtectedRoute = ({ children }: { children: ReactNode }) => {
     const router = useRouter();
 
     useEffect(() => {
-        if (!user.uid) {
+        if (
+            !user.uid &&
+            router.pathname !== "/login" &&
+            router.pathname !== "/register"
+        ) {
             router.push("/login");
         }
     }, [router, user]);
