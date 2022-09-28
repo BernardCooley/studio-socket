@@ -1,25 +1,70 @@
-import React, { createContext, useState } from "react";
+import React, {
+    createContext,
+    ReactNode,
+    useContext,
+    useEffect,
+    useState,
+} from "react";
+import {
+    createUserWithEmailAndPassword,
+    onAuthStateChanged,
+    signInWithEmailAndPassword,
+    signOut,
+    UserCredential,
+} from "firebase/auth";
+import { auth } from "../firebase/clientApp";
+interface User {
+    uid?: string;
+    email?: string | null;
+    displayName?: string | null;
+}
 
-export const AuthContext = createContext({});
+interface AuthContextProps {
+    user: User | object;
+    login: (email: string, password: string) => Promise<UserCredential>;
+    register: (email: string, password: string) => Promise<UserCredential>;
+    logout: () => Promise<void>;
+}
 
-type AuthContextProviderProps = {
-    user: boolean;
-    children: any;
-};
+export const AuthContext = createContext<AuthContextProps | object>({});
 
-export const AuthContextProvider = ({ children }: AuthContextProviderProps) => {
-    const [user, setUser] = useState({
-        name: "Bernard",
-    });
+export const useAuth = () => useContext(AuthContext);
 
-    const login = () => {
-        setUser({});
-        console.log("logged in");
+export const AuthContextProvider = ({ children }: { children: ReactNode }) => {
+    const [user, setUser] = useState<User | object>({});
+
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const unsubscribe = onAuthStateChanged(auth, (user) => {
+            if (user?.uid) {
+                setUser({
+                    uid: user.uid,
+                    email: user.email,
+                    displayName: user.displayName,
+                });
+            } else {
+                setUser({});
+            }
+            setLoading(false);
+        });
+
+        return () => {
+            unsubscribe();
+        };
+    }, []);
+
+    const login = (email: string, password: string) => {
+        return signInWithEmailAndPassword(auth, email, password);
     };
 
-    const logout = () => {
+    const register = (email: string, password: string) => {
+        return createUserWithEmailAndPassword(auth, email, password);
+    };
+
+    const logout = async () => {
         setUser({});
-        console.log("logged out");
+        await signOut(auth);
     };
 
     return (
@@ -27,10 +72,11 @@ export const AuthContextProvider = ({ children }: AuthContextProviderProps) => {
             value={{
                 user,
                 login,
+                register,
                 logout,
             }}
         >
-            {children}
+            {loading ? null : children}
         </AuthContext.Provider>
     );
 };
