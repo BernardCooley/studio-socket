@@ -1,120 +1,139 @@
-import React, { useState, MouseEvent, ChangeEvent } from "react";
-import styles from "./styles.Login.module.scss";
-import {
-    Box,
-    Button,
-    FormControl,
-    IconButton,
-    Input,
-    InputAdornment,
-    InputLabel,
-} from "@mui/material";
-import { Visibility, VisibilityOff } from "@mui/icons-material";
+import React, { useState, useRef, FormEvent, useEffect } from "react";
 import { useAuth } from "../../contexts/AuthContext";
-import router from "next/router";
-import Link from "next/link";
-import { authFormStyles, authFormFieldStyles } from "../../materialStyles";
-
-interface FormState {
-    password: string;
-    email: string;
-    showPassword: boolean;
-    showRepeatPassword: boolean;
-}
+import { useRouter } from "next/router";
+import CustomTextInput from "../../components/CustomTextInput";
+import CustomButton from "../../components/CustomButton";
+import { LoginFormSchema } from "../../formValidation";
+import { getErrorMessages } from "../../utils";
 
 interface Props {}
 
 const Login = ({}: Props) => {
+    const emailRef = useRef<HTMLInputElement>(null);
+    const passwordRef = useRef<HTMLInputElement>(null);
+    const [errors, setErrors] = useState([]);
+    const [formErrorMessages, setFormErrorMessage] = useState<string[]>([]);
+    const [showFormError, setShowFormError] = useState<boolean>(false);
+    const router = useRouter();
     const { login } = useAuth();
 
-    const [values, setValues] = useState<FormState>({
-        password: "",
-        email: "",
-        showPassword: false,
-        showRepeatPassword: false,
-    });
+    useEffect(() => {
+        if (formErrorMessages.length > 0) {
+            setShowFormError(true);
+        } else {
+            setShowFormError(false);
+        }
+    }, [formErrorMessages]);
 
-    const handleChange =
-        (prop: keyof FormState) => (event: ChangeEvent<HTMLInputElement>) => {
-            setValues({ ...values, [prop]: event.target.value });
-        };
-
-    const handleClickShowPassword = () => {
-        setValues({
-            ...values,
-            showPassword: !values.showPassword,
-        });
-    };
-
-    const handleMouseDownPassword = (event: MouseEvent<HTMLButtonElement>) => {
-        event.preventDefault();
-    };
-
-    const handleSubmit = async (e) => {
+    const handleSubmit = async (e: FormEvent) => {
         e.preventDefault();
-        console.log(values);
+        validate();
 
-        try {
-            await login(values.email, values.password);
-            router.push("/devices");
-        } catch (err) {
-            console.log(err);
+        if (errors.length === 0) {
+            try {
+                await login(
+                    emailRef.current?.value,
+                    passwordRef.current?.value
+                );
+                router.push("/devices");
+            } catch (err: any) {
+                console.log(err.code);
+                if (err.code === "auth/user-not-found") {
+                    setFormErrorMessage([
+                        ...formErrorMessages,
+                        "Email/password incorrect",
+                    ]);
+                }
+            }
         }
     };
 
+    const validate = () => {
+        try {
+            LoginFormSchema.parse({
+                email: emailRef.current?.value,
+                password: passwordRef.current?.value,
+            });
+        } catch (err: any) {
+            setErrors(err.errors);
+        }
+    };
+
+    const onFormClick = () => {
+        setShowFormError(false);
+        setFormErrorMessage([]);
+    };
+
     return (
-        <div className={styles.container}>
-            <form onSubmit={handleSubmit}>
-                <Box sx={authFormStyles}>
-                    <h1 className={styles.title}>Log in</h1>
-                    <FormControl variant="standard" sx={authFormFieldStyles}>
-                        <InputLabel htmlFor="email">Email</InputLabel>
-                        <Input
-                            id="email"
-                            value={values.email}
-                            onChange={handleChange("email")}
-                            aria-describedby="email-helper-text"
-                            inputProps={{
-                                "aria-label": "email",
-                            }}
-                        />
-                    </FormControl>
-                    <FormControl sx={authFormFieldStyles} variant="standard">
-                        <InputLabel htmlFor="password">Password</InputLabel>
-                        <Input
-                            id="password"
-                            type={values.showPassword ? "text" : "password"}
-                            value={values.password}
-                            onChange={handleChange("password")}
-                            endAdornment={
-                                <InputAdornment position="end">
-                                    <IconButton
-                                        aria-label="toggle password visibility"
-                                        onClick={handleClickShowPassword}
-                                        onMouseDown={handleMouseDownPassword}
-                                    >
-                                        {values.showPassword ? (
-                                            <VisibilityOff />
-                                        ) : (
-                                            <Visibility />
-                                        )}
-                                    </IconButton>
-                                </InputAdornment>
-                            }
-                        />
-                    </FormControl>
-                    <div className={styles.buttonContainer}>
-                        <Button type="submit" variant="outlined">
-                            Login
-                        </Button>
-                        <div className={styles.changeAuth}>
-                            <div className={styles.alreadyText}>
-                                Not registered?...
-                            </div>
-                            <Link href="/register">Register</Link>
+        <div className="authContainer">
+            <form
+                onSubmit={handleSubmit}
+                className="authForm"
+                noValidate={true}
+                onClick={onFormClick}
+            >
+                <h1 className="text-2xl">Log in</h1>
+
+                <div
+                    className={`w-full relative transition duration-200 flex flex-col items-center`}
+                >
+                    {showFormError && (
+                        <div className="absolute z-10 text-xl top-1/2 border-red-500 text-red-500 w-80 text-center bg-white p-2 rounded-lg border-2 drop-shadow-md">
+                            {formErrorMessages.map((message) => (
+                                <div key={message}>{message}</div>
+                            ))}
                         </div>
-                    </div>
-                </Box>
+                    )}
+                    <CustomTextInput
+                        id="email"
+                        type="email"
+                        label="Email"
+                        name="email"
+                        className={`customTextInput ${
+                            showFormError
+                                ? "pointer-events-none opacity-50"
+                                : ""
+                        }`}
+                        defaultValue={"bernardcooley@gmail.com"}
+                        inputClassName="bg-transparent"
+                        ref={emailRef}
+                        errorMessages={getErrorMessages(errors, "email")}
+                    />
+                    <CustomTextInput
+                        className={`customTextInput ${
+                            showFormError
+                                ? "pointer-events-none opacity-50"
+                                : ""
+                        }`}
+                        type="password"
+                        id="password"
+                        label="Password"
+                        name="password"
+                        defaultValue={"Yeloocc1"}
+                        inputClassName="bg-transparent"
+                        ref={passwordRef}
+                        errorMessages={getErrorMessages(errors, "password")}
+                    />
+                    <CustomButton
+                        label="Log in"
+                        type="submit"
+                        className={`authButton ${
+                            showFormError
+                                ? "pointer-events-none opacity-50"
+                                : ""
+                        }`}
+                    />
+                </div>
+                <div className="mt-4 w-full text-right flex justify-end">
+                    <span>Dont have an account?</span>
+                    <CustomButton
+                        label="Register"
+                        type="button"
+                        className="authHaveAnAccount"
+                        labelClassName="hover:underline underline-offset-4"
+                        onClick={() => router.push("/register")}
+                    />
+                </div>
             </form>
         </div>
     );

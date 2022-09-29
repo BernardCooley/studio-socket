@@ -28,3 +28,28 @@ a {
         background: black;
     }
 }
+
+.authContainer {
+    @apply relative flex justify-center flex-col items-end h-screen bg-auth p-4;
+}
+
+.authForm {
+    @apply relative w-full lg:w-2/5 flex justify-between flex-col border rounded-lg p-3 sm:p-10 shadow-lg items-center place-self-auto bg-slate-100 h-5/6;
+}
+
+.authButton {
+    @apply w-full text-2xl ds-primary py-3 px-8 text-center hover:bg-slate-600 hover:text-white hover:cursor-pointer hover:shadow-lg rounded-lg shadow-gray-900 leading-10 hover:sm:scale-x-105 transition-transform duration-200 ease-in-out;
+}
+
+.customTextInput {
+    @apply my-6 w-full;
+}
+
+.authHaveAnAccount {
+    @apply ml-2 font-bold;
+}
+
+/* Design system */
+.ds-primary {
+    @apply bg-slate-400 text-gray-900;
+}

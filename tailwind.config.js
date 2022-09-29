@@ -5,7 +5,14 @@ module.exports = {
         "./components/**/*.{js,ts,jsx,tsx}",
     ],
     theme: {
-        extend: {},
+        extend: {
+            backgroundImage: {
+                auth: "url('../public/assets/images/modular-side-dark.jpg')",
+            },
+            minHeight: {
+                val: "40px",
+            },
+        },
     },
     plugins: [],
 };

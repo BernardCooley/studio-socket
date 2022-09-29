@@ -1,155 +1,112 @@
-import { Visibility, VisibilityOff } from "@mui/icons-material";
-import {
-    Box,
-    Button,
-    FormControl,
-    IconButton,
-    Input,
-    InputAdornment,
-    InputLabel,
-} from "@mui/material";
-import React, { useState, ChangeEvent, MouseEvent } from "react";
+import React, { FormEvent, useRef, useState } from "react";
 import { useAuth } from "../../contexts/AuthContext";
-import styles from "./styles.Register.module.scss";
-import router from "next/router";
-import Link from "next/link";
-import { authFormStyles, authFormFieldStyles } from "../../materialStyles";
-
-interface FormState {
-    password: string;
-    repeatPassword: string;
-    email: string;
-    showPassword: boolean;
-    showRepeatPassword: boolean;
-}
+import { useRouter } from "next/router";
+import CustomTextInput from "../../components/CustomTextInput";
+import CustomButton from "../../components/CustomButton";
+import { RegisterFormSchema } from "../../formValidation";
+import { getErrorMessages } from "../../utils";
 
 interface Props {}
 
 const Register = ({}: Props) => {
+    const emailRef = useRef<HTMLInputElement>(null);
+    const passwordRef = useRef<HTMLInputElement>(null);
+    const repeatPasswordRef = useRef<HTMLInputElement>(null);
+    const [errors, setErrors] = useState([]);
+    const router = useRouter();
     const { register } = useAuth();
 
-    const [values, setValues] = useState<FormState>({
-        password: "",
-        repeatPassword: "",
-        email: "",
-        showPassword: false,
-        showRepeatPassword: false,
-    });
-
-    const handleSubmit = async (e) => {
+    const handleSubmit = async (e: FormEvent) => {
         e.preventDefault();
 
-        try {
-            await register(values.email, values.password);
-            router.push("/devices");
-        } catch (err) {
-            console.log(err);
+        validate();
+
+        if (errors.length === 0) {
+            try {
+                await register(
+                    emailRef.current?.value,
+                    passwordRef.current?.value
+                );
+                router.push("/devices");
+            } catch (err: any) {
+                console.log(err.code);
+            }
         }
     };
 
-    const handleChange =
-        (prop: keyof FormState) => (event: ChangeEvent<HTMLInputElement>) => {
-            setValues({ ...values, [prop]: event.target.value });
-        };
-
-    const handleClickShowPassword = () => {
-        setValues({
-            ...values,
-            showPassword: !values.showPassword,
-        });
+    const validate = () => {
+        try {
+            RegisterFormSchema.parse({
+                email: emailRef.current?.value,
+                password: passwordRef.current?.value,
+                repeatPassword: repeatPasswordRef.current?.value,
+            });
+        } catch (err: any) {
+            setErrors(err.errors);
+        }
     };
 
-    const handleClickShowRepeatPassword = () => {
-        setValues({
-            ...values,
-            showRepeatPassword: !values.showRepeatPassword,
-        });
-    };
-
-    const handleMouseDownPassword = (event: MouseEvent<HTMLButtonElement>) => {
-        event.preventDefault();
-    };
     return (
-        <div className={styles.container}>
-            <form onSubmit={handleSubmit}>
-                <Box sx={authFormStyles}>
-                    <h1 className={styles.title}>Register</h1>
-                    <FormControl variant="standard" sx={authFormFieldStyles}>
-                        <InputLabel htmlFor="email">Email</InputLabel>
-                        <Input
-                            id="email"
-                            value={values.email}
-                            onChange={handleChange("email")}
-                            aria-describedby="email-helper-text"
-                            inputProps={{
-                                "aria-label": "email",
-                            }}
-                        />
-                    </FormControl>
-                    <FormControl sx={authFormFieldStyles} variant="standard">
-                        <InputLabel htmlFor="password">Password</InputLabel>
-                        <Input
-                            id="password"
-                            type={values.showPassword ? "text" : "password"}
-                            value={values.password}
-                            onChange={handleChange("password")}
-                            endAdornment={
-                                <InputAdornment position="end">
-                                    <IconButton
-                                        aria-label="toggle password visibility"
-                                        onClick={handleClickShowPassword}
-                                        onMouseDown={handleMouseDownPassword}
-                                    >
-                                        {values.showPassword ? (
-                                            <VisibilityOff />
-                                        ) : (
-                                            <Visibility />
-                                        )}
-                                    </IconButton>
-                                </InputAdornment>
-                            }
-                        />
-                    </FormControl>
-                    <FormControl sx={authFormFieldStyles} variant="standard">
-                        <InputLabel htmlFor="repeat-password">
-                            Repeat password
-                        </InputLabel>
-                        <Input
-                            id="repeat-password"
-                            type={
-                                values.showRepeatPassword ? "text" : "password"
-                            }
-                            value={values.repeatPassword}
-                            onChange={handleChange("repeatPassword")}
-                            endAdornment={
-                                <InputAdornment position="end">
-                                    <IconButton
-                                        aria-label="toggle repeat password visibility"
-                                        onClick={handleClickShowRepeatPassword}
-                                        onMouseDown={handleMouseDownPassword}
-                                    >
-                                        {values.showRepeatPassword ? (
-                                            <VisibilityOff />
-                                        ) : (
-                                            <Visibility />
-                                        )}
-                                    </IconButton>
-                                </InputAdornment>
-                            }
-                        />
-                    </FormControl>
-                    <div className={styles.buttonContainer}>
-                        <Button type="submit" variant="outlined">
-                            Register
-                        </Button>
-                        <div className={styles.changeAuth}>
-                            <div className={styles.alreadyText}>
-                                Already registered?...
-                            </div>
-                            <Link href="/login">Log in</Link>
-                        </div>
-                    </div>
-                </Box>
+        <div className="authContainer">
+            <form
+                onSubmit={handleSubmit}
+                className="authForm"
+                noValidate={true}
+            >
+                <h1 className="text-2xl">Register</h1>
+                <div className="w-full">
+                    <CustomTextInput
+                        id="email"
+                        type="email"
+                        label="Email"
+                        name="email"
+                        className="customTextInput"
+                        inputClassName="bg-transparent"
+                        ref={emailRef}
+                        defaultValue="bernardcooley@gmail.com"
+                        errorMessages={getErrorMessages(errors, "email")}
+                    />
+                    <CustomTextInput
+                        className="customTextInput"
+                        type="password"
+                        id="password"
+                        label="Password"
+                        name="password"
+                        inputClassName="bg-transparent"
+                        ref={passwordRef}
+                        defaultValue="Yeloocc1"
+                        errorMessages={getErrorMessages(errors, "password")}
+                    />
+                    <CustomTextInput
+                        className="customTextInput"
+                        type="password"
+                        id="repeatPassword"
+                        label="Repeat password"
+                        name="repeatPassword"
+                        inputClassName="bg-transparent"
+                        ref={repeatPasswordRef}
+                        defaultValue="Yeloocc1"
+                        errorMessages={getErrorMessages(
+                            errors,
+                            "repeatPassword"
+                        )}
+                    />
+                    <CustomButton
+                        label="Register"
+                        type="submit"
+                        className="authButton"
+                    />
+                </div>
+                <div className="mt-4 w-full text-right flex justify-end">
+                    <span>Already have an account?</span>
+                    <CustomButton
+                        label="Log in"
+                        type="button"
+                        className="authHaveAnAccount"
+                        labelClassName="hover:underline underline-offset-4"
+                        onClick={() => router.push("/login")}
+                    />
+                </div>
             </form>
         </div>
     );
