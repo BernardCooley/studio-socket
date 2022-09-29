@@ -1,10 +1,11 @@
-import React, { FormEvent, useRef, useState } from "react";
+import React, { FormEvent, useEffect, useRef, useState } from "react";
 import { useAuth } from "../../contexts/AuthContext";
 import { useRouter } from "next/router";
 import CustomTextInput from "../../components/CustomTextInput";
 import CustomButton from "../../components/CustomButton";
 import { RegisterFormSchema } from "../../formValidation";
 import { getErrorMessages } from "../../utils";
+import FormMessage from "../../components/FormMessage";
 
 interface Props {}
 
@@ -15,6 +16,17 @@ const Register = ({}: Props) => {
     const [errors, setErrors] = useState([]);
     const router = useRouter();
     const { register } = useAuth();
+    const [formMessages, setFormMessages] = useState<string[]>([]);
+    const [showFormMessages, setShowFormMessages] = useState<boolean>(false);
+    const registeringMessage = "Creating account...";
+
+    useEffect(() => {
+        if (formMessages.length > 0) {
+            setShowFormMessages(true);
+        } else {
+            setShowFormMessages(false);
+        }
+    }, [formMessages]);
 
     const handleSubmit = async (e: FormEvent) => {
         e.preventDefault();
@@ -22,6 +34,7 @@ const Register = ({}: Props) => {
         validate();
 
         if (errors.length === 0) {
+            setFormMessages([registeringMessage]);
             try {
                 await register(
                     emailRef.current?.value,
@@ -54,7 +67,27 @@ const Register = ({}: Props) => {
                 noValidate={true}
             >
                 <h1 className="text-2xl">Create account</h1>
-                <div className="w-full">
+                <div className="w-full relative transition duration-200 flex flex-col items-center">
+                    <FormMessage
+                        formMessages={formMessages}
+                        messageToMatch={registeringMessage}
+                        showFormMessages={showFormMessages}
+                    />
+                    {/* <div>
+                        {showFormMessages && (
+                            <div
+                                className={`absolute z-10 text-xl top-1/2  w-80 text-center bg-white p-2 rounded-lg border-2 drop-shadow-md ${
+                                    formMessages.includes(registeringMessage)
+                                        ? ""
+                                        : "text-red-500 border-red-500"
+                                }`}
+                            >
+                                {formMessages.map((message) => (
+                                    <div key={message}>{message}</div>
+                                ))}
+                            </div>
+                        )}
+                    </div> */}
                     <CustomTextInput
                         id="email"
                         type="email"

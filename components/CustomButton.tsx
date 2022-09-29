@@ -16,11 +16,9 @@ const CustomButton = ({
     labelClassName,
 }: Props) => {
     return (
-        <div className={className}>
-            <button onClick={onClick} type={type}>
-                <span className={labelClassName}>{label}</span>
-            </button>
-        </div>
+        <button className={className} onClick={onClick} type={type}>
+            <span className={labelClassName}>{label}</span>
+        </button>
     );
 };
 

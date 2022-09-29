@@ -5,6 +5,7 @@ import CustomTextInput from "../../components/CustomTextInput";
 import CustomButton from "../../components/CustomButton";
 import { LoginFormSchema } from "../../formValidation";
 import { getErrorMessages } from "../../utils";
+import FormMessage from "../../components/FormMessage";
 
 interface Props {}
 
@@ -12,24 +13,26 @@ const Login = ({}: Props) => {
     const emailRef = useRef<HTMLInputElement>(null);
     const passwordRef = useRef<HTMLInputElement>(null);
     const [errors, setErrors] = useState([]);
-    const [formErrorMessages, setFormErrorMessage] = useState<string[]>([]);
-    const [showFormError, setShowFormError] = useState<boolean>(false);
+    const [formMessages, setFormMessages] = useState<string[]>([]);
+    const [showFormMessages, setShowFormMessages] = useState<boolean>(false);
     const router = useRouter();
     const { login } = useAuth();
+    const loggingInMessage = "Logging in...";
 
     useEffect(() => {
-        if (formErrorMessages.length > 0) {
-            setShowFormError(true);
+        if (formMessages.length > 0) {
+            setShowFormMessages(true);
         } else {
-            setShowFormError(false);
+            setShowFormMessages(false);
         }
-    }, [formErrorMessages]);
+    }, [formMessages]);
 
     const handleSubmit = async (e: FormEvent) => {
         e.preventDefault();
         validate();
 
         if (errors.length === 0) {
+            setFormMessages([loggingInMessage]);
             try {
                 await login(
                     emailRef.current?.value,
@@ -37,10 +40,9 @@ const Login = ({}: Props) => {
                 );
                 router.push("/devices");
             } catch (err: any) {
-                console.log(err.code);
                 if (err.code === "auth/user-not-found") {
-                    setFormErrorMessage([
-                        ...formErrorMessages,
+                    setFormMessages([
+                        ...formMessages,
                         "Email/password incorrect",
                     ]);
                 }
@@ -60,8 +62,8 @@ const Login = ({}: Props) => {
     };
 
     const onFormClick = () => {
-        setShowFormError(false);
-        setFormErrorMessage([]);
+        setShowFormMessages(false);
+        setFormMessages([]);
     };
 
     return (
@@ -77,20 +79,18 @@ const Login = ({}: Props) => {
                 <div
                     className={`w-full relative transition duration-200 flex flex-col items-center`}
                 >
-                    {showFormError && (
-                        <div className="absolute z-10 text-xl top-1/2 border-red-500 text-red-500 w-80 text-center bg-white p-2 rounded-lg border-2 drop-shadow-md">
-                            {formErrorMessages.map((message) => (
-                                <div key={message}>{message}</div>
-                            ))}
-                        </div>
-                    )}
+                    <FormMessage
+                        formMessages={formMessages}
+                        messageToMatch={loggingInMessage}
+                        showFormMessages={showFormMessages}
+                    />
                     <CustomTextInput
                         id="email"
                         type="email"
                         label="Email"
                         name="email"
                         className={`customTextInput ${
-                            showFormError
+                            showFormMessages
                                 ? "pointer-events-none opacity-50"
                                 : ""
                         }`}
@@ -101,7 +101,7 @@ const Login = ({}: Props) => {
                     />
                     <CustomTextInput
                         className={`customTextInput ${
-                            showFormError
+                            showFormMessages
                                 ? "pointer-events-none opacity-50"
                                 : ""
                         }`}
@@ -118,7 +118,7 @@ const Login = ({}: Props) => {
                         label="Log in"
                         type="submit"
                         className={`authButton ${
-                            showFormError
+                            showFormMessages
                                 ? "pointer-events-none opacity-50"
                                 : ""
                         }`}
