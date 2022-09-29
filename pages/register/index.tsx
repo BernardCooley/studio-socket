@@ -53,7 +53,7 @@ const Register = ({}: Props) => {
                 className="authForm"
                 noValidate={true}
             >
-                <h1 className="text-2xl">Register</h1>
+                <h1 className="text-2xl">Create account</h1>
                 <div className="w-full">
                     <CustomTextInput
                         id="email"
