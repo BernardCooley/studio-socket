@@ -6,6 +6,7 @@ interface Props {
     className?: string;
     onClick?: () => void;
     labelClassName?: string;
+    disabled?: boolean;
 }
 
 const CustomButton = ({
@@ -14,9 +15,15 @@ const CustomButton = ({
     className,
     onClick,
     labelClassName,
+    disabled,
 }: Props) => {
     return (
-        <button className={className} onClick={onClick} type={type}>
+        <button
+            disabled={disabled}
+            className={className}
+            onClick={onClick}
+            type={type}
+        >
             <span className={labelClassName}>{label}</span>
         </button>
     );

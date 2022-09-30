@@ -3,7 +3,7 @@ import { useAuth } from "../../contexts/AuthContext";
 import { useRouter } from "next/router";
 import CustomTextInput from "../../components/CustomTextInput";
 import CustomButton from "../../components/CustomButton";
-import { RegisterFormSchema } from "../../formValidation";
+import { generateFormMessages, RegisterFormSchema } from "../../formValidation";
 import { getErrorMessages } from "../../utils";
 import FormMessage from "../../components/FormMessage";
 import AuthHero from "../../components/AuthHero/AuthHero";
@@ -19,7 +19,8 @@ const Register = ({}: Props) => {
     const { register } = useAuth();
     const [formMessages, setFormMessages] = useState<string[]>([]);
     const [showFormMessages, setShowFormMessages] = useState<boolean>(false);
-    const registeringMessage = "Creating account...";
+    const [submitButtonDisabled, setSubmitButtonDisabled] =
+        useState<boolean>(false);
 
     useEffect(() => {
         if (formMessages.length > 0) {
@@ -29,21 +30,28 @@ const Register = ({}: Props) => {
         }
     }, [formMessages]);
 
+    const clearMessages = () => {
+        setFormMessages([]);
+        setShowFormMessages(false);
+        setErrors([]);
+        setSubmitButtonDisabled(false);
+    };
+
     const handleSubmit = async (e: FormEvent) => {
+        clearMessages();
         e.preventDefault();
 
-        validate();
-
-        if (errors.length === 0) {
-            setFormMessages([registeringMessage]);
+        if (validate() && errors.length === 0) {
+            setSubmitButtonDisabled(true);
             try {
                 await register(
                     emailRef.current?.value,
                     passwordRef.current?.value
                 );
+                clearMessages();
                 router.push("/devices");
             } catch (err: any) {
-                console.log(err.code);
+                setFormMessages(generateFormMessages(err.code, formMessages));
             }
         }
     };
@@ -55,9 +63,17 @@ const Register = ({}: Props) => {
                 password: passwordRef.current?.value,
                 repeatPassword: repeatPasswordRef.current?.value,
             });
+            return true;
         } catch (err: any) {
             setErrors(err.errors);
+            return false;
         }
+    };
+
+    const onFormClick = () => {
+        setShowFormMessages(false);
+        setFormMessages([]);
+        setSubmitButtonDisabled(false);
     };
 
     return (
@@ -68,30 +84,14 @@ const Register = ({}: Props) => {
                     onSubmit={handleSubmit}
                     className="authForm"
                     noValidate={true}
+                    onClick={onFormClick}
                 >
                     <h1 className="text-2xl">Create account</h1>
-                    <div className="w-full relative transition duration-200 flex flex-col items-center">
+                    <div className="w-full relative flex flex-col items-center">
                         <FormMessage
                             formMessages={formMessages}
-                            messageToMatch={registeringMessage}
                             showFormMessages={showFormMessages}
                         />
-                        {/* TODO Fix error message */}
-                        {/* <div>
-                        {showFormMessages && (
-                            <div
-                                className={`absolute z-10 text-xl top-1/2  w-80 text-center bg-white p-2 rounded-lg border-2 drop-shadow-md ${
-                                    formMessages.includes(registeringMessage)
-                                        ? ""
-                                        : "text-red-500 border-red-500"
-                                }`}
-                            >
-                                {formMessages.map((message) => (
-                                    <div key={message}>{message}</div>
-                                ))}
-                            </div>
-                        )}
-                    </div> */}
                         <CustomTextInput
                             id="email"
                             type="email"
@@ -132,6 +132,7 @@ const Register = ({}: Props) => {
                             label="Register"
                             type="submit"
                             className="authButton"
+                            disabled={submitButtonDisabled}
                         />
                     </div>
                     <div className="mt-4 w-full text-right flex justify-end">

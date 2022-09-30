@@ -32,7 +32,7 @@ const PasswordInput = forwardRef(
                 <div className="text-red-500 text-sm min-h-val">
                     {errorMessages.length > 0 &&
                         errorMessages.map((error) => (
-                            <div key={error}>{error}</div>
+                            <div key={JSON.stringify(error)}>{error}</div>
                         ))}
                 </div>
                 <input

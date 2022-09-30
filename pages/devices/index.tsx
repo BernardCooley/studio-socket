@@ -1,6 +1,5 @@
 import { Button } from "@mui/material";
-import React, { useState, useEffect } from "react";
-import styles from "./styles.Devices.module.scss";
+import React, { useEffect } from "react";
 import { useAuth } from "../../contexts/AuthContext";
 import router from "next/router";
 
@@ -8,7 +7,6 @@ interface Props {}
 
 const Devices = ({}: Props) => {
     const { logout } = useAuth();
-    const [state, setState] = useState("");
 
     useEffect(() => {}, []);
 
@@ -18,7 +16,7 @@ const Devices = ({}: Props) => {
     };
 
     return (
-        <div className={styles.container}>
+        <div className="">
             <Button onClick={signOut}>Log out</Button>
         </div>
     );

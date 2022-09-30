@@ -16,7 +16,7 @@ export const Components = [
     },
     {
         type: "textSnippet",
-        data: "Create your own virtual studio",
+        data: "Create your own virtual studios",
     },
     {
         type: "sketchImage",
@@ -28,7 +28,7 @@ export const Components = [
     },
     {
         type: "textSnippet",
-        data: "Create your own virtual studio",
+        data: "Share your studios with the community",
     },
     {
         type: "sketchImage",
@@ -40,15 +40,11 @@ export const Components = [
     },
     {
         type: "textSnippet",
-        data: "Create your own virtual studio",
+        data: "Get inspired by studios from the community",
     },
     {
         type: "sketchImage",
         data: { name: "mixer", image: mixer },
-    },
-    {
-        type: "textSnippet",
-        data: "Create your own virtual studio",
     },
     {
         type: "sketchImage",

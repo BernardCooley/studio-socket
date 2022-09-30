@@ -42,11 +42,11 @@ a {
 }
 
 .authButton {
-    @apply w-full text-2xl ds-primary py-3 px-8 text-center hover:bg-slate-600 hover:text-white hover:cursor-pointer hover:shadow-lg rounded-lg shadow-gray-900 leading-10 hover:sm:scale-x-105 transition-transform duration-200 ease-in-out;
+    @apply bg-red-600 w-full text-2xl ds-primary py-3 px-8 text-center hover:bg-slate-600 hover:text-white hover:cursor-pointer hover:shadow-lg rounded-lg shadow-gray-900 leading-10 hover:sm:scale-x-105 transition-transform duration-200 ease-in-out disabled:pointer-events-none;
 }
 
 .customTextInput {
-    @apply my-6 w-full;
+    @apply w-full;
 }
 
 .authHaveAnAccount {

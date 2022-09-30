@@ -3,7 +3,7 @@ import { useAuth } from "../../contexts/AuthContext";
 import { useRouter } from "next/router";
 import CustomTextInput from "../../components/CustomTextInput";
 import CustomButton from "../../components/CustomButton";
-import { LoginFormSchema } from "../../formValidation";
+import { generateFormMessages, LoginFormSchema } from "../../formValidation";
 import { getErrorMessages } from "../../utils";
 import FormMessage from "../../components/FormMessage";
 import AuthHero from "../../components/AuthHero/AuthHero";
@@ -18,7 +18,8 @@ const Login = ({}: Props) => {
     const [showFormMessages, setShowFormMessages] = useState<boolean>(false);
     const router = useRouter();
     const { login } = useAuth();
-    const loggingInMessage = "Logging in...";
+    const [submitButtonDisabled, setSubmitButtonDisabled] =
+        useState<boolean>(false);
 
     useEffect(() => {
         if (formMessages.length > 0) {
@@ -28,25 +29,28 @@ const Login = ({}: Props) => {
         }
     }, [formMessages]);
 
-    const handleSubmit = async (e: FormEvent) => {
-        e.preventDefault();
-        validate();
+    const clearMessages = () => {
+        setFormMessages([]);
+        setShowFormMessages(false);
+        setErrors([]);
+        setSubmitButtonDisabled(false);
+    };
 
-        if (errors.length === 0) {
-            setFormMessages([loggingInMessage]);
+    const handleSubmit = async (e: FormEvent) => {
+        clearMessages();
+        e.preventDefault();
+
+        if (validate() && errors.length === 0) {
+            setSubmitButtonDisabled(true);
             try {
                 await login(
                     emailRef.current?.value,
                     passwordRef.current?.value
                 );
+                clearMessages();
                 router.push("/devices");
             } catch (err: any) {
-                if (err.code === "auth/user-not-found") {
-                    setFormMessages([
-                        ...formMessages,
-                        "Email/password incorrect",
-                    ]);
-                }
+                setFormMessages(generateFormMessages(err.code, formMessages));
             }
         }
     };
@@ -57,14 +61,17 @@ const Login = ({}: Props) => {
                 email: emailRef.current?.value,
                 password: passwordRef.current?.value,
             });
+            return true;
         } catch (err: any) {
             setErrors(err.errors);
+            return false;
         }
     };
 
     const onFormClick = () => {
         setShowFormMessages(false);
         setFormMessages([]);
+        setSubmitButtonDisabled(false);
     };
 
     return (
@@ -80,11 +87,10 @@ const Login = ({}: Props) => {
                     <h1 className="text-2xl">Log in</h1>
 
                     <div
-                        className={`w-full relative transition duration-200 flex flex-col items-center`}
+                        className={`w-full relative flex flex-col items-center`}
                     >
                         <FormMessage
                             formMessages={formMessages}
-                            messageToMatch={loggingInMessage}
                             showFormMessages={showFormMessages}
                         />
                         <CustomTextInput
@@ -125,6 +131,7 @@ const Login = ({}: Props) => {
                                     ? "pointer-events-none opacity-50"
                                     : ""
                             }`}
+                            disabled={submitButtonDisabled}
                         />
                     </div>
                     <div className="mt-4 w-full text-right flex justify-end">
