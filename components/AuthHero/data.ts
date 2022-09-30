@@ -7,6 +7,8 @@ import mixer from "../../public/assets/images/mixer_sketch.png";
 import pedal from "../../public/assets/images/pedal_sketch.png";
 import speakers from "../../public/assets/images/speakers_sketch.png";
 
+// TODO Optimise images
+
 export const Components = [
     {
         type: "sketchImage",
