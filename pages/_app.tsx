@@ -3,6 +3,7 @@ import type { AppProps } from "next/app";
 import { useRouter } from "next/router";
 import ProtectedRoute from "../components/ProtectedRoutes";
 import { AuthContextProvider, useAuth } from "../contexts/AuthContext";
+import Navigation from "../components/Navigation";
 
 const noAuthRequired = ["/", "/login", "/register"];
 
@@ -12,6 +13,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
     return (
         <AuthContextProvider>
+            {/* <Navigation /> */}
             {user?.uid && noAuthRequired.includes(router.pathname) ? (
                 <Component {...pageProps} />
             ) : (
