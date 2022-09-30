@@ -29,8 +29,12 @@ a {
     }
 }
 
+.authBakcground {
+    @apply bg-auth bg-cover relative;
+}
+
 .authContainer {
-    @apply relative flex justify-center flex-col items-end h-screen bg-auth p-4 bg-cover py-16 px-10;
+    @apply relative flex justify-center items-end h-screen p-4 py-16 px-10 gap-10 bg-slate-500 bg-opacity-50;
 }
 
 .authForm {

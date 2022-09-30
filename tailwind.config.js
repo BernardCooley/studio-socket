@@ -7,7 +7,7 @@ module.exports = {
     theme: {
         extend: {
             backgroundImage: {
-                auth: "url('../public/assets/images/modular-side-dark.jpg')",
+                auth: "url('../public/assets/backgrounds/modular-side-dark.jpg')",
             },
             minHeight: {
                 val: "40px",

@@ -6,6 +6,7 @@ import CustomButton from "../../components/CustomButton";
 import { LoginFormSchema } from "../../formValidation";
 import { getErrorMessages } from "../../utils";
 import FormMessage from "../../components/FormMessage";
+import AuthHero from "../../components/AuthHero/AuthHero";
 
 interface Props {}
 
@@ -67,74 +68,77 @@ const Login = ({}: Props) => {
     };
 
     return (
-        <div className="authContainer">
-            <form
-                onSubmit={handleSubmit}
-                className="authForm"
-                noValidate={true}
-                onClick={onFormClick}
-            >
-                <h1 className="text-2xl">Log in</h1>
-
-                <div
-                    className={`w-full relative transition duration-200 flex flex-col items-center`}
+        <div className="authBakcground">
+            <div className="authContainer">
+                <AuthHero />
+                <form
+                    onSubmit={handleSubmit}
+                    className="authForm"
+                    noValidate={true}
+                    onClick={onFormClick}
                 >
-                    <FormMessage
-                        formMessages={formMessages}
-                        messageToMatch={loggingInMessage}
-                        showFormMessages={showFormMessages}
-                    />
-                    <CustomTextInput
-                        id="email"
-                        type="email"
-                        label="Email"
-                        name="email"
-                        className={`customTextInput ${
-                            showFormMessages
-                                ? "pointer-events-none opacity-50"
-                                : ""
-                        }`}
-                        defaultValue={"bernardcooley@gmail.com"}
-                        inputClassName="bg-transparent"
-                        ref={emailRef}
-                        errorMessages={getErrorMessages(errors, "email")}
-                    />
-                    <CustomTextInput
-                        className={`customTextInput ${
-                            showFormMessages
-                                ? "pointer-events-none opacity-50"
-                                : ""
-                        }`}
-                        type="password"
-                        id="password"
-                        label="Password"
-                        name="password"
-                        defaultValue={"Yeloocc1"}
-                        inputClassName="bg-transparent"
-                        ref={passwordRef}
-                        errorMessages={getErrorMessages(errors, "password")}
-                    />
-                    <CustomButton
-                        label="Log in"
-                        type="submit"
-                        className={`authButton ${
-                            showFormMessages
-                                ? "pointer-events-none opacity-50"
-                                : ""
-                        }`}
-                    />
-                </div>
-                <div className="mt-4 w-full text-right flex justify-end">
-                    <span>Dont have an account?</span>
-                    <CustomButton
-                        label="Register"
-                        type="button"
-                        className="authHaveAnAccount"
-                        labelClassName="hover:underline underline-offset-4"
-                        onClick={() => router.push("/register")}
-                    />
-                </div>
-            </form>
+                    <h1 className="text-2xl">Log in</h1>
+
+                    <div
+                        className={`w-full relative transition duration-200 flex flex-col items-center`}
+                    >
+                        <FormMessage
+                            formMessages={formMessages}
+                            messageToMatch={loggingInMessage}
+                            showFormMessages={showFormMessages}
+                        />
+                        <CustomTextInput
+                            id="email"
+                            type="email"
+                            label="Email"
+                            name="email"
+                            className={`customTextInput ${
+                                showFormMessages
+                                    ? "pointer-events-none opacity-50"
+                                    : ""
+                            }`}
+                            defaultValue={"bernardcooley@gmail.com"}
+                            inputClassName="bg-transparent"
+                            ref={emailRef}
+                            errorMessages={getErrorMessages(errors, "email")}
+                        />
+                        <CustomTextInput
+                            className={`customTextInput ${
+                                showFormMessages
+                                    ? "pointer-events-none opacity-50"
+                                    : ""
+                            }`}
+                            type="password"
+                            id="password"
+                            label="Password"
+                            name="password"
+                            defaultValue={"Yeloocc1"}
+                            inputClassName="bg-transparent"
+                            ref={passwordRef}
+                            errorMessages={getErrorMessages(errors, "password")}
+                        />
+                        <CustomButton
+                            label="Log in"
+                            type="submit"
+                            className={`authButton ${
+                                showFormMessages
+                                    ? "pointer-events-none opacity-50"
+                                    : ""
+                            }`}
+                        />
+                    </div>
+                    <div className="mt-4 w-full text-right flex justify-end">
+                        <span>Dont have an account?</span>
+                        <CustomButton
+                            label="Register"
+                            type="button"
+                            className="authHaveAnAccount"
+                            labelClassName="hover:underline underline-offset-4"
+                            onClick={() => router.push("/register")}
+                        />
+                    </div>
+                </form>
+            </div>
         </div>
     );
 };
