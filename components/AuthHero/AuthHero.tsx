@@ -42,9 +42,9 @@ const AuthHero = () => {
     });
 
     return (
-        <div className="text-white flex-col items-center justify-center flex-1 h-full flex">
+        <div className="text-white relative rounded-xl flex-col items-center justify-center flex-1 h-full flex">
             <h1 className="text-5xl mb-10">Studio Socket</h1>
-            <div className="images flex flex-1 flex-wrap justify-center text-2xl p-12">
+            <div className="overflow-hidden max-h-full images flex flex-1 flex-wrap justify-center text-2xl p-12">
                 {renderComponents.map((component) => (
                     <div className="flex-1 basis-1" key={component.key}>
                         {component.component}

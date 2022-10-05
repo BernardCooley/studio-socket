@@ -25,8 +25,8 @@ const SketchImage = ({ image, rotateClasses, yClasses, xClasses }: Props) => {
     return (
         <div
             key={image.name}
-            className={`m-8 relative ${
-                image.name === "pedal" ? "w-9 2xl:w-20" : "w-24 2xl:w-40"
+            className={`m-4 relative ${
+                image.name === "pedal" ? "w-9 2xl:w-20" : "w-28 2xl:w-40"
             } ${rotateClass} ${yClass} ${xClass}`}
         >
             <Image

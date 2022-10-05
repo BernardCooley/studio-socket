@@ -4,7 +4,6 @@ import deck from "../../public/assets/images/deck_sketch.png";
 import headphones from "../../public/assets/images/headphones_sketch.png";
 import interfaceSketch from "../../public/assets/images/interface_sketch.png";
 import mixer from "../../public/assets/images/mixer_sketch.png";
-import pedal from "../../public/assets/images/pedal_sketch.png";
 import speakers from "../../public/assets/images/speakers_sketch.png";
 
 // TODO Optimise images
@@ -39,16 +38,12 @@ export const Components = [
         data: { name: "interfaceSketch", image: interfaceSketch },
     },
     {
-        type: "sketchImage",
-        data: { name: "mixer", image: mixer },
-    },
-    {
         type: "textSnippet",
         data: "Get inspired by studios from the community",
     },
     {
         type: "sketchImage",
-        data: { name: "pedal", image: pedal },
+        data: { name: "mixer", image: mixer },
     },
     {
         type: "sketchImage",
@@ -75,8 +70,6 @@ export const yClasses = [
     "top-1 2xl:top-6",
     "top-2 2xl:top-7",
     "top-3 2xl:top-8",
-    "top-4 2xl:top-9",
-    "top-5 2xl:top-10",
     "bottom-0 2xl:bottom-0",
     "bottom-1 2xl:bottom-1",
     "bottom-2 2xl:bottom-2",
@@ -86,8 +79,6 @@ export const yClasses = [
     "bottom-1 2xl:bottom-6",
     "bottom-2 2xl:bottom-7",
     "bottom-3 2xl:bottom-8",
-    "bottom-4 2xl:bottom-9",
-    "bottom-5 2xl:bottom-10",
 ];
 export const xClasses = [
     "left-0 2xl:left-0",
@@ -99,8 +90,6 @@ export const xClasses = [
     "left-1 2xl:left-6",
     "left-2 2xl:left-7",
     "left-3 2xl:left-8",
-    "left-4 2xl:left-9",
-    "left-5 2xl:left-10",
     "right-0 2xl:right-0",
     "right-1 2xl:right-1",
     "right-2 2xl:right-2",
@@ -110,6 +99,4 @@ export const xClasses = [
     "right-1 2xl:right-6",
     "right-2 2xl:right-7",
     "right-3 2xl:right-8",
-    "right-4 2xl:right-9",
-    "right-5 2xl:right-10",
 ];
