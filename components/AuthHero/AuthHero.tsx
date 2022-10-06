@@ -1,7 +1,6 @@
 import React from "react";
 import SketchImage from "../AuthImage";
-import AuthTextSnippet from "../AuthTextSnippet";
-import { Components, rotateClasses, xClasses, yClasses } from "./data";
+import { Components, rotateClasses } from "./data";
 
 interface Component {
     key: string;
@@ -9,47 +8,54 @@ interface Component {
 }
 
 const AuthHero = () => {
-    const getComponent = (type: string, data: any): Component => {
-        if (type === "sketchImage") {
-            return {
-                key: data.name,
-                component: (
-                    <SketchImage
-                        image={data}
-                        rotateClasses={rotateClasses}
-                        yClasses={yClasses}
-                        xClasses={xClasses}
-                    />
-                ),
-            };
-        }
-
+    const getComponent = (data: any): Component => {
         return {
-            key: data,
+            key: data.name,
             component: (
-                <AuthTextSnippet
-                    content={data}
-                    rotateClasses={rotateClasses}
-                    yClasses={yClasses}
-                    xClasses={xClasses}
-                />
+                <SketchImage image={data} rotateClasses={rotateClasses} />
             ),
         };
     };
 
     const renderComponents = Components.map((comp): Component => {
-        return getComponent(comp.type, comp.data);
+        return getComponent(comp.data);
     });
 
     return (
-        <div className="text-white relative rounded-xl flex-col items-center justify-center flex-1 h-full flex">
+        <div className="text-white relative flex-col items-center justify-center flex-1 h-full flex">
             <h1 className="text-5xl mb-10">Studio Socket</h1>
-            <div className="overflow-hidden max-h-full images flex flex-1 flex-wrap justify-center text-2xl p-12">
-                {renderComponents.map((component) => (
-                    <div className="flex-1 basis-1" key={component.key}>
-                        {component.component}
+            <div className="rounded-3xl w-full h-full p-10 bg-woodFloor bg-full overflow-hidden shadow-black shadow-2xl">
+                <div className="flex flex-col justify-between h-full">
+                    <p className="leading-10 text-xl z-10">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit
+                        anim id est laborum.
+                    </p>
+                    <div className="my-5 bg-table bg-cover h-48 rounded-full flex justify-around items-center z-10 shadow-black shadow-2xl">
+                        {renderComponents.map((component) => (
+                            <div className="scale-85" key={component.key}>
+                                {component.component}
+                            </div>
+                        ))}
                     </div>
-                ))}
+                    <p className="leading-10 text-xl z-10">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit
+                        anim id est laborum.
+                    </p>
+                </div>
             </div>
         </div>
     );
