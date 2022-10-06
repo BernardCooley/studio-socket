@@ -1,24 +1,36 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import SketchImage from "../AuthImage";
-import { Components, rotateClasses } from "./data";
-
-interface Component {
-    key: string;
-    component: JSX.Element;
-}
+import { ImageData, rotateClasses } from "./data";
+import { useFirebaseImages } from "../../hooks/useFirebaseImages";
+import { ISketchImages } from "../../types";
 
 const AuthHero = () => {
-    const getComponent = (data: any): Component => {
-        return {
-            key: data.name,
-            component: (
-                <SketchImage image={data} rotateClasses={rotateClasses} />
-            ),
-        };
-    };
+    const { images } = useFirebaseImages("sketches");
+    const [componentsWithImage, setComponentsWithImage] = useState<
+        ISketchImages[]
+    >([]);
 
-    const renderComponents = Components.map((comp): Component => {
-        return getComponent(comp.data);
+    useEffect(() => {
+        if (images && images.length > 0) {
+            const imgs = ImageData.map((imageData) => {
+                imageData.image = images.filter(
+                    (image) => image.name === imageData.name
+                )[0];
+                return imageData;
+            });
+
+            setComponentsWithImage(imgs);
+        }
+    }, [images]);
+
+    const RenderImages = componentsWithImage.map((component): JSX.Element => {
+        return (
+            <SketchImage
+                key={component.name}
+                image={component}
+                rotateClasses={rotateClasses}
+            />
+        );
     });
 
     return (
@@ -38,9 +50,9 @@ const AuthHero = () => {
                         anim id est laborum.
                     </p>
                     <div className="my-5 bg-table bg-cover h-48 rounded-full flex justify-around items-center z-10 shadow-black shadow-2xl">
-                        {renderComponents.map((component) => (
-                            <div className="scale-85" key={component.key}>
-                                {component.component}
+                        {RenderImages.map((image) => (
+                            <div className="scale-85 h-28" key={image.key}>
+                                {image}
                             </div>
                         ))}
                     </div>

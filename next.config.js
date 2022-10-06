@@ -1,3 +1,5 @@
+const withImages = require("next-images");
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     reactStrictMode: true,
@@ -14,3 +16,12 @@ const nextConfig = {
 };
 
 module.exports = nextConfig;
+
+module.exports = withImages({
+    inlineImageLimit: 0,
+    webpack(config, options) {
+        return config;
+    },
+});
+
+module.exports = { images: { domains: ["firebasestorage.googleapis.com"] } };

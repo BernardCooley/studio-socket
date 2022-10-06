@@ -1,13 +1,8 @@
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import React, { useState } from "react";
-
+import { ISketchImages } from "../types";
 interface Props {
-    image: {
-        name: string;
-        image: StaticImageData;
-        width: string;
-        top?: string;
-    };
+    image: ISketchImages;
     rotateClasses: string[];
 }
 
@@ -19,15 +14,15 @@ const SketchImage = ({ image, rotateClasses }: Props) => {
     return (
         <div
             key={image.name}
-            className={`m-4 relative ${image.width} ${image.top} ${
+            className={`m-4 h-full relative ${image.width} ${image.top} ${
                 image.name !== "speakers" && rotateClass
             }`}
         >
             <Image
                 objectFit="contain"
-                src={image.image}
+                src={image.image.url}
                 alt=""
-                layout="responsive"
+                layout="fill"
                 className=""
             ></Image>
         </div>

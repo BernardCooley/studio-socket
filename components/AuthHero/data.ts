@@ -1,58 +1,74 @@
-import rytm from "../../public/assets/images/rytm_sketch.png";
-import synth from "../../public/assets/images/synth_sketch.png";
-import deck from "../../public/assets/images/deck_sketch.png";
-import headphones from "../../public/assets/images/headphones_sketch.png";
-import interfaceSketch from "../../public/assets/images/interface_sketch.png";
-import mixer from "../../public/assets/images/mixer_sketch.png";
-import speakers from "../../public/assets/images/speakers_sketch.png";
-
-// TODO Optimise images
-
-export const Components = [
+export const ImageData = [
     {
-        type: "sketchImage",
-        data: {
-            name: "speakers",
-            image: speakers,
-            width: "w-16",
-            top: "-top-16",
+        name: "speakers_sketch",
+        width: "w-16",
+        top: "-top-16",
+        image: {
+            name: "speakers_sketch",
+            url: "",
         },
     },
     {
-        type: "sketchImage",
-        data: { name: "rytm", image: rytm, width: "w-28" },
-    },
-    {
-        type: "sketchImage",
-        data: { name: "synth", image: synth, width: "w-36" },
-    },
-    {
-        type: "sketchImage",
-        data: { name: "deck", image: deck, width: "w-36" },
-    },
-    {
-        type: "sketchImage",
-        data: { name: "headphones", image: headphones, width: "w-16" },
-    },
-    {
-        type: "sketchImage",
-        data: {
-            name: "interfaceSketch",
-            image: interfaceSketch,
-            width: "w-24",
+        name: "rytm_sketch",
+        width: "w-28",
+        image: {
+            name: "rytm_sketch",
+            url: "",
         },
+        top: "",
     },
     {
-        type: "sketchImage",
-        data: { name: "mixer", image: mixer, width: "w-28" },
+        name: "synth_sketch",
+        width: "w-36",
+        image: {
+            name: "synth_sketch",
+            url: "",
+        },
+        top: "",
     },
     {
-        type: "sketchImage",
-        data: {
-            name: "speakers",
-            image: speakers,
-            width: "w-16",
-            top: "-top-16",
+        name: "deck_sketch",
+        width: "w-36",
+        image: {
+            name: "deck_sketch",
+            url: "",
+        },
+        top: "",
+    },
+    {
+        name: "headphones_sketch",
+        width: "w-16",
+        image: {
+            name: "headphones_sketch",
+            url: "",
+        },
+        top: "",
+    },
+    {
+        name: "interface_sketch",
+        width: "w-24",
+        image: {
+            name: "interface_sketch",
+            url: "",
+        },
+        top: "",
+    },
+    {
+        name: "mixer_sketch",
+        width: "w-28",
+        image: {
+            name: "mixer_sketch",
+            url: "",
+        },
+        top: "",
+    },
+    {
+        name: "speakers_sketch",
+        width: "w-16",
+        top: "-top-16",
+        image: {
+            name: "speakers_sketch",
+            url: "",
         },
     },
 ];

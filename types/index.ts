@@ -1132,3 +1132,15 @@ export const getDeviceWithInterface = (types: String[], device: any) => {
     if (types.includes("Sequencer")) return device as ISequencer;
     return device;
 };
+
+export interface IFirebaseImage {
+    name: string;
+    url: string;
+}
+
+export interface ISketchImages {
+    name: string;
+    width: string;
+    top: string;
+    image: IFirebaseImage;
+}
