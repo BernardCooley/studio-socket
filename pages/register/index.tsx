@@ -44,15 +44,24 @@ const Register = ({}: Props) => {
 
         if (validate() && errors.length === 0) {
             setSubmitButtonDisabled(true);
-            try {
-                await register(
-                    emailRef.current?.value,
-                    passwordRef.current?.value
-                );
-                clearMessages();
-                router.push("/devices");
-            } catch (err: any) {
-                setFormMessages(generateFormMessages(err.code, formMessages));
+
+            if (
+                emailRef.current &&
+                passwordRef.current &&
+                repeatPasswordRef.current
+            ) {
+                try {
+                    await register(
+                        emailRef.current.value,
+                        passwordRef.current.value
+                    );
+                    clearMessages();
+                    router.push("/devices");
+                } catch (err: any) {
+                    setFormMessages(
+                        generateFormMessages(err.code, formMessages)
+                    );
+                }
             }
         }
     };
