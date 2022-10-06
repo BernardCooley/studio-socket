@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             {user?.uid && noAuthRequired.includes(router.pathname) ? (
                 <Component {...pageProps} />
             ) : (
-                <ProtectedRoute user={user}>
+                <ProtectedRoute>
                     <Component {...pageProps} />
                 </ProtectedRoute>
             )}
