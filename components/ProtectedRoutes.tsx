@@ -1,22 +1,7 @@
-import { useRouter } from "next/router";
-import React, { ReactNode, useEffect } from "react";
-import { useAuth } from "../contexts/AuthContext";
+import React from "react";
 
-const ProtectedRoute = ({ children }: { children: ReactNode }) => {
-    const { user } = useAuth();
-    const router = useRouter();
-
-    useEffect(() => {
-        if (
-            !user.uid &&
-            router.pathname !== "/login" &&
-            router.pathname !== "/register"
-        ) {
-            router.push("/login");
-        }
-    }, [router, user]);
-
-    return <>{user ? children : null}</>;
+const ProtectedRoute = () => {
+    return <></>;
 };
 
 export default ProtectedRoute;
