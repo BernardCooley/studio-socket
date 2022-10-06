@@ -10,6 +10,19 @@ body {
         Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+body {
+    display: table;
+    width: 100%;
+    background: #4e54c8;
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+    background: url("../public/assets/backgrounds/modular-side-dark.jpg");
+    background-size: cover;
+    color: #000;
+    line-height: 1.6;
+    position: relative;
+    font-family: sans-serif;
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -30,15 +43,15 @@ a {
 }
 
 .authBakcground {
-    @apply bg-auth bg-cover relative;
+    @apply relative;
 }
 
 .authContainer {
-    @apply relative flex justify-center items-stretch p-4 py-16 px-10 gap-10 bg-slate-500 bg-opacity-50;
+    @apply relative flex justify-center items-stretch p-4 py-16 px-10 gap-10 bg-slate-500 bg-opacity-50 h-screen;
 }
 
 .authForm {
-    @apply relative w-full lg:w-2/6 flex justify-between flex-col border rounded-lg p-3 sm:p-10 shadow-lg items-center place-self-auto bg-slate-100 overflow-y-auto;
+    @apply relative w-full lg:w-2/6 flex justify-between flex-col border rounded-lg p-3 sm:p-10 items-center place-self-auto bg-slate-100 overflow-y-auto shadow-black shadow-2xl;
 }
 
 .authButton {

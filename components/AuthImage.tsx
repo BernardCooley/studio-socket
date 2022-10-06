@@ -9,19 +9,11 @@ interface Props {
         top?: string;
     };
     rotateClasses: string[];
-    yClasses: string[];
-    xClasses: string[];
 }
 
-const SketchImage = ({ image, rotateClasses, yClasses, xClasses }: Props) => {
+const SketchImage = ({ image, rotateClasses }: Props) => {
     const [rotateClass, setRotateClass] = useState<string>(
         rotateClasses[Math.floor(Math.random() * rotateClasses.length)]
-    );
-    const [yClass, setyClass] = useState<string>(
-        yClasses[Math.floor(Math.random() * yClasses.length)]
-    );
-    const [xClass, setxClass] = useState<string>(
-        xClasses[Math.floor(Math.random() * xClasses.length)]
     );
 
     return (

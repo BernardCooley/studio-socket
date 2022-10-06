@@ -7,6 +7,7 @@ import { generateFormMessages, RegisterFormSchema } from "../../formValidation";
 import { getErrorMessages } from "../../utils";
 import FormMessage from "../../components/FormMessage";
 import AuthHero from "../../components/AuthHero/AuthHero";
+import LineBackground from "../../components/LineBackground/LineBackground";
 
 interface Props {}
 
@@ -78,6 +79,7 @@ const Register = ({}: Props) => {
 
     return (
         <div className="authBakcground">
+            <LineBackground />
             <div className="authContainer">
                 <AuthHero />
                 <form
@@ -136,7 +138,7 @@ const Register = ({}: Props) => {
                         />
                     </div>
                     <div className="mt-4 w-full text-right flex justify-end">
-                        <span>Already have an account?</span>
+                        <span>Already registered?</span>
                         <CustomButton
                             label="Log in"
                             type="button"

@@ -7,6 +7,7 @@ import { generateFormMessages, LoginFormSchema } from "../../formValidation";
 import { getErrorMessages } from "../../utils";
 import FormMessage from "../../components/FormMessage";
 import AuthHero from "../../components/AuthHero/AuthHero";
+import LineBackground from "../../components/LineBackground/LineBackground";
 
 interface Props {}
 
@@ -76,6 +77,7 @@ const Login = ({}: Props) => {
 
     return (
         <div className="authBakcground">
+            <LineBackground />
             <div className="authContainer">
                 <AuthHero />
                 <form
@@ -135,7 +137,7 @@ const Login = ({}: Props) => {
                         />
                     </div>
                     <div className="mt-4 w-full text-right flex justify-end">
-                        <span>Dont have an account?</span>
+                        <span>Not registered?</span>
                         <CustomButton
                             label="Register"
                             type="button"
