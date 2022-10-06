@@ -11,43 +11,49 @@ import speakers from "../../public/assets/images/speakers_sketch.png";
 export const Components = [
     {
         type: "sketchImage",
-        data: { name: "rytm", image: rytm },
-    },
-    {
-        type: "textSnippet",
-        data: "Create your own virtual studios",
-    },
-    {
-        type: "sketchImage",
-        data: { name: "synth", image: synth },
+        data: {
+            name: "speakers",
+            image: speakers,
+            width: "w-16",
+            top: "-top-16",
+        },
     },
     {
         type: "sketchImage",
-        data: { name: "deck", image: deck },
+        data: { name: "rytm", image: rytm, width: "w-28" },
     },
     {
         type: "sketchImage",
-        data: { name: "headphones", image: headphones },
-    },
-    {
-        type: "textSnippet",
-        data: "Share your studios with the community",
+        data: { name: "synth", image: synth, width: "w-36" },
     },
     {
         type: "sketchImage",
-        data: { name: "interfaceSketch", image: interfaceSketch },
-    },
-    {
-        type: "textSnippet",
-        data: "Get inspired by studios from the community",
+        data: { name: "deck", image: deck, width: "w-36" },
     },
     {
         type: "sketchImage",
-        data: { name: "mixer", image: mixer },
+        data: { name: "headphones", image: headphones, width: "w-16" },
     },
     {
         type: "sketchImage",
-        data: { name: "speakers", image: speakers },
+        data: {
+            name: "interfaceSketch",
+            image: interfaceSketch,
+            width: "w-24",
+        },
+    },
+    {
+        type: "sketchImage",
+        data: { name: "mixer", image: mixer, width: "w-28" },
+    },
+    {
+        type: "sketchImage",
+        data: {
+            name: "speakers",
+            image: speakers,
+            width: "w-16",
+            top: "-top-16",
+        },
     },
 ];
 
@@ -58,45 +64,4 @@ export const rotateClasses = [
     "rotate-3",
     "rotate-6",
     "rotate-12",
-];
-
-export const yClasses = [
-    "top-0 2xl:top-0",
-    "top-1 2xl:top-1",
-    "top-2 2xl:top-2",
-    "top-3 2xl:top-3",
-    "top-4 2xl:top-4",
-    "top-0 2xl:top-5",
-    "top-1 2xl:top-6",
-    "top-2 2xl:top-7",
-    "top-3 2xl:top-8",
-    "bottom-0 2xl:bottom-0",
-    "bottom-1 2xl:bottom-1",
-    "bottom-2 2xl:bottom-2",
-    "bottom-3 2xl:bottom-3",
-    "bottom-4 2xl:bottom-4",
-    "bottom-0 2xl:bottom-5",
-    "bottom-1 2xl:bottom-6",
-    "bottom-2 2xl:bottom-7",
-    "bottom-3 2xl:bottom-8",
-];
-export const xClasses = [
-    "left-0 2xl:left-0",
-    "left-1 2xl:left-1",
-    "left-2 2xl:left-2",
-    "left-3 2xl:left-3",
-    "left-4 2xl:left-4",
-    "left-0 2xl:left-5",
-    "left-1 2xl:left-6",
-    "left-2 2xl:left-7",
-    "left-3 2xl:left-8",
-    "right-0 2xl:right-0",
-    "right-1 2xl:right-1",
-    "right-2 2xl:right-2",
-    "right-3 2xl:right-3",
-    "right-4 2xl:right-4",
-    "right-0 2xl:right-5",
-    "right-1 2xl:right-6",
-    "right-2 2xl:right-7",
-    "right-3 2xl:right-8",
 ];

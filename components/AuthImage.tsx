@@ -5,6 +5,8 @@ interface Props {
     image: {
         name: string;
         image: StaticImageData;
+        width: string;
+        top?: string;
     };
     rotateClasses: string[];
     yClasses: string[];
@@ -25,9 +27,9 @@ const SketchImage = ({ image, rotateClasses, yClasses, xClasses }: Props) => {
     return (
         <div
             key={image.name}
-            className={`m-4 relative ${
-                image.name === "pedal" ? "w-9 2xl:w-20" : "w-28 2xl:w-40"
-            } ${rotateClass} ${yClass} ${xClass}`}
+            className={`m-4 relative ${image.width} ${image.top} ${
+                image.name !== "speakers" && rotateClass
+            }`}
         >
             <Image
                 objectFit="contain"
