@@ -74,8 +74,6 @@ export const AuthContextProvider = ({ children }: { children: ReactNode }) => {
         await signOut(auth);
     };
 
-    // TODO: Everything is expoerting as null
-
     return (
         <AuthContext.Provider
             value={{
