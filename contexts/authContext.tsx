@@ -20,18 +20,27 @@ interface User {
 }
 
 interface AuthContextProps {
-    user: User | object;
+    user: User;
     login: (email: string, password: string) => Promise<UserCredential>;
     register: (email: string, password: string) => Promise<UserCredential>;
     logout: () => Promise<void>;
 }
 
-export const AuthContext = createContext<AuthContextProps | object>({});
+export const AuthContext = createContext<AuthContextProps>({
+    user: { uid: "", email: "", displayName: "" },
+    login: () => new Promise(() => {}),
+    register: () => new Promise(() => {}),
+    logout: () => new Promise(() => {}),
+});
 
 export const useAuth = () => useContext(AuthContext);
 
 export const AuthContextProvider = ({ children }: { children: ReactNode }) => {
-    const [user, setUser] = useState<User | object>({});
+    const [user, setUser] = useState<User>({
+        uid: "",
+        email: "",
+        displayName: "",
+    });
 
     const [loading, setLoading] = useState(true);
 

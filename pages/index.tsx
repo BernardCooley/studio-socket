@@ -8,7 +8,7 @@ const Home: NextPage = () => {
 
     return (
         <div className={styles.container}>
-            {user ? <div>{user}</div> : <div>No user</div>}
+            {/* {user ? <div>{user}</div> : <div>No user</div>} */}
         </div>
     );
 };
