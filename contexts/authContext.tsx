@@ -52,8 +52,6 @@ export const AuthContextProvider = ({ children }: { children: ReactNode }) => {
                     email: user.email,
                     displayName: user.displayName,
                 });
-            } else {
-                setUser({});
             }
             setLoading(false);
         });
