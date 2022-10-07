@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import CustomTextInput from "../../components/CustomTextInput";
 import CustomButton from "../../components/CustomButton";
 import { generateFormMessages, LoginFormSchema } from "../../formValidation";
-import { getErrorMessages } from "../../utils";
+import { getErrorMessages, getRoute } from "../../utils";
 import FormMessage from "../../components/FormMessage";
 import AuthHero from "../../components/AuthHero/AuthHero";
 import LineBackground from "../../components/LineBackground/LineBackground";
@@ -53,7 +53,7 @@ const Login = ({}: Props) => {
                         passwordRef.current.value
                     );
                     clearMessages();
-                    router.push("/devices");
+                    router.push(getRoute("Dashboard").path);
                 } catch (err: any) {
                     setFormMessages(
                         generateFormMessages(err.code, formMessages)
@@ -83,7 +83,7 @@ const Login = ({}: Props) => {
     };
 
     return (
-        <div className="authBakcground" data-testid="login-page">
+        <div className="login authBakcground" data-testid="login-page">
             <LineBackground />
             <div className="authContainer">
                 <AuthHero />
