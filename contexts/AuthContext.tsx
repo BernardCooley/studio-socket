@@ -24,6 +24,7 @@ interface AuthContextProps {
     login: (email: string, password: string) => Promise<UserCredential>;
     register: (email: string, password: string) => Promise<UserCredential>;
     logout: () => Promise<void>;
+    isLoggedIn: boolean;
 }
 
 export const AuthContext = createContext<AuthContextProps>({
@@ -31,6 +32,7 @@ export const AuthContext = createContext<AuthContextProps>({
     login: () => new Promise(() => {}),
     register: () => new Promise(() => {}),
     logout: () => new Promise(() => {}),
+    isLoggedIn: false,
 });
 
 export const useAuth = () => useContext(AuthContext);
@@ -41,8 +43,9 @@ export const AuthContextProvider = ({ children }: { children: ReactNode }) => {
         email: "",
         displayName: "",
     });
+    const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
 
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState<boolean>(true);
 
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (user) => {
@@ -52,6 +55,7 @@ export const AuthContextProvider = ({ children }: { children: ReactNode }) => {
                     email: user.email,
                     displayName: user.displayName,
                 });
+                setIsLoggedIn(true);
             }
             setLoading(false);
         });
@@ -81,6 +85,7 @@ export const AuthContextProvider = ({ children }: { children: ReactNode }) => {
                 login,
                 register,
                 logout,
+                isLoggedIn,
             }}
         >
             {loading ? null : children}

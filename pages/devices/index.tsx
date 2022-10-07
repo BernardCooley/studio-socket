@@ -1,5 +1,5 @@
 import { Button } from "@mui/material";
-import React, { useEffect } from "react";
+import React from "react";
 import { useAuth } from "../../contexts/AuthContext";
 import router from "next/router";
 
@@ -7,8 +7,6 @@ interface Props {}
 
 const Devices = ({}: Props) => {
     const { logout } = useAuth();
-
-    useEffect(() => {}, []);
 
     const signOut = async () => {
         await logout();
