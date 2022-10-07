@@ -10,7 +10,7 @@ const FormMessage = ({ showFormMessages, formMessages }: Props) => {
         <>
             {showFormMessages && (
                 <div
-                    className={`absolute z-10 text-xl top-1/2 w-80 text-center bg-white p-2 rounded-lg border-2 drop-shadow-md text-red-500 border-red-500`}
+                    className={`absolute z-10 text-xl top-1/2 w-80 text-center bg-offWhite p-2 rounded-lg border-2 drop-shadow-md text-error border-error`}
                 >
                     {formMessages.map((message) => (
                         <div key={message}>{message}</div>

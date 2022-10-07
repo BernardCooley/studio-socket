@@ -34,7 +34,7 @@ const AuthHero = () => {
     });
 
     return (
-        <div className="text-white relative flex-col items-center justify-center flex-1 h-full flex">
+        <div className="text-offWhite relative flex-col items-center justify-center flex-1 h-full flex">
             <h1 className="text-5xl mb-10">Studio Socket</h1>
             <div className="rounded-3xl w-full h-full p-10 bg-woodFloor bg-full overflow-hidden shadow-black shadow-2xl">
                 <div className="flex flex-col justify-between h-full">

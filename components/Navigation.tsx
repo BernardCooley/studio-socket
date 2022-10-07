@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { routes } from "../routes";
 import {
     AccountCircleRounded,
@@ -11,13 +11,26 @@ import {
 import { getRoute } from "../utils";
 import { useAuth } from "../contexts/AuthContext";
 import useRouter from "next/router";
+import { useNavigationContext } from "../contexts/NavigationContext";
 
 interface Props {}
 
 const Navigation = ({}: Props) => {
     const router = useRouter;
     const { logout } = useAuth();
+    const { scrollPosition, scrollingDown } = useNavigationContext();
     const [showNav, setShowNav] = useState<boolean>(false);
+    const [navScrollClasses, setNavScrollClasses] = useState<string>("");
+
+    useEffect(() => {
+        setNavScrollClasses(getScrollClasses);
+    }, [scrollPosition]);
+
+    const getScrollClasses = () => {
+        if (scrollPosition < 50) return "translate-y-0";
+        if (scrollPosition > 50 && !scrollingDown) return "translate-y-0";
+        return "-translate-y-full";
+    };
 
     const signOut = async () => {
         toggleNav();
@@ -32,33 +45,35 @@ const Navigation = ({}: Props) => {
     return (
         <div
             className={`${
-                !showNav
-                    ? "w-10 md:w-full right-0 bg-transparent md:bg-red-500"
-                    : "w-full bg-red-500"
-            } fixed z-10 w-full h-auto md:h-16 p-10 md:p-0`}
+                showNav
+                    ? "w-full bg-primary shadow-dark"
+                    : "w-10 md:w-full right-0 bg-primary rounded-br-3xl md:bg-primary text-secondary shadow-dark"
+            } fixed realtive z-10 w-full h-auto md:h-16 p-10 md:p-0 shadow-secondary ease-in-out duration-500 left-0 ${navScrollClasses}`}
         >
-            <div
-                onClick={toggleNav}
-                className={`${
-                    showNav ? "block" : "hidden"
-                } absolute right-4 top-4 block md:hidden`}
-            >
-                <Close sx={{ fontSize: 40 }} />
-            </div>
+            <div>
+                <div
+                    onClick={toggleNav}
+                    className={`${
+                        showNav ? "block" : "hidden"
+                    } absolute right-4 top-4 block md:hidden hover:cursor-pointer`}
+                >
+                    <Close sx={{ fontSize: 40 }} />
+                </div>
 
-            <div
-                onClick={toggleNav}
-                className={`${
-                    !showNav ? "block" : "hidden"
-                } absolute right-4 top-4 block md:hidden`}
-            >
-                <Menu sx={{ fontSize: 40 }} />
+                <div
+                    onClick={toggleNav}
+                    className={`${
+                        !showNav ? "block" : "hidden"
+                    } absolute right-5 top-5 block md:hidden hover:cursor-pointer`}
+                >
+                    <Menu sx={{ fontSize: 40 }} />
+                </div>
             </div>
 
             <ul
                 className={`${
                     !showNav ? "h-0 md:h-full" : "h-72 md:h-full"
-                } list-none flex justify-start items-start md:items-center text-xl ml-0 md:ml-10 flex-col md:flex-row ease-in-out duration-200 overflow-hidden`}
+                } list-none flex justify-start items-start md:items-center text-xl ml-0 md:pl-8 flex-col md:flex-row ease-in-out duration-200 overflow-hidden`}
             >
                 {routes.map((route) => {
                     if (route.protected && route.showInNav) {

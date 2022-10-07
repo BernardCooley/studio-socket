@@ -29,15 +29,15 @@ const PasswordInput = forwardRef(
 
         return (
             <div className={`customInput flex flex-col-reverse ${className}`}>
-                <div className="text-red-500 text-sm min-h-val">
+                <div className="text-error text-sm min-h-val">
                     {errorMessages.length > 0 &&
                         errorMessages.map((error) => (
                             <div key={JSON.stringify(error)}>{error}</div>
                         ))}
                 </div>
                 <input
-                    className={`peer h-10 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none leading-10 ${inputClassName} ${
-                        errorMessages.length > 0 ? "border-red-500" : ""
+                    className={`peer h-10 w-full border-b-2 border-gray-300 text-secondary focus:outline-none leading-10 ${inputClassName} ${
+                        errorMessages.length > 0 ? "border-error" : ""
                     }`}
                     type={type}
                     name={name}
@@ -50,8 +50,8 @@ const PasswordInput = forwardRef(
                 <label
                     className={`transition top-0 relative peer-placeholder-shown:text-transparent peer-placeholder-shown:top-7 ${
                         errorMessages.length > 0
-                            ? "text-red-500"
-                            : "text-slate-500"
+                            ? "text-error"
+                            : "text-formLabel"
                     }`}
                     htmlFor={id}
                 >

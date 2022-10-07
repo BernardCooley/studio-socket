@@ -29,7 +29,7 @@ const ProtectedRoute = ({ children }: Props) => {
             {isLoggedIn && (
                 <div>
                     <Navigation />
-                    <div className="p-8 pt-12 md:pt-24 h-full relative border bg-white">
+                    <div className="p-8 pt-12 md:pt-24 h-full relative border bg-offWhite scroll-smooth">
                         {children}
                     </div>
                 </div>

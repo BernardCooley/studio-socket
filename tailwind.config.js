@@ -18,11 +18,21 @@ module.exports = {
             minHeight: {
                 val: "40px",
             },
-            shadow: {
-                dark: "0 25px 50px -12px rgb(0 0 0 / 0.95)",
+            boxShadow: {
+                dark: "-1px 9px 30px 0px rgba(0,0,0,0.32)",
             },
             scale: {
                 85: ".85",
+            },
+            colors: {
+                primary: "#94a3b8",
+                secondary: "#111827",
+                offWhite: "#f8fafc",
+                error: "#ef4444",
+                formLabel: "#64748b",
+            },
+            backgroundColor: {
+                primaryOpaque: "rgba(148,163,184,0.65)",
             },
         },
     },
