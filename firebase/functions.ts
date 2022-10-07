@@ -5,9 +5,11 @@ import {
     query,
     where,
     WhereFilterOp,
+    limit,
 } from "firebase/firestore";
 import { getDownloadURL, getStorage, listAll, ref } from "firebase/storage";
 import { IFirebaseImage } from "../types";
+import { devicesRef } from "./firebaseRefs";
 
 export const getDocumentsWhere = async (
     collectionRef: CollectionReference<DocumentData>,
@@ -51,4 +53,20 @@ export const getFirebaseImages = async (
     } catch (e) {
         console.log(e);
     }
+};
+
+export const getFirebaseDevices = async (
+    amount: number = 0
+): Promise<DocumentData[] | null> => {
+    const q = query(devicesRef, limit(amount));
+
+    try {
+        const data = await getDocs(q);
+        const docs = data.docs.map((doc) => doc.data());
+        return docs;
+    } catch (e) {
+        console.log(e);
+    }
+
+    return null;
 };
