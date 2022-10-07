@@ -23,6 +23,8 @@ const Register = ({}: Props) => {
     const [submitButtonDisabled, setSubmitButtonDisabled] =
         useState<boolean>(false);
 
+    const isProduction = process.env.NODE_ENV === "production";
+
     useEffect(() => {
         if (formMessages.length > 0) {
             setShowFormMessages(true);
@@ -111,7 +113,9 @@ const Register = ({}: Props) => {
                             className="customTextInput"
                             inputClassName="bg-transparent"
                             ref={emailRef}
-                            defaultValue="bernardcooley@gmail.com"
+                            defaultValue={
+                                !isProduction ? "bernardcooley@gmail.com" : ""
+                            }
                             errorMessages={getErrorMessages(errors, "email")}
                         />
                         <CustomTextInput
@@ -122,7 +126,7 @@ const Register = ({}: Props) => {
                             name="password"
                             inputClassName="bg-transparent"
                             ref={passwordRef}
-                            defaultValue="Yeloocc1"
+                            defaultValue={!isProduction ? "Yeloocc1" : ""}
                             errorMessages={getErrorMessages(errors, "password")}
                         />
                         <CustomTextInput
@@ -133,7 +137,7 @@ const Register = ({}: Props) => {
                             name="repeatPassword"
                             inputClassName="bg-transparent"
                             ref={repeatPasswordRef}
-                            defaultValue="Yeloocc1"
+                            defaultValue={!isProduction ? "Yeloocc1" : ""}
                             errorMessages={getErrorMessages(
                                 errors,
                                 "repeatPassword"

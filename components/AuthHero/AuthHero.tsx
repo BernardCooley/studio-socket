@@ -1,33 +1,33 @@
 import React, { useEffect, useState } from "react";
 import SketchImage from "../AuthImage";
-import { ImageData, rotateClasses } from "./data";
+import { ImageProps, rotateClasses } from "./imageProps";
 import { useFirebaseImages } from "../../hooks/useFirebaseImages";
 import { ISketchImages } from "../../types";
 
 const AuthHero = () => {
     const { images } = useFirebaseImages("sketches");
-    const [componentsWithImage, setComponentsWithImage] = useState<
+    const [ImagePropsWithImage, setImagePropsWithImage] = useState<
         ISketchImages[]
     >([]);
 
     useEffect(() => {
         if (images && images.length > 0) {
-            const imgs = ImageData.map((imageData) => {
-                imageData.image = images.filter(
-                    (image) => image.name === imageData.name
+            const imgs = ImageProps.map((imageProps) => {
+                imageProps.image = images.filter(
+                    (image) => image.name === imageProps.name
                 )[0];
-                return imageData;
+                return imageProps;
             });
 
-            setComponentsWithImage(imgs);
+            setImagePropsWithImage(imgs);
         }
     }, [images]);
 
-    const RenderImages = componentsWithImage.map((component): JSX.Element => {
+    const RenderImages = ImagePropsWithImage.map((imageProps): JSX.Element => {
         return (
             <SketchImage
-                key={component.name}
-                image={component}
+                key={imageProps.name}
+                image={imageProps}
                 rotateClasses={rotateClasses}
             />
         );

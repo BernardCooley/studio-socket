@@ -22,6 +22,8 @@ const Login = ({}: Props) => {
     const [submitButtonDisabled, setSubmitButtonDisabled] =
         useState<boolean>(false);
 
+    const isProduction = process.env.NODE_ENV === "production";
+
     useEffect(() => {
         if (formMessages.length > 0) {
             setShowFormMessages(true);
@@ -110,7 +112,9 @@ const Login = ({}: Props) => {
                                     ? "pointer-events-none opacity-50"
                                     : ""
                             }`}
-                            defaultValue={"bernardcooley@gmail.com"}
+                            defaultValue={
+                                !isProduction ? "bernardcooley@gmail.com" : ""
+                            }
                             inputClassName="bg-transparent"
                             ref={emailRef}
                             errorMessages={getErrorMessages(errors, "email")}
@@ -125,7 +129,7 @@ const Login = ({}: Props) => {
                             id="password"
                             label="Password"
                             name="password"
-                            defaultValue={"Yeloocc1"}
+                            defaultValue={!isProduction ? "Yeloocc1" : ""}
                             inputClassName="bg-transparent"
                             ref={passwordRef}
                             errorMessages={getErrorMessages(errors, "password")}

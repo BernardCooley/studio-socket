@@ -2,9 +2,12 @@ import { useState, useEffect } from "react";
 import { getDownloadURL, getStorage, listAll, ref } from "firebase/storage";
 import { IFirebaseImage } from "../types";
 
-export const useFirebaseImages = (folderName: string) => {
+export const useFirebaseImages = (
+    folderName: string,
+    fileName: string = ""
+) => {
     const storage = getStorage();
-    const pathReference = ref(storage, folderName);
+    const pathReference = ref(storage, `${folderName}/${fileName}`);
     const [images, setImages] = useState<IFirebaseImage[]>([]);
 
     useEffect(() => {
@@ -17,7 +20,11 @@ export const useFirebaseImages = (folderName: string) => {
         const imageRefs = await listAll(pathReference);
         const imageData = await Promise.all(
             imageRefs.items.map(async (imageRef) => {
-                const name = imageRef.name.replace(".PNG", "");
+                const name = imageRef.name
+                    .toLocaleLowerCase()
+                    .replace(".png", "")
+                    .replace(".jpg", "")
+                    .replace(".jpeg", "");
                 const url = await getDownloadURL(imageRef);
 
                 return {

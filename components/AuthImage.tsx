@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React, { useState } from "react";
+import React from "react";
 import { ISketchImages } from "../types";
 interface Props {
     image: ISketchImages;
@@ -7,9 +7,8 @@ interface Props {
 }
 
 const SketchImage = ({ image, rotateClasses }: Props) => {
-    const [rotateClass, setRotateClass] = useState<string>(
-        rotateClasses[Math.floor(Math.random() * rotateClasses.length)]
-    );
+    const rotateClass =
+        rotateClasses[Math.floor(Math.random() * rotateClasses.length)];
 
     return (
         <div

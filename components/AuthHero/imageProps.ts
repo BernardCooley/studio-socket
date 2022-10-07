@@ -1,4 +1,4 @@
-export const ImageData = [
+export const ImageProps = [
     {
         name: "speakers_sketch",
         width: "w-16",
