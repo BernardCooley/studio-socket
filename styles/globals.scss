@@ -47,11 +47,11 @@ a {
 }
 
 .authContainer {
-    @apply relative flex justify-center items-stretch p-4 py-16 px-10 gap-10 bg-opacity-50 h-screen;
+    @apply relative flex justify-center py-16 px-4 lg:px-10 pt-0 gap-10 bg-opacity-50;
 }
 
 .authForm {
-    @apply relative w-full lg:w-2/6 flex justify-between flex-col border rounded-lg p-3 sm:p-10 items-center place-self-auto bg-offWhite overflow-y-auto shadow-black shadow-2xl;
+    @apply h-rem44 relative flex justify-between flex-col border rounded-lg p-3 sm:p-10 items-center bg-offWhite overflow-y-auto shadow-black shadow-2xl;
 }
 
 .authButton {

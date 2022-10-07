@@ -18,6 +18,9 @@ module.exports = {
             minHeight: {
                 val: "40px",
             },
+            height: {
+                rem44: "44rem",
+            },
             boxShadow: {
                 dark: "-1px 9px 30px 0px rgba(0,0,0,0.32)",
             },

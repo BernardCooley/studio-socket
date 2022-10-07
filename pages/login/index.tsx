@@ -87,11 +87,16 @@ const Login: NextPage<any> = ({ images }: Props) => {
     return (
         <div className="login authBakcground" data-testid="login-page">
             <LineBackground />
-            <div className="authContainer">
-                <AuthHero images={images} />
+            <h1 className="text-5xl text-offWhite w-full text-center p-10">
+                Studio Socket
+            </h1>
+            <div className="authContainer flex-col-reverse lg:flex-row flex-wrap lg:flex-nowrap">
+                <div className="flex w-full lg:w-2/3">
+                    <AuthHero images={images} />
+                </div>
                 <form
                     onSubmit={handleSubmit}
-                    className="authForm"
+                    className="authForm flex w-full lg:w-1/3"
                     noValidate={true}
                     onClick={onFormClick}
                 >

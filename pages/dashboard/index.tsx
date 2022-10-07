@@ -1,12 +1,12 @@
 import React from "react";
-import { loremIpsumFull } from "../../testData";
+import { randomTextFull } from "../../testData";
 
 interface Props {}
 
 const Dashboard = ({}: Props) => {
     return (
         <div className="dashboard" data-testid="dashboard">
-            <p>{loremIpsumFull}</p>
+            <p>{randomTextFull}</p>
         </div>
     );
 };

@@ -73,6 +73,10 @@ export const ImageProps = [
     },
 ];
 
+export const getImageProp = (name: string) => {
+    return ImageProps.filter((image) => image.name === name)[0];
+};
+
 export const rotateClasses = [
     "rotate-0",
     "rotate-1",
