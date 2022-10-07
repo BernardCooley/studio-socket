@@ -83,7 +83,7 @@ const Login = ({}: Props) => {
     };
 
     return (
-        <div className="authBakcground">
+        <div className="authBakcground" data-testid="login-page">
             <LineBackground />
             <div className="authContainer">
                 <AuthHero />
