@@ -46,9 +46,9 @@ const Navigation = ({}: Props) => {
         <div
             className={`${
                 showNav
-                    ? "w-full bg-primary shadow-dark"
-                    : "w-10 md:w-full right-0 bg-primary rounded-br-3xl md:bg-primary text-secondary shadow-dark"
-            } fixed realtive z-10 w-full h-auto md:h-16 p-10 md:p-0 shadow-secondary ease-in-out duration-500 left-0 ${navScrollClasses}`}
+                    ? "w-full bg-gradient-to-r from-cyan-500 to-blue-500 md:bg-primary shadow-dark"
+                    : "w-10 md:w-full right-0 bg-transparent md:rounded-3xl md:bg-primary text-secondary md:shadow-dark"
+            } fixed realtive z-10 w-full h-auto md:h-16 p-5 md:p-0 shadow-secondary ease-in-out duration-500 left-0 ${navScrollClasses}`}
         >
             <div>
                 <div
@@ -64,9 +64,9 @@ const Navigation = ({}: Props) => {
                     onClick={toggleNav}
                     className={`${
                         !showNav ? "block" : "hidden"
-                    } absolute right-5 top-5 block md:hidden hover:cursor-pointer`}
+                    } absolute left-2 top-2 block md:hidden hover:cursor-pointer`}
                 >
-                    <Menu sx={{ fontSize: 40 }} />
+                    <Menu sx={{ fontSize: 35 }} />
                 </div>
             </div>
 
@@ -83,7 +83,14 @@ const Navigation = ({}: Props) => {
                                 className="h-full flexCenter mr-10"
                             >
                                 <Link passHref href={route.path}>
-                                    <a onClick={toggleNav} className="navItems">
+                                    <a
+                                        onClick={toggleNav}
+                                        className={`navItems ${
+                                            router.asPath === route.path
+                                                ? "underline underline-offset-8 hover:scale-100 font-bold"
+                                                : ""
+                                        }`}
+                                    >
                                         {route.name}
                                     </a>
                                 </Link>
