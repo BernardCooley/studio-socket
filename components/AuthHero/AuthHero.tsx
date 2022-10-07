@@ -46,29 +46,37 @@ const AuthHero = ({ images }: Props) => {
                         {randomTextPart}
                     </p>
                     <div className="relative my-5 bg-table bg-cover p-16 h-auto rounded-3xl xl:rounded-full flex justify-around items-center z-10 shadow-black shadow-2xl flex-wrap">
-                        <div className="scale-85 h-28 absolute left-0 xl:left-10 top-10">
-                            <SketchImage
-                                key={getImageProp("speakers_sketch").name}
-                                image={getImageProp("speakers_sketch")}
-                                rotateClasses={rotateClasses}
-                            />
-                        </div>
-                        {imageNames.map((name) => (
-                            <div key={name} className="scale-85 h-28">
-                                <SketchImage
-                                    key={getImageProp(name).name}
-                                    image={getImageProp(name)}
-                                    rotateClasses={rotateClasses}
-                                />
-                            </div>
-                        ))}
-                        <div className="scale-85 h-28 absolute right-0 xl:right-10 top-10">
-                            <SketchImage
-                                key={getImageProp("speakers_sketch").name}
-                                image={getImageProp("speakers_sketch")}
-                                rotateClasses={rotateClasses}
-                            />
-                        </div>
+                        {ImagePropsWithImage.length > 0 && (
+                            <>
+                                <div className="scale-85 h-28 absolute left-0 xl:left-10 top-10">
+                                    <SketchImage
+                                        key={
+                                            getImageProp("speakers_sketch").name
+                                        }
+                                        image={getImageProp("speakers_sketch")}
+                                        rotateClasses={rotateClasses}
+                                    />
+                                </div>
+                                {imageNames.map((name) => (
+                                    <div key={name} className="scale-85 h-28">
+                                        <SketchImage
+                                            key={getImageProp(name).name}
+                                            image={getImageProp(name)}
+                                            rotateClasses={rotateClasses}
+                                        />
+                                    </div>
+                                ))}
+                                <div className="scale-85 h-28 absolute right-0 xl:right-10 top-10">
+                                    <SketchImage
+                                        key={
+                                            getImageProp("speakers_sketch").name
+                                        }
+                                        image={getImageProp("speakers_sketch")}
+                                        rotateClasses={rotateClasses}
+                                    />
+                                </div>
+                            </>
+                        )}
                     </div>
                     <p className="leading-7 lg:leading-10 text-lg lg:text-xl z-10">
                         {randomTextPart}
