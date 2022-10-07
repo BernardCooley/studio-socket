@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from "react";
 import SketchImage from "../AuthImage";
 import { ImageProps, rotateClasses } from "./imageProps";
-import { useFirebaseImages } from "../../hooks/useFirebaseImages";
-import { ISketchImages } from "../../types";
+import { IFirebaseImage, ISketchImage } from "../../types";
 
-const AuthHero = () => {
-    const { images } = useFirebaseImages("sketches");
+interface Props {
+    images: IFirebaseImage[] | undefined;
+}
+
+const AuthHero = ({ images }: Props) => {
     const [ImagePropsWithImage, setImagePropsWithImage] = useState<
-        ISketchImages[]
+        ISketchImage[]
     >([]);
 
     useEffect(() => {

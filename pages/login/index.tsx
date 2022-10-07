@@ -8,10 +8,12 @@ import { getErrorMessages, getRoute } from "../../utils";
 import FormMessage from "../../components/FormMessage";
 import AuthHero from "../../components/AuthHero/AuthHero";
 import LineBackground from "../../components/LineBackground/LineBackground";
+import { InferGetStaticPropsType, NextPage } from "next";
+import { getFirebaseImages } from "../../firebase/functions";
 
-interface Props {}
+interface Props extends InferGetStaticPropsType<typeof getStaticProps> {}
 
-const Login = ({}: Props) => {
+const Login: NextPage<any> = ({ images }: Props) => {
     const emailRef = useRef<HTMLInputElement>(null);
     const passwordRef = useRef<HTMLInputElement>(null);
     const [errors, setErrors] = useState([]);
@@ -86,7 +88,7 @@ const Login = ({}: Props) => {
         <div className="login authBakcground" data-testid="login-page">
             <LineBackground />
             <div className="authContainer">
-                <AuthHero />
+                <AuthHero images={images} />
                 <form
                     onSubmit={handleSubmit}
                     className="authForm"
@@ -159,6 +161,16 @@ const Login = ({}: Props) => {
             </div>
         </div>
     );
+};
+
+export const getStaticProps = async () => {
+    const img = await getFirebaseImages("sketches");
+
+    return {
+        props: {
+            images: img,
+        },
+    };
 };
 
 export default Login;

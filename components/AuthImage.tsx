@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
-import { ISketchImages } from "../types";
+import { ISketchImage } from "../types";
 interface Props {
-    image: ISketchImages;
+    image: ISketchImage;
     rotateClasses: string[];
 }
 

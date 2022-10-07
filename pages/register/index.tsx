@@ -8,10 +8,12 @@ import { getErrorMessages, getRoute } from "../../utils";
 import FormMessage from "../../components/FormMessage";
 import AuthHero from "../../components/AuthHero/AuthHero";
 import LineBackground from "../../components/LineBackground/LineBackground";
+import { InferGetStaticPropsType } from "next";
+import { getFirebaseImages } from "../../firebase/functions";
 
-interface Props {}
+interface Props extends InferGetStaticPropsType<typeof getStaticProps> {}
 
-const Register = ({}: Props) => {
+const Register = ({ images }: Props) => {
     const emailRef = useRef<HTMLInputElement>(null);
     const passwordRef = useRef<HTMLInputElement>(null);
     const repeatPasswordRef = useRef<HTMLInputElement>(null);
@@ -92,7 +94,7 @@ const Register = ({}: Props) => {
         <div className="register authBakcground" data-testid="register-page">
             <LineBackground />
             <div className="authContainer">
-                <AuthHero />
+                <AuthHero images={images} />
                 <form
                     onSubmit={handleSubmit}
                     className="authForm"
@@ -164,6 +166,16 @@ const Register = ({}: Props) => {
             </div>
         </div>
     );
+};
+
+export const getStaticProps = async () => {
+    const img = await getFirebaseImages("sketches");
+
+    return {
+        props: {
+            images: img,
+        },
+    };
 };
 
 export default Register;

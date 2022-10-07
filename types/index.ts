@@ -1138,7 +1138,7 @@ export interface IFirebaseImage {
     url: string;
 }
 
-export interface ISketchImages {
+export interface ISketchImage {
     name: string;
     width: string;
     top: string;
