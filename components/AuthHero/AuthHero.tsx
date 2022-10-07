@@ -1,33 +1,42 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import SketchImage from "../AuthImage";
-import { getImageProp, ImageProps, rotateClasses } from "./imageProps";
-import { IFirebaseImage } from "../../types";
+import { ImageProps, rotateClasses } from "./imageProps";
+import { IFirebaseImage, ISketchImage } from "../../types";
 import { randomTextPart } from "../../testData";
+
+const imageNames = [
+    "rytm_sketch",
+    "synth_sketch",
+    "deck_sketch",
+    "headphones_sketch",
+    "interface_sketch",
+    "mixer_sketch",
+];
 
 interface Props {
     images: IFirebaseImage[] | undefined;
 }
 
 const AuthHero = ({ images }: Props) => {
+    const [ImagePropsWithImage, setImagePropsWithImage] = useState<
+        ISketchImage[]
+    >([]);
+
     useEffect(() => {
         if (images && images.length > 0) {
-            ImageProps.map((imageProps) => {
+            const imgs = ImageProps.map((imageProps) => {
                 imageProps.image = images.filter(
                     (image) => image.name === imageProps.name
                 )[0];
                 return imageProps;
             });
+            setImagePropsWithImage(imgs);
         }
     }, [images]);
 
-    const imageNames = [
-        "rytm_sketch",
-        "synth_sketch",
-        "deck_sketch",
-        "headphones_sketch",
-        "interface_sketch",
-        "mixer_sketch",
-    ];
+    const getImageProp = (name: string) => {
+        return ImagePropsWithImage.filter((image) => image.name === name)[0];
+    };
 
     return (
         <div className="text-offWhite relative flex-col items-center justify-center h-full flex">
