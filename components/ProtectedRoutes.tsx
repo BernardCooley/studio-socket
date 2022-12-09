@@ -20,7 +20,7 @@ const ProtectedRoute = ({ children }: Props) => {
 
     useEffect(() => {
         if (!isLoggedIn && !protestedRoutePaths().includes(router.pathname)) {
-            router.push("/login");
+            router.push("/landing");
         }
     }, [router, isLoggedIn]);
 
@@ -29,9 +29,7 @@ const ProtectedRoute = ({ children }: Props) => {
             {isLoggedIn && (
                 <div>
                     <Navigation />
-                    <div className="p-10 pt-12 md:pt-24 h-full relative border bg-offWhite scroll-smooth">
-                        {children}
-                    </div>
+                    <div>{children}</div>
                 </div>
             )}
         </div>

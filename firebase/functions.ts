@@ -9,6 +9,7 @@ import {
 } from "firebase/firestore";
 import { getDownloadURL, getStorage, listAll, ref } from "firebase/storage";
 import { IFirebaseImage } from "../types";
+import { trimFileExtension } from "../utils";
 import { devicesRef } from "./firebaseRefs";
 
 export const getDocumentsWhere = async (
@@ -26,23 +27,35 @@ export const getDocumentsWhere = async (
     return null;
 };
 
-export const getFirebaseImages = async (
+export const getFirebaseImage = async (
     folder: string,
-    filename: string = ""
-): Promise<IFirebaseImage[] | undefined> => {
+    filename: string
+): Promise<IFirebaseImage | undefined> => {
     const storage = getStorage();
     const pathReference = ref(storage, `${folder}/${filename}`);
+
+    try {
+        const name = trimFileExtension(filename);
+        const url = await getDownloadURL(pathReference);
+        return { url, name };
+    } catch (e) {
+        console.log(e);
+    }
+    return undefined;
+};
+
+export const getFirebaseImages = async (
+    folder: string
+): Promise<IFirebaseImage[] | undefined> => {
+    const storage = getStorage();
+    const pathReference = ref(storage, `${folder}`);
 
     try {
         const imageRefs = await listAll(pathReference);
         return await Promise.all(
             imageRefs.items.map(async (imageRef) => {
-                const name = imageRef.name
-                    .toLocaleLowerCase()
-                    .replace(".png", "")
-                    .replace(".jpg", "")
-                    .replace(".jpeg", "");
                 const url = await getDownloadURL(imageRef);
+                const name = trimFileExtension(imageRef.name);
 
                 return {
                     name,
@@ -53,6 +66,7 @@ export const getFirebaseImages = async (
     } catch (e) {
         console.log(e);
     }
+    return undefined;
 };
 
 export const getFirebaseDevices = async (

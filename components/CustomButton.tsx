@@ -2,8 +2,8 @@ import React from "react";
 
 interface Props {
     label: string;
-    type: "button" | "submit" | "reset" | undefined;
-    className?: string;
+    type: "button" | "submit" | "reset";
+    buttonClassName?: string;
     onClick?: () => void;
     labelClassName?: string;
     disabled?: boolean;
@@ -12,7 +12,7 @@ interface Props {
 const CustomButton = ({
     label,
     type,
-    className,
+    buttonClassName,
     onClick,
     labelClassName,
     disabled,
@@ -20,7 +20,7 @@ const CustomButton = ({
     return (
         <button
             disabled={disabled}
-            className={className}
+            className={buttonClassName}
             onClick={onClick}
             type={type}
         >

@@ -1,5 +1,23 @@
 export const routes = [
     {
+        name: "Landing",
+        path: "/landing",
+        protected: false,
+        showInNav: false,
+    },
+    {
+        name: "Login",
+        path: "/login",
+        protected: false,
+        showInNav: false,
+    },
+    {
+        name: "Register",
+        path: "/register",
+        protected: false,
+        showInNav: false,
+    },
+    {
         name: "Dashboard",
         path: "/dashboard",
         protected: true,
@@ -27,18 +45,6 @@ export const routes = [
         name: "Settings",
         path: "/settings",
         protected: true,
-        showInNav: false,
-    },
-    {
-        name: "Login",
-        path: "/login",
-        protected: false,
-        showInNav: false,
-    },
-    {
-        name: "Register",
-        path: "/register",
-        protected: false,
         showInNav: false,
     },
 ];

@@ -5,15 +5,11 @@ import CustomTextInput from "../../components/CustomTextInput";
 import CustomButton from "../../components/CustomButton";
 import { generateFormMessages, RegisterFormSchema } from "../../formValidation";
 import { getErrorMessages, getRoute } from "../../utils";
-import FormMessage from "../../components/FormMessage";
-import AuthHero from "../../components/AuthHero/AuthHero";
-import LineBackground from "../../components/LineBackground/LineBackground";
-import { InferGetStaticPropsType } from "next";
-import { getFirebaseImages } from "../../firebase/functions";
+import FormDialog from "../../components/FormDialog";
 
-interface Props extends InferGetStaticPropsType<typeof getStaticProps> {}
+interface Props {}
 
-const Register = ({ images }: Props) => {
+const Register = ({}: Props) => {
     const emailRef = useRef<HTMLInputElement>(null);
     const passwordRef = useRef<HTMLInputElement>(null);
     const repeatPasswordRef = useRef<HTMLInputElement>(null);
@@ -92,14 +88,10 @@ const Register = ({ images }: Props) => {
 
     return (
         <div className="register authBakcground" data-testid="register-page">
-            <LineBackground />
             <h1 className="text-5xl text-offWhite w-full text-center p-10">
                 Studio Socket
             </h1>
             <div className="authContainer flex-col-reverse lg:flex-row flex-wrap lg:flex-nowrap">
-                <div className="flex w-full lg:w-2/3">
-                    <AuthHero images={images} />
-                </div>
                 <form
                     onSubmit={handleSubmit}
                     className="authForm flex w-full lg:w-1/3"
@@ -108,7 +100,7 @@ const Register = ({ images }: Props) => {
                 >
                     <h1 className="text-2xl">Create account</h1>
                     <div className="w-full relative flex flex-col items-center">
-                        <FormMessage
+                        <FormDialog
                             formMessages={formMessages}
                             showFormMessages={showFormMessages}
                         />
@@ -153,7 +145,7 @@ const Register = ({ images }: Props) => {
                         <CustomButton
                             label="Register"
                             type="submit"
-                            className="authButton"
+                            buttonClassName="authButton"
                             disabled={submitButtonDisabled}
                         />
                     </div>
@@ -162,7 +154,7 @@ const Register = ({ images }: Props) => {
                         <CustomButton
                             label="Log in"
                             type="button"
-                            className="authHaveAnAccount"
+                            buttonClassName="authHaveAnAccount"
                             labelClassName="hover:underline underline-offset-4"
                             onClick={() => router.push("/login")}
                         />
@@ -171,16 +163,6 @@ const Register = ({ images }: Props) => {
             </div>
         </div>
     );
-};
-
-export const getStaticProps = async () => {
-    const img = await getFirebaseImages("sketches");
-
-    return {
-        props: {
-            images: img,
-        },
-    };
 };
 
 export default Register;

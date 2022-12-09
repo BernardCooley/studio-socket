@@ -1,12 +1,12 @@
 import React from "react";
-import { randomTextFull } from "../../testData";
+import { testCopyFull } from "../../testData";
 
 interface Props {}
 
 const Dashboard = ({}: Props) => {
     return (
         <div className="dashboard" data-testid="dashboard">
-            <p>{randomTextFull}</p>
+            <p>{testCopyFull}</p>
         </div>
     );
 };

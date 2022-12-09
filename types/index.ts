@@ -1138,13 +1138,6 @@ export interface IFirebaseImage {
     url: string;
 }
 
-export interface ISketchImage {
-    name: string;
-    width: string;
-    top: string;
-    image: IFirebaseImage;
-}
-
 export interface IRoute {
     name: string;
     path: string;

@@ -13,13 +13,15 @@ function MyApp({ Component, pageProps }: AppProps) {
     return (
         <NavigationContextProvider>
             <AuthContextProvider>
-                {noAuthRequired.includes(router.pathname) ? (
-                    <Component {...pageProps} />
-                ) : (
-                    <ProtectedRoute>
+                <div className="h-full relative scroll-smooth bg-secondary font-default">
+                    {noAuthRequired.includes(router.pathname) ? (
                         <Component {...pageProps} />
-                    </ProtectedRoute>
-                )}
+                    ) : (
+                        <ProtectedRoute>
+                            <Component {...pageProps} />
+                        </ProtectedRoute>
+                    )}
+                </div>
             </AuthContextProvider>
         </NavigationContextProvider>
     );

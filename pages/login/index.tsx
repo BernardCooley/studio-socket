@@ -5,15 +5,12 @@ import CustomTextInput from "../../components/CustomTextInput";
 import CustomButton from "../../components/CustomButton";
 import { generateFormMessages, LoginFormSchema } from "../../formValidation";
 import { getErrorMessages, getRoute } from "../../utils";
-import FormMessage from "../../components/FormMessage";
-import AuthHero from "../../components/AuthHero/AuthHero";
-import LineBackground from "../../components/LineBackground/LineBackground";
-import { InferGetStaticPropsType, NextPage } from "next";
-import { getFirebaseImages } from "../../firebase/functions";
+import FormDialog from "../../components/FormDialog";
+import { NextPage } from "next";
 
-interface Props extends InferGetStaticPropsType<typeof getStaticProps> {}
+interface Props {}
 
-const Login: NextPage<any> = ({ images }: Props) => {
+const Login: NextPage<any> = ({}: Props) => {
     const emailRef = useRef<HTMLInputElement>(null);
     const passwordRef = useRef<HTMLInputElement>(null);
     const [errors, setErrors] = useState([]);
@@ -86,14 +83,10 @@ const Login: NextPage<any> = ({ images }: Props) => {
 
     return (
         <div className="login authBakcground" data-testid="login-page">
-            <LineBackground />
             <h1 className="text-5xl text-offWhite w-full text-center p-10">
                 Studio Socket
             </h1>
             <div className="authContainer flex-col-reverse lg:flex-row flex-wrap lg:flex-nowrap">
-                <div className="flex w-full lg:w-2/3">
-                    <AuthHero images={images} />
-                </div>
                 <form
                     onSubmit={handleSubmit}
                     className="authForm flex w-full lg:w-1/3"
@@ -105,7 +98,7 @@ const Login: NextPage<any> = ({ images }: Props) => {
                     <div
                         className={`w-full relative flex flex-col items-center`}
                     >
-                        <FormMessage
+                        <FormDialog
                             formMessages={formMessages}
                             showFormMessages={showFormMessages}
                         />
@@ -114,7 +107,7 @@ const Login: NextPage<any> = ({ images }: Props) => {
                             type="email"
                             label="Email"
                             name="email"
-                            className={`customTextInput ${
+                            className={`w-full ${
                                 showFormMessages
                                     ? "pointer-events-none opacity-50"
                                     : ""
@@ -122,12 +115,11 @@ const Login: NextPage<any> = ({ images }: Props) => {
                             defaultValue={
                                 !isProduction ? "bernardcooley@gmail.com" : ""
                             }
-                            inputClassName="bg-transparent"
                             ref={emailRef}
                             errorMessages={getErrorMessages(errors, "email")}
                         />
                         <CustomTextInput
-                            className={`customTextInput ${
+                            className={`w-full ${
                                 showFormMessages
                                     ? "pointer-events-none opacity-50"
                                     : ""
@@ -137,14 +129,13 @@ const Login: NextPage<any> = ({ images }: Props) => {
                             label="Password"
                             name="password"
                             defaultValue={!isProduction ? "Yeloocc1" : ""}
-                            inputClassName="bg-transparent"
                             ref={passwordRef}
                             errorMessages={getErrorMessages(errors, "password")}
                         />
                         <CustomButton
                             label="Log in"
                             type="submit"
-                            className={`authButton ${
+                            buttonClassName={`authButton ${
                                 showFormMessages
                                     ? "pointer-events-none opacity-50"
                                     : ""
@@ -157,7 +148,7 @@ const Login: NextPage<any> = ({ images }: Props) => {
                         <CustomButton
                             label="Register"
                             type="button"
-                            className="authHaveAnAccount"
+                            buttonClassName="authHaveAnAccount"
                             labelClassName="hover:underline underline-offset-4"
                             onClick={() => router.push("/register")}
                         />
@@ -166,16 +157,6 @@ const Login: NextPage<any> = ({ images }: Props) => {
             </div>
         </div>
     );
-};
-
-export const getStaticProps = async () => {
-    const img = await getFirebaseImages("sketches");
-
-    return {
-        props: {
-            images: img,
-        },
-    };
 };
 
 export default Login;

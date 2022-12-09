@@ -2,25 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: "SairaCondensed-Regular";
+    src: url("../styles/fonts/SairaCondensed/SairaCondensed-Regular.ttf");
+}
+@font-face {
+    font-family: "SairaCondensed-Black";
+    src: url("../styles/fonts/SairaCondensed/SairaCondensed-Black.ttf");
+}
+@font-face {
+    font-family: "SairaCondensed-Bold";
+    src: url("../styles/fonts/SairaCondensed/SairaCondensed-Bold.ttf");
+}
+@font-face {
+    font-family: "SairaCondensed-ExtraBold";
+    src: url("../styles/fonts/SairaCondensed/SairaCondensed-ExtraBold.ttf");
+}
+@font-face {
+    font-family: "SairaCondensed-ExtraLight";
+    src: url("../styles/fonts/SairaCondensed/SairaCondensed-ExtraLight.ttf");
+}
+@font-face {
+    font-family: "SairaCondensed-Light";
+    src: url("../styles/fonts/SairaCondensed/SairaCondensed-Light.ttf");
+}
+@font-face {
+    font-family: "SairaCondensed-Medium";
+    src: url("../styles/fonts/SairaCondensed/SairaCondensed-Medium.ttf");
+}
+@font-face {
+    font-family: "SairaCondensed-SemiBold";
+    src: url("../styles/fonts/SairaCondensed/SairaCondensed-SemiBold.ttf");
+}
+@font-face {
+    font-family: "SairaCondensed-Thin";
+    src: url("../styles/fonts/SairaCondensed/SairaCondensed-Thin.ttf");
+}
+
 html,
 body {
     padding: 0;
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-body {
-    display: table;
-    width: 100%;
-    background: #4e54c8;
-    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
-    background: url("../public/assets/backgrounds/modular-side-dark.jpg");
-    background-size: cover;
-    color: #000;
-    line-height: 1.6;
-    position: relative;
-    font-family: sans-serif;
 }
 
 a {
@@ -51,15 +73,11 @@ a {
 }
 
 .authForm {
-    @apply h-rem44 relative flex justify-between flex-col border rounded-lg p-3 sm:p-10 items-center bg-offWhite overflow-y-auto shadow-black shadow-2xl;
+    @apply relative flex justify-between flex-col border rounded-lg p-3 sm:p-10 items-center;
 }
 
 .authButton {
-    @apply w-full text-2xl bg-primary text-secondary py-3 px-8 text-center hover:bg-secondary hover:text-offWhite hover:cursor-pointer hover:shadow-lg rounded-lg shadow-gray-900 leading-10 hover:sm:scale-x-105 transition-transform duration-200 ease-in-out disabled:pointer-events-none;
-}
-
-.customTextInput {
-    @apply w-full;
+    @apply w-full text-2xl bg-primary text-secondary py-3 px-8 text-center hover:bg-secondary hover:cursor-pointer hover:shadow-lg rounded-lg leading-10 hover:sm:scale-x-105 ease-in-out disabled:pointer-events-none;
 }
 
 .authHaveAnAccount {
@@ -67,7 +85,7 @@ a {
 }
 
 .navItems {
-    @apply h-2/3 flex justify-center items-center p-3 hover:underline underline-offset-8 hover:scale-110 rounded-lg ease-in-out duration-200;
+    @apply h-2/3 flex justify-center items-center p-3 hover:underline underline-offset-8 hover:scale-110 rounded-lg ease-in-out;
 }
 
 .flexCenter {
@@ -75,5 +93,5 @@ a {
 }
 
 .navIcons {
-    @apply hover:scale-125 ease-in-out duration-200 hover:cursor-pointer p-2;
+    @apply hover:scale-125 ease-in-out hover:cursor-pointer p-2;
 }

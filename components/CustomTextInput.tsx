@@ -11,7 +11,7 @@ interface Props {
     errorMessages: string[];
 }
 
-const PasswordInput = forwardRef(
+const CustomTextInput = forwardRef(
     (
         {
             name,
@@ -36,7 +36,7 @@ const PasswordInput = forwardRef(
                         ))}
                 </div>
                 <input
-                    className={`peer h-10 w-full border-b-2 border-gray-300 text-secondary focus:outline-none leading-10 ${inputClassName} ${
+                    className={`peer h-10 w-full border-b-2 border-gray-300 focus:outline-none leading-10 bg-transparent text-primary pl-3 placeholder-transparent ${inputClassName} ${
                         errorMessages.length > 0 ? "border-error" : ""
                     }`}
                     type={type}
@@ -48,7 +48,7 @@ const PasswordInput = forwardRef(
                     ref={ref}
                 />
                 <label
-                    className={`transition top-0 relative peer-placeholder-shown:text-transparent peer-placeholder-shown:top-7 ${
+                    className={`transition-transform top-0 relative peer-placeholder-shown:text-transparent peer-placeholder-shown:top-7 ${
                         errorMessages.length > 0
                             ? "text-error"
                             : "text-formLabel"
@@ -62,6 +62,6 @@ const PasswordInput = forwardRef(
     }
 );
 
-PasswordInput.displayName = "PasswordInput";
+CustomTextInput.displayName = "CustomTextInput";
 
-export default PasswordInput;
+export default CustomTextInput;
