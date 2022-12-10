@@ -109,8 +109,7 @@ const Register = ({}: Props) => {
                             type="email"
                             label="Email"
                             name="email"
-                            className="customTextInput"
-                            inputClassName="bg-transparent"
+                            className="w-full"
                             ref={emailRef}
                             defaultValue={
                                 !isProduction ? "bernardcooley@gmail.com" : ""
@@ -118,23 +117,21 @@ const Register = ({}: Props) => {
                             errorMessages={getErrorMessages(errors, "email")}
                         />
                         <CustomTextInput
-                            className="customTextInput"
+                            className="w-full"
                             type="password"
                             id="password"
                             label="Password"
                             name="password"
-                            inputClassName="bg-transparent"
                             ref={passwordRef}
                             defaultValue={!isProduction ? "Yeloocc1" : ""}
                             errorMessages={getErrorMessages(errors, "password")}
                         />
                         <CustomTextInput
-                            className="customTextInput"
+                            className="w-full"
                             type="password"
                             id="repeatPassword"
                             label="Repeat password"
                             name="repeatPassword"
-                            inputClassName="bg-transparent"
                             ref={repeatPasswordRef}
                             defaultValue={!isProduction ? "Yeloocc1" : ""}
                             errorMessages={getErrorMessages(

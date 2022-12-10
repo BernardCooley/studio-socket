@@ -28,7 +28,7 @@ const CustomTextInput = forwardRef(
         const [value, setValue] = useState(defaultValue);
 
         return (
-            <div className={`customInput flex flex-col-reverse ${className}`}>
+            <div className={`relative pb-4 ${className}`}>
                 <div className="text-error text-sm min-h-val">
                     {errorMessages.length > 0 &&
                         errorMessages.map((error) => (
@@ -36,19 +36,21 @@ const CustomTextInput = forwardRef(
                         ))}
                 </div>
                 <input
-                    className={`peer h-10 w-full border-b-2 border-gray-300 focus:outline-none leading-10 bg-transparent text-primary pl-3 placeholder-transparent ${inputClassName} ${
-                        errorMessages.length > 0 ? "border-error" : ""
+                    className={`rounded-lg px-2.5 pb-2.5 pt-5 w-full text-sm text-primary bg-transparent border-0 focus:ring-0 peer ${inputClassName} ${
+                        errorMessages.length > 0
+                            ? "focus:border-error border-error focus:border-b border-b"
+                            : "focus:border-primary focus:border-b"
                     }`}
                     type={type}
                     name={name}
                     id={id}
                     value={value}
                     onChange={(e) => setValue(e.target.value)}
-                    placeholder={label}
                     ref={ref}
+                    placeholder=" "
                 />
                 <label
-                    className={`transition-transform top-0 relative peer-placeholder-shown:text-transparent peer-placeholder-shown:top-7 ${
+                    className={`absolute text-sm duration-300 transform -translate-y-4 scale-75 top-4 z-10 origin-[0] left-2.5 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 ${
                         errorMessages.length > 0
                             ? "text-error"
                             : "text-formLabel"

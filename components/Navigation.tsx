@@ -82,7 +82,7 @@ const Navigation = ({}: Props) => {
                                 key={route.name}
                                 className="h-full flexCenter mr-10"
                             >
-                                <Link passHref href={route.path}>
+                                <Link legacyBehavior passHref href={route.path}>
                                     <a
                                         onClick={toggleNav}
                                         className={`navItems ${
